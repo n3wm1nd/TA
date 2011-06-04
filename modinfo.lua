@@ -2,7 +2,7 @@ return {
   name='gitsynctest',
   description='',
   shortname='TA',
-  version='4',
+  version='5',
   mutator='',
   game='',
   shortGame='',

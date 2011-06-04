@@ -2,4 +2,4 @@
 *.swp
 .directory
 *.kate-swp
-.git/
+.git/*

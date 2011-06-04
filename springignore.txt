@@ -3,4 +3,3 @@
 .directory
 *.kate-swp
 .git/
-*

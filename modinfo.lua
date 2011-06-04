@@ -1,8 +1,8 @@
 return {
-  name='Tech Annihilation',
-  description='The New Generation Of War',
+  name='gitsynctest',
+  description='',
   shortname='TA',
-  version='v2.11-dev-$Id$',
+  version='$Id$',
   mutator='',
   game='',
   shortGame='',

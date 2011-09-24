@@ -50,6 +50,7 @@ local unitDef = {
 	smoothAnim = true,
 	turnRate = 0,
 	unitname = [[corhmakr]],
+        useBuildingGroundDecal = true,
 	workerTime = 0,
 	yardMap = [[ooooooooo]],
 	sounds = {

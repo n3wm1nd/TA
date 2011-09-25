@@ -65,6 +65,7 @@ local unitDef = {
     [[cormoho]],
     [[cormexp]],
     [[cormmkr]],
+	[[corhmakr]],
     [[coruwadves]],
     [[coruwadvms]],
     [[corarad]],

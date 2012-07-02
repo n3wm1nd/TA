@@ -40,38 +40,30 @@ local stunned = 0
 
 local function StunnedCheck()
 	while true do
---		Spring.Echo("tock");
 		if select(1, spGetUnitIsStunned(unitID)) and GetUnitValue(COB.ACTIVATION) == 1  then
-			Spring.Echo("A" .. stunned);
 			if  stunned and stunned == 1 then 
+				stunned = 1;
 				SetUnitValue(COB.ACTIVATION, 0)
 			end
 			stunned = 1;
-		  
-		elseif not select(1, spGetUnitIsStunned(unitID)) and GetUnitValue(COB.ACTIVATION) ~= 1 then 
-			Spring.Echo("B" .. stunned);
-			if stunned and stunned == 1 then 
-				SetUnitValue(COB.ACTIVATION, 1) 
-			end
+		elseif stunned and stunned == 1  and not select(1, spGetUnitIsStunned(unitID)) and GetUnitValue(COB.ACTIVATION) ~= 1 then 
 			stunned = 0;
+			SetUnitValue(COB.ACTIVATION, 1) 
 		end
-		Sleep(1500);
+		Sleep(250);
 	end
 end
 
 local function Activate()
-   -- if stunned == 1 then return end
-	
+    if stunned and stunned == 1 then return end -- ADDED FOR STUNABLE
 	Spin( top , y_axis, 1.000000 )
 	Spin( dish1 , x_axis, 10.000000 )
 	Spin( dish2 , x_axis, -10.000000 )
-		
 	state = 1
 	
 end
 
 local function Deactivate()
-
 	StopSpin( top , y_axis, 40.000000 )
 	StopSpin( dish1 , x_axis, 40.000000 )
 	StopSpin( dish2 , x_axis, -40.000000 )

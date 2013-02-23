@@ -226,6 +226,7 @@ VFS.Include(HEADERS_DIRNAME .. 'mathenv.lua',nil,VFSMODE)
 VFS.Include(HEADERS_DIRNAME .. 'figures.lua',nil,VFSMODE)
 VFS.Include(HEADERS_DIRNAME .. 'vectors.lua',nil,VFSMODE)
 VFS.Include(HEADERS_DIRNAME .. 'hsl.lua',nil,VFSMODE)
+VFS.Include(HEADERS_DIRNAME .. 'nanoupdate.lua',nil,VFSMODE)
 
 --// load binary insert library
 VFS.Include(HEADERS_DIRNAME .. 'tablebin.lua')

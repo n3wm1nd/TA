@@ -893,6 +893,7 @@ end
 -- Setting collisionvolumetest true for all units
 for name, ud in pairs(UnitDefs) do
 		ud.collisionvolumetest = 1
+		ud.shownanospray = false
 end
 
 local cons = {

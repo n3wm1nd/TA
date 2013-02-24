@@ -235,9 +235,7 @@ local factionsNanoFx = {
     sizeGrowth  = 0.65,
     rotSpeed    = 0.1,
     rotSpread   = 360,
-    --texture     = "bitmaps/EMG_alpha.tga",
-    texture     = "bitmaps/Other/Poof.png",
-    --texture     = "bitmaps/clouds2.tga",
+    texture     = "bitmaps/cc/dirt.png",
     particles   = 1.2,
   },
   --[[arm = {
@@ -337,7 +335,13 @@ local builders = {}
 						local faction = GetFaction(unitDefID)
 						local teamColor = {ud.nanoColorR, ud.nanoColorG, ud.nanoColorB, 1}
 						local nanoPieces = Spring.GetUnitNanoPieces(unitID) or {}
-
+						--[[
+						local bp = ud.buildSpeed/100
+						  if bp  >  8 then
+						    bp = 9 
+						  end
+						local buildspeed = bp
+						--]]
 						for j=1,#nanoPieces do
 							local nanoPieceID = nanoPieces[j]
 							--local nanoPieceIDAlt = Spring.GetUnitScriptPiece(unitID, nanoPieceID)

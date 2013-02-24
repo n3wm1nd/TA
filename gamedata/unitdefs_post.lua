@@ -738,6 +738,7 @@ local LosRadar = {
 ["uppercut"] = 35.965450286865,
 }
 
+
 for name, ud in pairs(UnitDefs) do  
 	if (LosRadar[ud.unitname]) then
 		if LosRadar[ud.unitname] > 20.00 then  
@@ -765,6 +766,17 @@ local function disableunits(unitlist)
     end
   end
 end
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--
+-- ud.customparams IS NEVER NIL
+
+for _, ud in pairs(UnitDefs) do
+    if not ud.customparams then
+        ud.customparams = {}
+    end
+ end
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------

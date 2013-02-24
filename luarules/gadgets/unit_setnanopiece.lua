@@ -25,8 +25,39 @@ local spGetUnitPiecePosDir  = Spring.GetUnitPiecePosDir
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 local units = {
-  [UnitDefNames.tllcom.id] = {"nano"},
+  --Arm Constructors
   [UnitDefNames.armcom.id] = {"nanolath"},
+  [UnitDefNames.armcom1.id] = {"nanolath"},
+  [UnitDefNames.armcom4.id] = {"nanolath"},
+  [UnitDefNames.armcom5.id] = {"nanolath"},
+  [UnitDefNames.armcom6.id] = {"nanolath"},
+  [UnitDefNames.armcom7.id] = {"nanolath"},
+
+  [UnitDefNames.armck.id] = {"nanospray"},
+  
+  [UnitDefNames.armnanotc.id] = {"emitnano"},
+  [UnitDefNames.armnanotc1.id] = {"emitnano"},
+  [UnitDefNames.armnanotc2.id] = {"emitnano"},
+  [UnitDefNames.armnanotc3.id] = {"emitnano"},
+
+  
+  --Core Constructors
+  [UnitDefNames.corcom.id] = {"mlasflsh"},
+  [UnitDefNames.corcom1.id] = {"mlasflsh"},
+  [UnitDefNames.corcom3.id] = {"mlasflsh"},
+  [UnitDefNames.corcom5.id] = {"mlasflsh"},
+  [UnitDefNames.corcom6.id] = {"mlasflsh"},
+  [UnitDefNames.corcom7.id] = {"mlasflsh"},
+  
+  --Tll Constructors
+  [UnitDefNames.tllcom.id] = {"nano"},
+  [UnitDefNames.tllcom3.id] = {"nano"},
+  [UnitDefNames.tllcom5.id] = {"nano"},
+  [UnitDefNames.tllcom6.id] = {"nano"},
+  [UnitDefNames.tllcom7.id] = {"nano"},
+
+  [UnitDefNames.tllck.id] = {"rspray"},
+  [UnitDefNames.tllck.id] = {"lspray"},
 }
 
 function gadget:UnitCreated(unitID, unitDefID, unitTeam)

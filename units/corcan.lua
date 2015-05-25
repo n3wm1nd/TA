@@ -1,8 +1,9 @@
 -- UNITDEF -- CORCAN --
 --------------------------------------------------------------------------------
 
-local unitName = "corcan"
-
+local unitName = "blindax"
+-- blindax is the originally name of this unit in total annihilation
+-- If accepted, change file name too ??
 --------------------------------------------------------------------------------
 
 local unitDef = {

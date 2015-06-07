@@ -111,6 +111,7 @@ local weaponDefs = {
 		weaponType = [[MissileLauncher]],
 		weaponVelocity = 900,
 		wobble = 1800,
+		sprayAngle = 90,
 		damage = {
 			default = 2500,
 			subs = 5,

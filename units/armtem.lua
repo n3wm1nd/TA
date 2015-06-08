@@ -115,7 +115,7 @@ local weaponDefs = {
 		model = [[temrocket]],
 		name = [[Guided Rockets]],
 		range = 1050,
-		reloadtime = 3,
+		reloadtime = 2.5,
 		renderType = 1,
 		selfprop = true,
 		smokedelay = 0.1,
@@ -138,7 +138,7 @@ local weaponDefs = {
 		weaponType = [[StarburstLauncher]],
 		weaponVelocity = 650,
 		damage = {
-			default = 800,
+			default = 500,
 			subs = 5,
 		},
 	},
@@ -165,7 +165,7 @@ local weaponDefs = {
 		weaponType = [[Cannon]],
 		weaponVelocity = 500,
 		damage = {
-			default = 590,
+			default = 600,
 			subs = 5,
 		},
 	},

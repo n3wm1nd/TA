@@ -9,8 +9,8 @@ local unitDef = {
 	acceleration = 0.09,
 	bmcode = 1,
 	brakeRate = 0.045,
-	buildCostEnergy = 32000,
-	buildCostMetal = 6300,
+	buildCostEnergy = 36000,
+	buildCostMetal = 6650,
 	builder = false,
 	buildTime = 74001,
 	canAttack = true,
@@ -41,7 +41,7 @@ local unitDef = {
 	maneuverleashlength = 640,
 	maxDamage = 22100,
 	maxSlope = 16,
-	maxVelocity = 1.4,
+	maxVelocity = 1.3,
 	maxWaterDepth = 0,
 	metalStorage = 0,
 	mobilestandorders = 1,
@@ -106,7 +106,7 @@ local unitDef = {
 
 local weaponDefs = {
 	CORADON_MISSILE = {
-		areaOfEffect = 110,
+		areaOfEffect = 150,
 		burst = 1,
 		burstrate = 0.6,
 		craterBoost = 0,
@@ -143,7 +143,7 @@ local weaponDefs = {
 		weaponType = [[MissileLauncher]],
 		weaponVelocity = 700,
 		damage = {
-			default = 750,
+			default = 600,
 			subs = 5,
 		},
 	},

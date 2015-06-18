@@ -89,7 +89,6 @@ local unitDef = {
 	weapons = {
 		[1] = {
 			def = [[MACROSS_STARBURST]],
-			onlyTargetCategory = [[NOTVTOL]],
 		},
 		[2] = {
 			def = [[MACROSS_ARM_GUN]],

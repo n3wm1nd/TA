@@ -87,10 +87,6 @@ local unitDef = {
 	},
 	weaponDefs = nil,
 	weapons = {
---		[1] = {
---			def = [[MACROSS_FIRE]],
---			onlyTargetCategory = [[NOTVTOL]],
---		},
 		[2] = {
 			def = [[MACROSS_ARM_GUN]],
 			onlyTargetCategory = [[NOTVTOL]],
@@ -125,7 +121,7 @@ local weaponDefs = {
 		weaponType = [[Cannon]],
 		weaponVelocity = 500,
 		damage = {
-			default = 1500,
+			default = 1800,
 			subs = 5,
 		},
 	},

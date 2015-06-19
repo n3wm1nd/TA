@@ -87,9 +87,9 @@ local unitDef = {
 	},
 	weaponDefs = nil,
 	weapons = {
-		[1] = {
-			def = [[MACROSS_STARBURST]],
-		},
+--		[1] = {
+--			def = [[MACROSS_STARBURST]],
+--		},
 		[2] = {
 			def = [[MACROSS_ARM_GUN]],
 			onlyTargetCategory = [[NOTVTOL]],
@@ -165,7 +165,7 @@ local weaponDefs = {
 		weaponType = [[Cannon]],
 		weaponVelocity = 500,
 		damage = {
-			default = 1500,
+			default = 1800,
 			subs = 5,
 		},
 	},
@@ -179,7 +179,7 @@ local weaponDefs = {
 		metalpershot = 0,
 		model = [[macrossmissile]],
 		name = [[Macross Missiles]],
-		range = 850,
+		range = 950,
 		reloadtime = 1,
 		renderType = 1,
 		rgbColor = [[1.000 0.000 0.000]],

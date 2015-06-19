@@ -87,9 +87,6 @@ local unitDef = {
 	},
 	weaponDefs = nil,
 	weapons = {
---		[1] = {
---			def = [[MACROSS_STARBURST]],
---		},
 		[2] = {
 			def = [[MACROSS_ARM_GUN]],
 			onlyTargetCategory = [[NOTVTOL]],
@@ -104,47 +101,6 @@ local unitDef = {
 --------------------------------------------------------------------------------
 
 local weaponDefs = {
-	
-	MACROSS_STARBURST = {
-		areaOfEffect = 80,
-		cegTag = [[ARMRAVENTRAIL]],
-		fireStarter = 70,
-		flightTime = 5,
-		guidance = true,
-		id = 137,
-		lineOfSight = true,
-		metalpershot = 0,
-		model = [[advmsl]],
-		name = [[Advanced Krogoth Heavy Rockets]],
-		range = 1050,
-		reloadtime = 2.5,
-		renderType = 1,
-		rgbColor = [[1.000 0.000 0.000]],
-		selfprop = true,
-		smokedelay = 0.1,
-		smokeTrail = false,
-		soundHitDry = [[xplosml2]],
-		soundStart = [[rocklit1]],
-		startsmoke = 1,
-		startVelocity = 250,
-		Texture1 = [[null]],
-		Texture2 = [[null]],
-		Texture3 = [[null]],
-		Texture4 = [[null]],
-		tolerance = 9000,
-		tracks = true,
-		turnRate = 63000,
-		vlaunch = true,
-		weaponAcceleration = 200,
-		weaponTimer = 1,
-		weaponType = [[StarburstLauncher]],
-		weaponVelocity = 550,
-		damage = {
-			default = 500,
-			subs = 5,
-		},
-	},
-	
 	MACROSS_ARM_GUN = {
 		areaOfEffect = 75,
 		id = 142,

@@ -74,6 +74,7 @@ local unitDef = {
 		[14] = [[cordoom]],
 		[15] = [[madsam]],
 		[16] = [[corflak]],
+		[17] = [[screamer]],
 		[17] = [[cordl]],
 		[18] = [[corck]],
 		[19] = [[corroach]],

@@ -124,10 +124,17 @@ local morphDefs = {
       corrl = {
 		into = 'corrl1',
 		time = 10,
+		xp = 0.01,
 	},
       armrl = {
 		into = 'armrl1',
 		time = 10,
+		xp = 0.01,
+	},
+      tlllmt = {
+		into = 'tlllmt1',
+		time = 30,
+		xp = 0.01,
 	},
       armllt = {
 		into = 'armllt1',
@@ -169,16 +176,25 @@ local morphDefs = {
 		xp = 0.60,
 	},
 	},
+      tllhlt = {
+		into = 'tllpulaser',
+		time = 30,
+		metal = 400,
+		xp = 0.50,
+	},
       armguard= {
 		into = 'armamb',
 		time = 30,
-		metal = 650,
 		xp = 0.50,
 	},
       corpun= {
 		into = 'cortoast',
 		time = 30,
-		metal = 650,
+		xp = 0.50,
+	},
+      tlllbt = {
+		into = 'tllplasma',
+		time = 30,
 		xp = 0.50,
 	},
       armamd = {
@@ -229,10 +245,12 @@ local morphDefs = {
       armcir = {
 		into = 'armcir1',
 		time = 60,
+		xp = 0.05,
 	},
       corerad = {
 		into = 'corerad1',
 		time = 60,
+		xp = 0.05,
 	},
       armgmm = {
 		into = 'armfor',
@@ -652,7 +670,7 @@ local morphDefs = {
 		into = 'corpyrox1',
 		time = 30,
 		xp = 0.15,
-	},    
+	},
 }
 
 

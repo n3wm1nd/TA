@@ -152,13 +152,11 @@ local morphDefs = {
 	{
 		into = 'armvhlt',
 		time = 20,
-		metal = 250,
 		xp = 0.30,
 	},
 	{
 		into = 'armpb',
 		time = 30,
-		metal = 400,
 		xp = 0.60,
 	},
 	},
@@ -166,20 +164,17 @@ local morphDefs = {
 	{
 		into = 'corvhlt',
 		time = 20,
-		metal = 260,
 		xp = 0.30,
 	},
 	{
 		into = 'corvipe',
 		time = 30,
-		metal = 420,
 		xp = 0.60,
 	},
 	},
       tllhlt = {
 		into = 'tllpulaser',
 		time = 30,
-		metal = 400,
 		xp = 0.50,
 	},
       armguard= {

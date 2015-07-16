@@ -5,7 +5,7 @@ return {
 		bmcode = 1,
 		brakerate = 1.962,
 		buildcostenergy = 179200,
-		buildcostmetal = 10347,
+		buildcostmetal = 10350,
 		builder = false,
 		buildpic = "ARMBANTH.png",
 		buildtime = 232000,

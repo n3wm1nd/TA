@@ -1,8 +1,8 @@
 return {
 	core_intimidator = {
 		bmcode = 0,
-		buildcostenergy = 43381,
-		buildcostmetal = 5047,
+		buildcostenergy = 43350,
+		buildcostmetal = 5000,
 		builder = false,
 		buildinggrounddecaldecayspeed = 30,
 		buildinggrounddecalsizex = 8,
@@ -128,7 +128,7 @@ return {
 				craterboost = 0,
 				cratermult = 0,
 				edgeeffectiveness = 50,
-				energypershot = 16300,
+				energypershot = 10000,
 				explosiongenerator = "custom:EMPFLASH240",
 				firestarter = 50,
 				gravityaffected = true,

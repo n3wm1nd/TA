@@ -120,7 +120,7 @@ return {
 		weapondefs = {
 			armhorg_weapon = {
 				accuracy = 200,
-				areaofeffect = 120,
+				areaofeffect = 60,
 				avoidfeature = false,
 				burst = 8,
 				burstrate = 0.22,

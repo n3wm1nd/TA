@@ -106,7 +106,7 @@ return {
 		},
 		weapondefs = {
 			tll_thumper = {
-				areaofeffect = 292,
+				areaofeffect = 312,
 				cegtag = "Trail_cannon",
 				craterboost = 0,
 				cratermult = 0,
@@ -117,8 +117,8 @@ return {
 				name = "HeavyCannon",
 				nogap = 1,
 				noselfdamage = true,
-				range = 750,
-				reloadtime = 3,
+				range = 765,
+				reloadtime = 5,
 				rgbcolor = "0.72 0.4 0",
 				separation = 0.45,
 				size = 2.97,
@@ -130,8 +130,8 @@ return {
 				weapontype = "Cannon",
 				weaponvelocity = 313.92676,
 				damage = {
-					commanders = 500,
-					default = 1000,
+					commanders = 750,
+					default = 1500,
 					subs = 5,
 				},
 			},

@@ -136,7 +136,7 @@ return {
 				nogap = 1,
 				noselfdamage = true,
 				predictboost = 1,
-				range = 1350,
+				range = 1400,
 				reloadtime = 6,
 				rgbcolor = "0.81 0.54 0",
 				separation = 0.45,
@@ -150,7 +150,8 @@ return {
 				weapontype = "Cannon",
 				weaponvelocity = 610,
 				damage = {
-					default = 1250,
+					commanders = 600,
+					default = 1200,
 					subs = 5,
 				},
 			},

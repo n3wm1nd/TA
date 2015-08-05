@@ -143,7 +143,7 @@ return {
 				name = "Gauss Cannon2",
 				range = 850,
 				reloadtime = 0.1,
-				rgbcolor = "1 0.1 0.1",
+				rgbcolor = "1 0.95 0.4",
 				soundhitdry = "xplomed2",
 				soundstart = "gatling",
 				soundstartvolume = 15,
@@ -156,7 +156,7 @@ return {
 				turret = true,
 				weapontimer = 1,
 				weapontype = "LaserCannon",
-				weaponvelocity = 900,
+				weaponvelocity = 250,
 				damage = {
 					commanders = 75,
 					default = 150,

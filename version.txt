@@ -1,3 +1,17 @@
+----------------------------------------- v2.36.1 ---------------------------------------
+----Visual----
+Rework TllBind => Remplace Green Laser by tllllt lighting
+Rework Tll Convincer => Remplace Rocket by Pulse
+Add detailled Air damage for Pelican
+
+----Balance----
+For All commanders, Fix timecounter for selfdestruct = 10s
+Artillery T1 => More range (710=>750 for better facility vs HLT) & Damage/s 
+Artillery T1 V1 => More range & Damage/s
+Arm T1.5 Artillery => Decrease Cost (400M => 250M) & Range (1050 => 900) & Damage/s (65=>48)
+Balance Copter TLL versus TLL Sea copter & other gunship
+Balance Uppercut (tactical sub nuke) => Decrease resources (35kM => 15.5KM) & Decrease Range (4400=>2800) & Aoe (768=>650) & Increase damage vs subs (800dmg/s versus naval & 1300dmg/s versus subs)
+
 ----------------------------------------- v2.36.0 ---------------------------------------
 ----Visual----
 Rework Horgue Cegtag & Explosion

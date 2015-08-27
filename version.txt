@@ -5,7 +5,7 @@ Rework Tll Convincer => Remplace Rocket by Pulse
 Add detailled Air damage for Pelican
 
 ----Balance----
-For All commanders, Fix timecounter for selfdestruct = 10s
+For All commanders, Fix timecounter for selfdestruct = 10s (except standar commander => 4s)
 Artillery T1 => More range (710=>750 for better facility vs HLT) & Damage/s 
 Artillery T1 V1 => More range & Damage/s
 Arm T1.5 Artillery => Decrease Cost (400M => 250M) & Range (1050 => 900) & Damage/s (65=>48)

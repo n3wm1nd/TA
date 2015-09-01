@@ -21,6 +21,7 @@ return {
 		description = "Heavy Assault Kbot",
 		designation = "ARM-KI2",
 		downloadable = 1,
+		energymake = 0.5,
 		energystorage = 0,
 		energyuse = 0.5,
 		explodeas = "BIG_UNITEX",
@@ -128,12 +129,12 @@ return {
 		weapondefs = {
 			arm_exxec = {
 				areaofeffect = 8,
-				energypershot = 30,
+				energypershot = 20,
 				explosiongenerator = "custom:exxec",
 				firestarter = 30,
 				name = "Annihilator Weapon",
 				range = 255,
-				reloadtime = 0.33,
+				reloadtime = 0.3,
 				rgbcolor = "0.000 0.012 1.000",
 				soundhitdry = "lasrhvy2",
 				soundstart = "lasrfast",
@@ -143,8 +144,7 @@ return {
 				weapontype = "LaserCannon",
 				weaponvelocity = 800,
 				damage = {
-					commanders = 50,
-					default = 150,
+					default = 135,
 					subs = 5,
 				},
 			},

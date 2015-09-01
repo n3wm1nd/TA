@@ -337,15 +337,9 @@ local morphDefs = {
 		xp = 0.05,
 	},
 	{
-		into = 'armfark',
-		time = 60,
-		xp = 1.10,
-	},
-	{
 		into = 'armsptk',
 		time = 30,
-		xp = 0.60,
-		energy = 3000,
+		xp = 0.30,
 	},
     },
       armham = {
@@ -374,8 +368,7 @@ local morphDefs = {
     	{
 		into = 'cortermite',
 		time = 30,
-		xp = 0.60,
-		energy = 3000,
+		xp = 0.30,
 	},
     },
       corthud = {

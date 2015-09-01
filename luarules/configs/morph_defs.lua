@@ -418,6 +418,11 @@ local morphDefs = {
 		xp = 0.50,
 	},
 	},
+       tllshaker = {
+		into = 'tllloki',
+		time = 30,
+		xp = 0.50,
+	},
       armjanus = {
 		into = 'armjanus1',
 		time = 10,
@@ -715,6 +720,8 @@ local morphDefs = {
 		time = 60,
 		xp = 0.75,
 	}
+	
+	
 --
 -- Here's an example of why active configuration
 -- scripts are better then static TDF files...

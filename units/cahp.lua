@@ -1,8 +1,8 @@
 return {
 	cahp = {
 		bmcode = 0,
-		buildcostenergy = 40677,
-		buildcostmetal = 4533,
+		buildcostenergy = 40700,
+		buildcostmetal = 4530,
 		builder = true,
 		buildinggrounddecaldecayspeed = 30,
 		buildinggrounddecalsizex = 12,
@@ -20,7 +20,7 @@ return {
 		designation = "COR-H",
 		downloadable = 1,
 		energystorage = 300,
-		energyuse = 50,
+		energyuse = 0,
 		explodeas = "LARGE_BUILDINGEX",
 		firestandorders = 1,
 		footprintx = 12,

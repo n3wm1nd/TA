@@ -54,12 +54,12 @@ return {
 		buildoptions = {
 			[1] = "cach",
 			[2] = "cormatch",
-			[3] = "corhover3g",
-			[4] = "nsacanglr",
-			[5] = "corfrog",
-			[6] = "watcher",
-			[7] = "blotter",
-			[8] = "nsacbehe",
+			[3] = "nsacanglr",
+			[4] = "corhover3g",
+			[5] = "nsacbehe",
+			[6] = "corfrog",
+			[7] = "watcher",
+			[8] = "blotter",
 			[9] = "coradon",
 		},
 		customparams = {

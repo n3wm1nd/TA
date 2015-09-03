@@ -388,11 +388,6 @@ local morphDefs = {
 		time = 10,
 		xp = 0.05,
 	},
-      tllariman = {
-		into = 'tllcoyote',
-		time = 30,
-		xp = 0.60,
-	},
       armstump = {
 	{
 		into = 'armstump1',
@@ -417,11 +412,6 @@ local morphDefs = {
 		time = 30,
 		xp = 0.50,
 	},
-	},
-       tllshaker = {
-		into = 'tllloki',
-		time = 30,
-		xp = 0.50,
 	},
       armjanus = {
 		into = 'armjanus1',
@@ -508,11 +498,6 @@ local morphDefs = {
 	},
 	corcrash = {
 		into = 'coraak',
-		time = 30,
-		xp = 0.30,
-	},
-	tllfirestarter = {
-		into = 'tllaak',
 		time = 30,
 		xp = 0.30,
 	},
@@ -715,12 +700,7 @@ local morphDefs = {
 		time = 60,
 		xp = 0.75,
 	},
-       tllpbot = {
-       		into = 'tllartybot',
-		time = 60,
-		xp = 0.75,
-	}
-	
+
 	
 --
 -- Here's an example of why active configuration

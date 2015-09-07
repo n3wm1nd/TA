@@ -46,11 +46,10 @@ return {
 		buildoptions = {
 			[1] = "tllchover",
 			[2] = "tllhoverlight",
-			[3] = "tllhplasma",
+			[3] = "tllhovergauss",
 			[4] = "tllhoverrocket",
 			[5] = "tllhovermissile",
-			[6] = "tllhovergauss",
-			[7] = "tllsalamander",
+			[6] = "tllhplasma",
 		},
 		featuredefs = {
 			dead = {

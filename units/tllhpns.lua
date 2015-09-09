@@ -1,10 +1,10 @@
 return {
 	tllhpns = {
 		bmcode = 0,
-		buildcostenergy = 627,
-		buildcostmetal = 1102,
+		buildcostenergy = 2500,
+		buildcostmetal = 1300,
 		builder = true,
-		buildtime = 11007,
+		buildtime = 11000,
 		canmove = true,
 		canpatrol = true,
 		canstop = 1,
@@ -46,11 +46,10 @@ return {
 		buildoptions = {
 			[1] = "tllchover",
 			[2] = "tllhoverlight",
-			[3] = "tllhplasma",
+			[3] = "tllhovergauss",
 			[4] = "tllhoverrocket",
 			[5] = "tllhovermissile",
-			[6] = "tllhovergauss",
-			[7] = "tllsalamander",
+			[6] = "tllhplasma",
 		},
 		featuredefs = {
 			dead = {

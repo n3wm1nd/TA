@@ -12,7 +12,7 @@ return {
 		buildinggrounddecaltype = "armfor_aoplane.dds",
 		buildtime = 200000,
 		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON",
-		description = "Risky Geothermical reactor",
+		description = "Atomic Geothermical reactor",
 		designation = "COR-FOR",
 		energymake = 5000,
 		energystorage = 5000,

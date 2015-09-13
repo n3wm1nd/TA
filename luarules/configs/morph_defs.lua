@@ -331,21 +331,15 @@ local morphDefs = {
 		xp = 0.01,
 	},
       armrock = {
-              {
+	{
 		into = 'armrock1',
 		time = 10,
 		xp = 0.05,
 	},
 	{
-		into = 'armfark',
-		time = 60,
-		xp = 1.10,
-	},
-	{
 		into = 'armsptk',
 		time = 30,
-		xp = 0.60,
-		energy = 3000,
+		xp = 0.30,
 	},
     },
       armham = {
@@ -357,7 +351,7 @@ local morphDefs = {
 	{
 		into = 'armfido',
 		time = 30,
-		xp = 0.6,
+		xp = 0.50,
 	},
 	},
       corak = {
@@ -366,16 +360,15 @@ local morphDefs = {
 		xp = 0.01,
 	},
       corstorm = {
-               {
+	{
 		into = 'corstorm1',
 		time = 10,
 		xp = 0.05,
 	},
-    {
+    	{
 		into = 'cortermite',
 		time = 30,
-		xp = 0.60,
-		energy = 3000,
+		xp = 0.30,
 	},
     },
       corthud = {
@@ -387,13 +380,13 @@ local morphDefs = {
 	{
 		into = 'cormort',
 		time = 30,
-		xp = 0.60,
+		xp = 0.50,
 	},
 	},
       armflash = {
 		into = 'armflash1',
 		time = 10,
-		xp = 0.05
+		xp = 0.05,
 	},
       armstump = {
 	{
@@ -406,7 +399,6 @@ local morphDefs = {
 		into = 'armbull',
 		time = 30,
 		xp = 0.60,
-		energy = 2000,
 	},
 	},
       tawf013 = {
@@ -418,7 +410,7 @@ local morphDefs = {
 	{
 		into = 'armmart',
 		time = 30,
-		xp = 0.60,
+		xp = 0.50,
 	},
 	},
       armjanus = {
@@ -458,17 +450,16 @@ local morphDefs = {
 	},
 	},
       corraid = {
-	{
+		{
 		into = 'corraid1',
 		time = 15,
 		xp = 0.10,
-	},
-	{
+		},
+		{
 		into = 'correap',
 		time = 30,
 		xp = 0.60,
-		energy = 2000,
-	},
+		},
 	},
       corwolv = {
 		{
@@ -479,7 +470,7 @@ local morphDefs = {
 		{
 		into = 'cormart',
 		time = 30,
-		xp = 0.60,
+		xp = 0.50,
 		},
 		{
 		into = 'trem',
@@ -497,19 +488,18 @@ local morphDefs = {
 		{
 		into = 'tawf114',
 		time = 30,
-		xp = 0.75,
-		energy = 2500,
+		xp = 0.60,
 		},
 	},
 	armjeth = {
 		into = 'armaak',
 		time = 30,
-		xp = 0.20,
+		xp = 0.30,
 	},
 	corcrash = {
 		into = 'coraak',
 		time = 30,
-		xp = 0.20,
+		xp = 0.30,
 	},
 	armwar = {
 		into = 'armmav',
@@ -710,10 +700,8 @@ local morphDefs = {
 		time = 60,
 		xp = 0.75,
 	},
-}
 
-
-
+	
 --
 -- Here's an example of why active configuration
 -- scripts are better then static TDF files...

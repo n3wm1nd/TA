@@ -59,7 +59,6 @@ return {
 			[5] = "armamspd",
 			[6] = "cortermite",
 			[7] = "cormena",
-			[8] = "cormonsta",
 		},
 		customparams = {
 			providetech = "T1 Factory",

@@ -83,7 +83,7 @@ return {
 			[18] = "armdl",
 			[19] = "armcv",
 			[20] = "armlatnk",
-			[21] = "armbull",
+			[21] = "armcroc",
 		},
 		customparams = {
 			buildpic = "CONSUL.png",

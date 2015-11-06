@@ -83,7 +83,7 @@ return {
 				craterboost = 0,
 				cratermult = 0,
 				edgeeffectiveness = 0.6,
-				energypershot = 100,
+				energypershot = 0,
 				explosiongenerator = "custom:BERTHASHOT1",
 				gravityaffected = true,
 				groundbounce = 0,
@@ -115,13 +115,13 @@ return {
 				},
 			},
 			ravagerbeam = {
-				areaofeffect = 250,
+				areaofeffect = 30,
 				cegtag = "Trail_gala_cannon",
 				collidefriendly = false,
 				craterboost = 0,
 				cratermult = 0,
 				duration = 0.025,
-				energypershot = 10000,
+				energypershot = 50000,
 				explosiongenerator = "custom:gala_explosion",
 				firestarter = 90,
 				impactonly = 1,
@@ -153,7 +153,7 @@ return {
 		},
 		weapons = {
 			[1] = {
-				badtargetcategory = "MEDIUM SMALL TINY",
+				badtargetcategory = "LARGE MEDIUM SMALL TINY",
 				def = "RavagerBeam",
 				onlytargetcategory = "NOTVTOL",
 			},

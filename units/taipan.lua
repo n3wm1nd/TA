@@ -131,6 +131,7 @@ return {
 				firestarter = 50,
 				id = 83,
 				name = "Laser",
+				noselfdamage = true,
 				range = 210,
 				reloadtime = 0.8,
 				rgbcolor = "0.765 0.000 1.000",

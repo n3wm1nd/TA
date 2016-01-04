@@ -57,7 +57,7 @@ return {
 		turnrate = 1.33,
 		unitname = "cnanotower",
 		usebuildinggrounddecal = true,
-		workertime = 900,
+		workertime = 1200,
 		buildoptions = {
 			[1] = "monkeylord",
 			[2] = "corgate1",

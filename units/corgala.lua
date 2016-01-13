@@ -121,7 +121,7 @@ return {
 				craterboost = 0,
 				cratermult = 0,
 				duration = 0.025,
-				energypershot = 50000,
+				energypershot = 40000,
 				explosiongenerator = "custom:gala_explosion",
 				firestarter = 90,
 				impactonly = 1,

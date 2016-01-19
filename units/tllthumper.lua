@@ -1,6 +1,6 @@
 return {
 	tllthumper = {
-		acceleration = 0.03,
+		acceleration = 0.12,
 		bmcode = 1,
 		brakerate = 0.06,
 		buildcostenergy = 35000,
@@ -27,7 +27,7 @@ return {
 		mass = 3080,
 		maxdamage = 10800,
 		maxslope = 20,
-		maxvelocity = 0.8,
+		maxvelocity = 1.1,
 		maxwaterdepth = 25,
 		mobilestandorders = 1,
 		movementclass = "HTANK4",

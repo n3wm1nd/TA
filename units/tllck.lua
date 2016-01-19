@@ -29,7 +29,7 @@ return {
 		losemitheight = 20.06036,
 		maneuverleashlength = 640,
 		mass = 140,
-		maxdamage = 780,
+		maxdamage = 980,
 		maxslope = 20,
 		maxvelocity = 1.4,
 		maxwaterdepth = 25,
@@ -55,7 +55,7 @@ return {
 		unitname = "tllck",
 		unitnumber = 812,
 		upright = true,
-		workertime = 100,
+		workertime = 120,
 		buildoptions = {
 			[1] = "tllsolar",
 			[2] = "tlladvsolar",

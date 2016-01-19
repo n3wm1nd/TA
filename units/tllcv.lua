@@ -28,7 +28,7 @@ return {
 		idletime = 1800,
 		maneuverleashlength = 640,
 		mass = 215,
-		maxdamage = 912,
+		maxdamage = 1112,
 		maxslope = 16,
 		maxvelocity = 1.55,
 		maxwaterdepth = 18,
@@ -52,7 +52,7 @@ return {
 		turnrate = 375,
 		unitname = "tllcv",
 		unitnumber = 829,
-		workertime = 115,
+		workertime = 135,
 		buildoptions = {
 			[1] = "tllsolar",
 			[2] = "tlladvsolar",

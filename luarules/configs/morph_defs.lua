@@ -106,7 +106,7 @@ local morphDefs = {
 		--energy = 0,
 		--Free For Xmas
 		
-		metal = 1350,
+		metal = 1500,
 		energy = 12000,
 	},
       tllcom3 = {

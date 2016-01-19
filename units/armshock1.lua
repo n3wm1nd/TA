@@ -7,7 +7,7 @@ return {
 		buildcostmetal = 1728,
 		builder = false,
 		buildpic = "ARMSHOCK.png",
-		buildtime = 38218,
+		buildtime = 27218,
 		canattack = true,
 		canguard = true,
 		canmove = true,

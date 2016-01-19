@@ -46,7 +46,7 @@ return {
 		unitname = "tlllab",
 		unitnumber = 811,
 		usebuildinggrounddecal = true,
-		workertime = 210,
+		workertime = 300,
 		yardmap = "occccooccccooccccooccccooccccoocccco",
 		buildoptions = {
 			[1] = "tllck",

@@ -3,7 +3,7 @@ return {
 		acceleration = 0.45,
 		bmcode = 1,
 		brakerate = 1.95,
-		buildcostenergy = 2970,
+		buildcostenergy = 3650,
 		buildcostmetal = 205,
 		builder = false,
 		buildpic = "CORPYRO.png",

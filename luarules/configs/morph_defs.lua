@@ -520,7 +520,11 @@ local morphDefs = {
 		into = 'armmav',
 		time = 30,
 		xp = 0.50,
-		energy = 2000,
+	},
+	armmav = {
+		into = 'armraz',
+		time = 90,
+		xp = 2.00,
 	},
         armmerl = {
 		into = 'armmlrs',
@@ -697,8 +701,8 @@ local morphDefs = {
 	},
   	corpyro = {
 		into = 'corpyrox',
-		time = 20,
-		xp = 0.30,
+		time = 60,
+		xp = 0.60,
 	},
       corpyrox = {
 		into = 'corpyrox1',

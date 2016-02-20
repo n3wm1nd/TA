@@ -533,7 +533,7 @@ local morphDefs = {
 	},
 	armmav = {
 		into = 'armraz',
-		time = 90,
+		time = 60,
 		xp = 2.00,
  	},
         armmerl = {

@@ -123,9 +123,9 @@ return {
 		weapondefs = {
 			armhorg_weapon = {
 				accuracy = 500,
-				areaofeffect = 80,
+				areaofeffect = 140,
 				avoidfeature = false,
-				burst = 8,
+				burst = 4,
 				burstrate = 0.22,
 				cegtag = "Core_Def_AA_Rocket",
 				craterboost = 0,
@@ -141,7 +141,7 @@ return {
 				movingaccuracy = 600,
 				name = "Banisher",
 				proximitypriority = -1,
-				range = 1500,
+				range = 1550,
 				reloadtime = 8,
 				smoketrail = true,
 				soundhitdry = "TAWF114b",
@@ -163,7 +163,7 @@ return {
 				weaponvelocity = 310,
 				wobble = 1800,
 				damage = {
-					default = 110,
+					default = 200,
 					subs = 5,
 				},
 			},

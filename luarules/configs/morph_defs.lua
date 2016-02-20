@@ -315,10 +315,20 @@ local morphDefs = {
 		time = 30,
 		xp = 0.14,
 	},
+      arm_immolator  = {
+		into = 'armbrtha',
+		time = 30,
+		xp = 0.20,
+	},
       armbrtha = {
 		into = 'armbrtha1',
 		time = 30,
 		xp = 0.50,
+	},
+       core_immolator  = {
+		into = 'corint',
+		time = 30,
+		xp = 0.20,
 	},
       corint= {
 		into = 'corint1',
@@ -520,8 +530,12 @@ local morphDefs = {
 		into = 'armmav',
 		time = 30,
 		xp = 0.50,
-		energy = 2000,
 	},
+	armmav = {
+		into = 'armraz',
+		time = 90,
+		xp = 2.00,
+ 	},
         armmerl = {
 		into = 'armmlrs',
 		tech = 3,

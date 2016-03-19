@@ -714,18 +714,18 @@ local morphDefs = {
 		time = 20,
 		xp = 0.45,
 	},
-      corpyrox = {
+	corpyrox = {
 		into = 'corpyrox1',
 		time = 30,
 		xp = 0.15,
 	},
-	  corpyrox1 = {
+	corpyrox1 = {
 		into = 'cordem',
 		tech = 2,
 		time = 60,
 		xp = 0.60,
 	},
-      armamph = {
+	armamph = {
 		into = 'marauder',
 		time = 60,
 		xp = 0.5,
@@ -751,20 +751,42 @@ local morphDefs = {
 		xp = 0.2,
 	},
       corjeag = {
-     	into = 'corsent',
+     		into = 'corsent',
 		time = 30,
 		xp = 0.2,
 	},
 	  krogtaar = {
-        into = 'corkrog',
+        	into = 'corkrog',
 		time = 30,
 		xp = 0.60,
 	},
 	  corkrog = {
-        into = 'corkrog1',
-        tech = 2,
+        	into = 'corkrog1',
+        	tech = 2,
 		time = 80,
 		xp = 0.90,
+	},
+	corgarp = {
+	{
+		into = 'corseal',
+        	time = 30,
+		xp = 0.25,
+	},
+	{
+		into = 'corparrow',
+        	time = 60,
+		xp = 0.50,
+	},
+	},
+	armpincer = {
+		into = 'armcroc',
+        	time = 30,
+		xp = 0.30,
+	},
+	armcroc = {
+		into = 'armscpion',
+        	time = 60,
+		xp = 0.20,
 	},
 }
 

@@ -59,11 +59,11 @@ return {
 		buildoptions = {
 			[1] = "armbeaver",
 			[2] = "armmarv",
-			[3] = "armpincer",
-			[4] = "armcroc",
-			[5] = "armjeth",
-			[6] = "armaak",
-			[7] = "armsub",
+			[3] = "armjeth",
+			[4] = "armaak",
+			[5] = "armpincer",
+			[6] = "armcroc",
+			[7] = "armscpion.lua",
 		},
 		customparams = {
 			buildpic = "ASUBPEN.png",

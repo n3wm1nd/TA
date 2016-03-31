@@ -5,7 +5,7 @@ return {
 		bmcode = 1,
 		brakerate = 1.8,
 		buildcostenergy = 147000,
-		buildcostmetal = 8600,
+		buildcostmetal = 8250,
 		builder = false,
 		buildtime = 33000,
 		canattack = true,
@@ -119,7 +119,7 @@ return {
 		},
 		weapondefs = {
 			demonslayer_cannon = {
-				accuracy = 750,
+				accuracy = 850,
 				areaofeffect = 480,
 				energypershot = 12000,
 				explosiongenerator = "custom:FLASHNUKE480",
@@ -132,7 +132,7 @@ return {
 				model = "missile10",
 				name = "Anti-Dreadnaught Heavy Cannon",
 				proximitypriority = -1,
-				range = 1100,
+				range = 1150,
 				reloadtime = 10,
 				smoketrail = true,
 				soundhitdry = "rockhit",

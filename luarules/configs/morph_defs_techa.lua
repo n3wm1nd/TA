@@ -770,7 +770,7 @@ local morphDefs = {
 	},
       krogtaar = {
         	into = 'corkrog',
-		time = 30,
+		time = 60,
 		xp = 0.60,
 	},
       corkrog = {
@@ -782,6 +782,11 @@ local morphDefs = {
         	into = 'armbanth1',
         	time = 240,
 		xp = 1.25,
+	},
+      akmech = {
+        	into = 'armorco',
+        	time = 60,
+		xp = 0.60,
 	},
 	arm_immolator  = {
 		into = 'armbrtha',

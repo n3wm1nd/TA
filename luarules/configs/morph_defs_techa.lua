@@ -355,8 +355,7 @@ local morphDefs = {
 		xp = 0.50,
 	},
       corbhmth = {
-       {
-		into = 'corbhmth1',
+       		into = 'corbhmth1',
 		time = 110,
 		xp = 0.30,
 	},
@@ -366,7 +365,7 @@ local morphDefs = {
 		xp = 0.01,
 	},
       armrock = {
-              {
+        {
 		into = 'armrock1',
 		time = 10,
 		xp = 0.05,

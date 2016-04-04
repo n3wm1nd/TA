@@ -355,8 +355,7 @@ local morphDefs = {
 		xp = 0.50,
 	},
       corbhmth = {
-       {
-		into = 'corbhmth1',
+       		into = 'corbhmth1',
 		time = 110,
 		xp = 0.30,
 	},
@@ -366,7 +365,7 @@ local morphDefs = {
 		xp = 0.01,
 	},
       armrock = {
-              {
+        {
 		into = 'armrock1',
 		time = 10,
 		xp = 0.05,
@@ -776,12 +775,12 @@ local morphDefs = {
       corkrog = {
         	into = 'corkrog1',
         	time = 240,
-		xp = 1.00,
+		xp = 0.60,
 	},
       armbanth = {
         	into = 'armbanth1',
         	time = 240,
-		xp = 1.00,
+		xp = 0.60,
 	},
       akmech = {
         	into = 'armorco',
@@ -828,12 +827,12 @@ local morphDefs = {
 	armraz  = {
 		into = 'armraz1',
         	time = 120,
-		xp = 1.00,
+		xp = 0.50,
 	},
 	corkarg = {
 		into = 'corkarg1',
         	time = 120,
-		xp = 1.00,
+		xp = 0.50,
 	},
 
 

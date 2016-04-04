@@ -554,7 +554,6 @@ local morphDefs = {
 	},
         armmerl = {
 		into = 'armmlrs',
-		tech = 2,
 		time = 120,
 		xp = 0.60,
 		metal = 3000,
@@ -562,7 +561,6 @@ local morphDefs = {
 	},
        corhrk = {
 		into = 'corhowie',
-		tech = 2,
 		time = 120,
 		xp = 0.60,
 		metal = 3000,
@@ -777,8 +775,13 @@ local morphDefs = {
 	},
       corkrog = {
         	into = 'corkrog1',
-        	time = 80,
-		xp = 0.90,
+        	time = 240,
+		xp = 1.00,
+	},
+      armbanth = {
+        	into = 'armbanth1',
+        	time = 240,
+		xp = 1.25,
 	},
 	arm_immolator  = {
 		into = 'armbrtha',

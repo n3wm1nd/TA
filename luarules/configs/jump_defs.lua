@@ -49,6 +49,11 @@ jumpCategory = {
 }
 
 jumpClassGroups = {
+	battlecom = {
+	"armcom4",
+	"corcom3",
+	"tllcom3",
+	},
 	assaultcom = {
 	"armcom5",
 	"corcom5",

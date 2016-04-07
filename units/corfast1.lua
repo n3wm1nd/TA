@@ -65,6 +65,7 @@ return {
 			[6] = "corrl1",
 			[7] = "commando",
 			[8] = "armraven1",
+			[9] = "corupmex",
 		},
 		customparams = {
 			buildpic = "CORFAST.png",

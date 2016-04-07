@@ -108,8 +108,7 @@ return {
 			[24] = "armfflak",
 			[25] = "armfark1",
 			[26] = "abuilderlvl2",
-			[27] = "corupmex",
-			[28] = "armpcan",
+			[27] = "armpcan",
 		
 		},
 		customparams = {

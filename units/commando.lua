@@ -20,7 +20,7 @@ return {
 		canstop = 1,
 		category = "ALL MEDIUM MOBILE NOTDEFENSE NOTHOVERNOTVTOL NOTSUB NOTSUBNOTSHIP NOTVTOL WEAPON",
 		defaultmissiontype = "Standby",
-		description = "Stealthy Capture Kbot",
+		description = "Stealthy Capture Jump Kbot",
 		energymake = 0.8,
 		energystorage = 0,
 		energyuse = 0.8,

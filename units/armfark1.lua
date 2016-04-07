@@ -63,6 +63,7 @@ return {
 			[6] = "armrl1",
 			[7] = "commando",
 			[8] = "armshock1",
+			[9] = "corupmex",
 		},
 		customparams = {
 			buildpic = "ARMFARK.png",

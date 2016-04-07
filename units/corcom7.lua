@@ -110,7 +110,6 @@ return {
 			[26] = "corenaa",
 			[27] = "corfast1",
 			[28] = "cbuilderlvl2",
-			[29] = "corupmex",
 			[30] = "corpcan",
 		
 		},

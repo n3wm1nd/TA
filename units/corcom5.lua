@@ -112,7 +112,6 @@ return {
 			[28] = "corfrt",
 			[29] = "corfast1",
 			[30] = "cbuilderlvl2",
-			[31] = "corupmex",
 			[32] = "corpcan",
 		},
 		customparams = {

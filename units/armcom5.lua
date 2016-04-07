@@ -112,7 +112,7 @@ return {
 			[28] = "armfrt",
 			[29] = "armfark1",
 			[30] = "abuilderlvl2",
-			[32] = "armpcan",
+			[31] = "armpcan",
 		},
 		customparams = {
 			buildpic = "ARMCOM.png",

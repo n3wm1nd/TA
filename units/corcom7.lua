@@ -110,7 +110,7 @@ return {
 			[26] = "corenaa",
 			[27] = "corfast1",
 			[28] = "cbuilderlvl2",
-			[30] = "corpcan",
+			[29] = "corpcan",
 		
 		},
 		customparams = {

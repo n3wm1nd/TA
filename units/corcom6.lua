@@ -108,7 +108,6 @@ return {
 			[24] = "corenaa",
 			[25] = "corfast1",
 			[26] = "cbuilderlvl2",
-			[27] = "corupmex",
 			[28] = "corpcan",
 		},
 		customparams = {

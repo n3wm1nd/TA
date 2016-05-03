@@ -4,7 +4,7 @@ return {
 		bmcode = 1,
 		brakerate = 0.375,
 		buildcostenergy = 624000,
-		buildcostmetal = 38900,
+		buildcostmetal = 36900,
 		builder = false,
 		buildpic = "GORG.png",
 		buildtime = 500000,

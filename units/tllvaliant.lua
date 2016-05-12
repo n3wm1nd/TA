@@ -227,7 +227,7 @@ return {
 		},
 		weapons = {
 			[1] = {
-				def = "Capitalshipminigun",
+				def = "CapitalShipMinigun",
 				maindir = "0 0 1",
 				maxangledif = 80,
 				onlytargetcategory = "NOTVTOL",

@@ -158,7 +158,7 @@ return {
 				reloadtime = 0.2,
 				rgbcolor = "1 1 1",
 				rgbcolor2 = "0.1 0.2 0.8",
-				soundhitdry = "",
+				soundhitdry = "lasrhit1",
 				soundstart = "MG1",
 				soundstartvolume = 5,
 				soundtrigger = true,
@@ -167,7 +167,7 @@ return {
 				texture3 = "NULL",
 				thickness = 2.5,
 				tolerance = 2000,
-				tracks = false,
+				tracks = true,
 				turnrate = 10000,
 				turret = false,
 				weapontimer = 1,
@@ -227,7 +227,7 @@ return {
 		},
 		weapons = {
 			[1] = {
-				def = "capitalshipminigun",
+				def = "Capitalshipminigun",
 				maindir = "0 0 1",
 				maxangledif = 80,
 				onlytargetcategory = "NOTVTOL",

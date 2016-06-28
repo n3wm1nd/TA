@@ -151,7 +151,7 @@ return {
 				footprintz = 2,
 				height = 4,
 				hitdensity = 100,
-				metal = 2500,
+				metal = 4000,
 				object = "2X2F",
 				reclaimable = true,
 				seqnamereclamate = "TREE1RECLAMATE",

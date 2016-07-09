@@ -4,7 +4,7 @@ return {
 		activatewhenbuilt = false,
 		bmcode = 1,
 		brakerate = 1.125,
-		buildcostenergy = 6200,
+		buildcostenergy = 6700,
 		buildcostmetal = 270,
 		builder = false,
 		buildpic = "ARMFIDO.png",

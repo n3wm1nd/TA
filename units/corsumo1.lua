@@ -130,7 +130,7 @@ return {
 				laserflaresize = 10,
 				name = "HighEnergyLaser",
 				noselfdamage = true,
-				range = 700,
+				range = 725,
 				reloadtime = 0.4,
 				rgbcolor = "0 1 0",
 				soundhitdry = "lasrhit1",

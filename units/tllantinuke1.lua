@@ -134,9 +134,9 @@ return {
 				stockpiletime = 60,
 				tolerance = 4000,
 				tracks = true,
-				turnrate = 99000,
+				turnrate = 113850,
 				weaponacceleration = 164,
-				weapontimer = 2,
+				weapontimer = 3,
 				weapontype = "StarburstLauncher",
 				weaponvelocity = 3600,
 				damage = {

@@ -801,12 +801,6 @@ local morphDefs = {
 		time = 60,
 		xp = 0.5,
 	},
-    armkam = {	
-		into = 'armbrawl',
-		time = 30,
-		xp = 0.15,
-	},
-
 }
 
 

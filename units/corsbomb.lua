@@ -20,7 +20,7 @@ return {
 		cloakcostmoving = 1750,
 		cloaktimeout = 350,
 		collide = false,
-		cruisealt = 220,
+		cruisealt = 350,
 		decloakonfire = true,
 		decloakspherical = true,
 		defaultmissiontype = "VTOL_standby",
@@ -35,6 +35,7 @@ return {
 		idleautoheal = 1,
 		idletime = 2200,
 		initcloaked = false,
+		maneuverleashlength = 1380,
 		mass = 3093,
 		maxdamage = 5500,
 		maxslope = 30,
@@ -58,8 +59,8 @@ return {
 		tedclass = "VTOL",
 		turninplaceanglelimit = 140,
 		turninplacespeedlimit = 4.29,
-		turnradius = 1500,
-		turnrate = 140,
+		--turnradius = 1500, (default: 500.0)
+		turnrate = 240,
 		unitname = "corsbomb",
 		workertime = 0,
 		customparams = {

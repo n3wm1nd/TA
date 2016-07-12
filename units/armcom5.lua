@@ -134,7 +134,7 @@ return {
 				footprintz = 2,
 				height = 20,
 				hitdensity = 100,
-				metal = 8000.2998,
+				metal = 8000,
 				object = "ARMCOM_DEAD",
 				reclaimable = true,
 				seqnamereclamate = "TREE1RECLAMATE",

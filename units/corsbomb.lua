@@ -58,7 +58,6 @@ return {
 		tedclass = "VTOL",
 		turninplaceanglelimit = 140,
 		turninplacespeedlimit = 4.29,
-		turnradius = 500, -- default value: 500 
 		turnrate = 140,
 		unitname = "corsbomb",
 		workertime = 0,

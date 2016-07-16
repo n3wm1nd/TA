@@ -123,7 +123,7 @@ return {
 				name = "Rocket",
 				noselfdamage = true,
 				range = 72000,
-				reloadtime = 2,
+				reloadtime = 1.3,
 				smoketrail = true,
 				soundhitdry = "xplomed4",
 				soundstart = "Rockhvy1",

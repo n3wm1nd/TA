@@ -3,8 +3,8 @@
 
 function gadget:GetInfo()
   return {
-    name      = "Water platform rundry vontrol",
-    desc      = "Explodes Water platform's that exceed there min waterline",
+    name      = "Run Dry Control",
+    desc      = "Explodes water units that are on land",
     author    = "Nixtux",
     date      = "April 29, 20012",
     license   = "GNU GPL, v2 or later",
@@ -50,6 +50,7 @@ local buffer = 2
 
 function gadget:GameFrame(n)
   if (((n+18) % 30) < 0.1) then
+    if Spring.IsCheatingEnabled() then return end
     for unitID, _ in pairs(tidals) do
 	local minwater = tidals[unitID].minwaterdepth
     local canMove = tidals[unitID].canmove

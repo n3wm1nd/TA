@@ -14,6 +14,9 @@ return {
 		canattack = true,
 		canstop = 1,
 		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL WEAPON",
+		collisionvolumeoffsets = "30 -130 10",
+		collisionvolumescales = "260 360 260",
+		collisionvolumetype = "CylY",
 		corpse = "dead",
 		description = "Ultimate Nuclear Missile Launcher",
 		energymake = 0,
@@ -26,7 +29,7 @@ return {
 		idleautoheal = 5,
 		idletime = 1800,
 		losemitheight = 180,
-		mass = 164149,
+		mass = 229808,
 		maxdamage = 15000,
 		maxslope = 12,
 		maxwaterdepth = 0,
@@ -43,7 +46,8 @@ return {
 		unitname = "tllion",
 		usebuildinggrounddecal = true,
 		workertime = 0,
-		yardmap = "oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo ",		customparams = {
+		yardmap = "oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo oooooooooooooooo ",
+		customparams = {
 			buildpic = "tllion.png",
 		},
 		featuredefs = {

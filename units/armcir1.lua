@@ -120,6 +120,7 @@ return {
 		weapondefs = {
 			arm_cir2 = {
 				areaofeffect = 84,
+				avoidGround = true,
 				burnblow = true,
 				burst = 4,
 				burstrate = 0.1,
@@ -127,6 +128,7 @@ return {
 				cegtag = "Arm_Def_AA_Rocket",
 				craterboost = 0,
 				cratermult = 0,
+				collidefriendly = true,
 				edgeeffectiveness = 0.75,
 				explosiongenerator = "custom:ARM_FIRE_SMALL",
 				firestarter = 20,
@@ -158,7 +160,7 @@ return {
 				weaponvelocity = 2500,
 				damage = {
 					bombers = 160,
-					default = 5,
+					default = 1,
 					fighters = 140,
 					flak_resistant = 120,
 					unclassed_air = 140,

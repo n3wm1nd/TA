@@ -128,7 +128,7 @@ return {
 				cegtag = "Arm_Def_AA_Rocket",
 				craterboost = 0,
 				cratermult = 0,
-				collidefriendly = true,
+				collidefriendly = false,
 				edgeeffectiveness = 0.75,
 				explosiongenerator = "custom:ARM_FIRE_SMALL",
 				firestarter = 20,

@@ -62,6 +62,9 @@ return {
 		unitnumber = 20000,
 		upright = false,
 		workertime = 0,
+		customparams = {
+			requiretech = "Advanced T1 Unit Research Centre",
+		},
 		featuredefs = {
 			corgol_heap = {
 				blocking = false,

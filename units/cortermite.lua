@@ -53,6 +53,7 @@ return {
 		workertime = 0,
 		customparams = {
 			buildpic = "CORTERMITE.png",
+			requiretech = "Advanced T1 Unit Research Centre",
 		},
 		featuredefs = {
 			dead = {

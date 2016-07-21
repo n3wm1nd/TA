@@ -200,7 +200,7 @@ return {
 				largebeamlaser = true,
 				minintensity = 1,
 				name = "Mini Ion Cannon",
-				range = 1600,
+				range = 1500,
 				reloadtime = 20,
 				rgbcolor = "0.2 0.2 1",
 				rgbcolor2 = "0.07 1 1",

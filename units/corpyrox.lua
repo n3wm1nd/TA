@@ -16,7 +16,6 @@ return {
 		collisionvolumescales = "54 66 44",
 		collisionvolumetype = "box",
 		corpse = "HEAP",
-		damagemodifier = 0.75,
 		defaultmissiontype = "Standby",
 		description = "Hell Fire Captain",
 		energymake = 0,

@@ -18,7 +18,6 @@ return {
 		collisionvolumescales = "54 66 44",
 		collisionvolumetype = "box",
 		corpse = "HEAP",
-		damagemodifier = 0.75,
 		defaultmissiontype = "Standby",
 		description = "Hell Fire General (Auto-Repair)",
 		energymake = 2.1,

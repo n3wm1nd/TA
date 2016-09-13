@@ -160,7 +160,7 @@ return {
 				laserflaresize = 22,
 				name = "ATAD",
 				noselfdamage = true,
-				range = 1650,
+				range = 1750,
 				reloadtime = 8,
 				rgbcolor = "0.2 0.2 1",
 				soundhitdry = "xplosml3",
@@ -173,7 +173,7 @@ return {
 				weaponvelocity = 1500,
 				damage = {
 					commanders = 1000,
-					default = 10000,
+					default = 12000,
 					subs = 5,
 				},
 			},

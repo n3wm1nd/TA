@@ -19,7 +19,7 @@ return {
 		collisionvolumetype = "box",
 		corpse = "HEAP",
 		defaultmissiontype = "Standby",
-		description = "Hell Fire General (Auto-Repair)",
+		description = "Hell Fire General (Auto-Repair 100)",
 		energymake = 2.1,
 		energystorage = 0,
 		energyuse = 2.1,

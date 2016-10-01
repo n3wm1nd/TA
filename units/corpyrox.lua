@@ -18,7 +18,7 @@ return {
 		collisionvolumetype = "box",
 		corpse = "HEAP",
 		defaultmissiontype = "Standby",
-		description = "Hell Fire Captain",
+		description = "Hell Fire Captain (Auto-Repair 25)",
 		energymake = 2.1,
 		energystorage = 0,
 		energyuse = 2.1,

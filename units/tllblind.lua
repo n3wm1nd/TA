@@ -236,7 +236,7 @@ return {
 				onlytargetcategory = "VTOL",
 			},
 			[3] = {
-				def = "BLIND_LASER",
+				def = "TLLTESLA_CANNON",
 				onlytargetcategory = "NOTVTOL",
 			},
 		},

@@ -47,7 +47,7 @@ return {
 		selfdestructas = "CRAWL_BLAST",
 		shootme = 1,
 		side = "ARM",
-		sightdistance = 245,
+		sightdistance = 490,
 		standingfireorder = 2,
 		standingmoveorder = 1,
 		steeringmode = 1,

@@ -6,7 +6,7 @@ return {
 		bmcode = 1,
 		brakerate = 0.525,
 		buildcostenergy = 4250,
-		buildcostmetal = 425,
+		buildcostmetal = 285,
 		builder = false,
 		buildpic = "tllspy.png",
 		buildtime = 20345,

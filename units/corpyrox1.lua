@@ -3,7 +3,7 @@ return {
 		acceleration = 0.1,
 		autoheal = 100,
 		brakerate = 0.54,
-		buildcostenergy = 35000,
+		buildcostenergy = 34850,
 		buildcostmetal = 3290,
 		builder = false,
 		buildpic = "corpyrox.png",

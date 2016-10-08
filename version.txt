@@ -7,7 +7,7 @@ Corpyrox1 => Decrease Metal cost 3500 => 3290.
 TLLOM => Delete lock by t3 technology
 Furie T3.5 => decrease speed 1 => 0.9
 Gorg T3.5 => decrease speed 0.95 => 0.8
-tllmatamata Turtle => Increase HP 6200 => 10200. Increase damage/s 208 => 275. Range 800 => 720
+tllmatamata Turtle => Increase HP 6200 => 10200. Increase damage/s 208 => 275. Range 800 => 750
 
 ---------------------------------------- v2.42.2 ---------------------------------------
 ----Balance----

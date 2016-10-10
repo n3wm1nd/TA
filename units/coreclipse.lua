@@ -98,7 +98,7 @@ return {
 		},
 		weapondefs = {
 			fab500 = {
-				areaofeffect = 100,
+				areaofeffect = 64,
 				burst = 8,
 				burstrate = 0.3,
 				cegtag = "Trail_Medium_Rocket_Bomb",

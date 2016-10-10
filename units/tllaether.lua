@@ -95,8 +95,8 @@ return {
 		weapondefs = {
 			thermite_bomb = {
 				areaofeffect = 64,
-				burst = 10,
-				burstrate = 0.15,
+				burst = 6,
+				burstrate = 0.2,
 				collidefriendly = false,
 				commandfire = false,
 				craterboost = 0,
@@ -127,10 +127,10 @@ return {
 				weapontype = "AircraftBomb",
 				weaponvelocity = 600,
 				damage = {
-					bomb_resistant = 175,
+					bomb_resistant = 100,
 					bombers = 5,
-					commanders = 175,
-					default = 500,
+					commanders = 100,
+					default = 300,
 					fighters = 5,
 					flak_resistant = 5,
 					unclassed_air = 5,

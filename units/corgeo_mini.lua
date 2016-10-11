@@ -20,7 +20,7 @@ return {
 		energymake = 180,
 		energystorage = 360,
 		energyuse = 0,
-		explodeas = "ESTOR_BUILDING",
+		explodeas = "ESTOR_BUILDINGEX",
 		footprintx = 3,
 		footprintz = 3,
 		icontype = "building",

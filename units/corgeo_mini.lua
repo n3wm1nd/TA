@@ -80,7 +80,7 @@ return {
 			heap = {
 				blocking = false,
 				category = "heaps",
-				damage = 990.00006,
+				damage = 200,
 				description = "Geothermal Powerplant Heap",
 				energy = 0,
 				featurereclamate = "SMUDGE01",

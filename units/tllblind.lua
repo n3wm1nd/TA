@@ -1,7 +1,7 @@
 return {
 	tllblind = {
 		acceleration = 0.06,
-		airsightdistance = 650,
+		airsightdistance = 920,
 		brakerate = 0.45,
 		buildcostenergy = 60100,
 		buildcostmetal = 7650,

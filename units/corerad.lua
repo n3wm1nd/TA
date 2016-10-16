@@ -132,6 +132,7 @@ return {
 		weapondefs = {
 			cor_erad = {
 				areaofeffect = 144,
+				avoidGround = true,
 				burnblow = true,
 				burst = 4,
 				burstrate = 0.1,
@@ -139,6 +140,7 @@ return {
 				cegtag = "Core_Def_AA_Rocket",
 				craterboost = 0,
 				cratermult = 0,
+				collidefriendly = false,
 				explosiongenerator = "custom:CORE_FIRE_SMALL",
 				firestarter = 20,
 				flighttime = 3,
@@ -169,7 +171,7 @@ return {
 				weaponvelocity = 1500,
 				damage = {
 					bombers = 140,
-					default = 5,
+					default = 1,
 					fighters = 110,
 					flak_resistant = 80,
 					unclassed_air = 110,

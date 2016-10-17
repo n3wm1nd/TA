@@ -33,7 +33,9 @@ T3 bomber => Decrease damage. Need 3 bombers or 2 heavy bombers to explode an ad
 Tllblind T3 Riot bot => Decrease energy Cost. Decrease HP 38K => 33K, decrease range for canon 650 => 600, and damage 1200 => 900 (same than goliath). Increase damage for Green Laser /Lighting 240 => 500. Decrease range 500 => 450.
 Commander Jump rebalance. Assaut : Range 900 => 750. Star 1050 => 1000. Supreme 1250 => 1250. reload Assaut 40 star 20 => 30 Supreme 15 => 20.
 TLLJump : Increase Range Jump : 250 => 400
-
+TllTroll (T2 Artillery) : Increase HP 2000 => 2450. Increase Velocity 1.7 => 1.75. Decrease metal cost 1010 => 950.
+TLLMegaFusion : Increase HP 12K => 28K
+Cyclone (T3.5 Bomber Arm) : Decrease damage for bomb : 18K => 12K
 
 ----Bugs---
 Fix T2 Aircraft Lab not providing the required tech level

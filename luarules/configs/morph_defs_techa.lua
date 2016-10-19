@@ -27,7 +27,7 @@ local morphDefs = {
 			--energy = 0,
 			--Free For Xmas
 		
-			metal = 1350,
+			metal = 1250,
 			energy = 12000,
 		},
 		{
@@ -38,25 +38,33 @@ local morphDefs = {
 			--energy = 0,
 			--Free For Xmas
 		
-			metal = 1100,
-			energy = 24500,
+			metal = 1500,
+			energy = 24000,
 		},
 	},
     armcom1 = {
 		into = 'armcom5',
-        time = 90,
+        	time = 60,
+		metal = 8000,
+		energy = 100000,
 	},
     armcom4 = {
 		into = 'armcom5',
-        time = 60,
+        	time = 60,
+		metal = 8250,
+		energy = 112000,
 	},
     armcom5 = {
 		into = 'armcom6',
 		time = 120,
+		metal = 18000,
+		energy = 240000,
 	},
       armcom6 = {
 		into = 'armcom7',
 		time = 180,
+		metal = 64000,
+		energy = 1000000,
 	},
       corcom = {
 		{
@@ -67,7 +75,7 @@ local morphDefs = {
 			--energy = 0,
 			--Free For Xmas
 		
-			metal = 1350,
+			metal = 1250,
 			energy = 12000,
 		},
 		{	
@@ -78,25 +86,33 @@ local morphDefs = {
 			--energy = 0,
 			--Free For Xmas
 		
-			metal = 1100,
-			energy = 24500,
+			metal = 1500,
+			energy = 24000,
 		},
 	},
     corcom1 = {
 		into = 'corcom5',
-		time = 90,
+		time = 60,
+		metal = 8000,
+		energy = 100000,
 	},
     corcom3 = {
 		into = 'corcom5',
 		time = 60,
+		metal = 8250,
+		energy = 112000,
 	},
     corcom5 = {
 		into = 'corcom6',
 		time = 120,
+		metal = 18000,
+		energy = 240000,
 	},
     corcom6 = {
 		into = 'corcom7',
 		time = 120,
+		metal = 64000,
+		energy = 1000000,
 	},
     tllcom = {
 		into = 'tllcom3',
@@ -106,20 +122,26 @@ local morphDefs = {
 		--energy = 0,
 		--Free For Xmas
 		
-		metal = 1350,
+		metal = 1250,
 		energy = 12000,
 	},
     tllcom3 = {
 		into = 'tllcom5',
 		time = 60,
+		metal = 8000,
+		energy = 112000,
 	},
     tllcom5 = {
 		into = 'tllcom6',
 		time = 120,
+		metal = 18000,
+		energy = 240000,
 	},
     tllcom6 = {
 		into = 'tllcom7',
 		time = 180,
+		metal = 64000,
+		energy = 1000000,
 	},
     corrl = {
 		into = 'corrl1',

@@ -87,7 +87,7 @@ return {
 			[4] = "tllestor",
 			[5] = "tlluwmstorage",
 			[6] = "tlluwestorage",
-			[7] = "tllmex",
+			[7] = "tllamex",
 			[8] = "tlluwmex",
 			[9] = "tllmm",
 			[10] = "tllwmconv",

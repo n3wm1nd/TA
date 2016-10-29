@@ -38,7 +38,7 @@ return {
 		objectname = "tllmex",
 		onoffable = true,
 		radaremitheight = 70,
-		script = "tllmex1.cob",
+		script = "tllmex.cob",
 		selfdestructas = "SMALL_BUILDING",
 		side = "TLL",
 		sightdistance = 210,

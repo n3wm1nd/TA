@@ -42,7 +42,7 @@ return {
 		selfdestructas = "SMALL_BUILDING",
 		side = "TLL",
 		sightdistance = 210,
-		unitname = "tllmex",
+		unitname = "tllmex1",
 		unitnumber = 802,
 		usebuildinggrounddecal = true,
 		yardmap = "ooooooooo",

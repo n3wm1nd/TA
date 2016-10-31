@@ -2,8 +2,8 @@ return {
 	armlightfus = {
 		activatewhenbuilt = true,
 		buildangle = 65535,
-		buildcostenergy = 12500,
-		buildcostmetal = 1480,
+		buildcostenergy = 12200,
+		buildcostmetal = 1440,
 		builder = false,
 		buildinggrounddecaldecayspeed = 30,
 		buildinggrounddecalsizex = 9,

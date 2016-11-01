@@ -9,7 +9,7 @@ return {
 		buildinggrounddecalsizex = 11,
 		buildinggrounddecalsizey = 11,
 		buildinggrounddecaltype = "crnns_aoplane.dds",
-		buildtime = 300000,
+		buildtime = 360000,
 		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON",
 		damagemodifier = 0.9,
 		description = "Produces Energy / Storage",

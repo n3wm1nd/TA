@@ -2,7 +2,7 @@ return {
 	corlightfus = {
 		activatewhenbuilt = true,
 		buildangle = 65535,
-		buildcostenergy = 18400,
+		buildcostenergy = 16400,
 		buildcostmetal = 1910,
 		builder = false,
 		buildinggrounddecaldecayspeed = 30,

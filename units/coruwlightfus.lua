@@ -5,7 +5,7 @@ return {
 		brakerate = 0,
 		buildangle = 8192,
 		buildcostenergy = 21060,
-		buildcostmetal = 2020,
+		buildcostmetal = 2280,
 		builder = false,
 		buildpic = "CORUWLIGHTFUS.png",
 		buildtime = 33000,

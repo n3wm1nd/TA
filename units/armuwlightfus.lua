@@ -5,7 +5,7 @@ return {
 		brakerate = 0,
 		buildangle = 8192,
 		buildcostenergy = 23400,
-		buildcostmetal = 2160,
+		buildcostmetal = 2300,
 		builder = false,
 		buildpic = "ARMUWLIGHTFUS.png",
 		buildtime = 35000,

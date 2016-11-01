@@ -15,7 +15,7 @@ return {
 		description = "Produces Energy / Storage",
 		downloadable = 1,
 		energystorage = 51200,
-		energyuse = 5120,
+		energyuse = -5120,
 		explodeas = "NUCLEAR_MISSILE_CORE",
 		footprintx = 10,
 		footprintz = 8,

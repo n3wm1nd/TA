@@ -64,12 +64,11 @@ return {
 			[2] = "tllauwmex",
 			[3] = "tllwmmohoconv",
 			[4] = "tllfgate",
-			[5] = "tlldtns",
-			[6] = "tllplat",
-			[7] = "tllsy",
-			[8] = "tllasy",
-			[9] = "tllsubpen",
-			[10] = "tllturtle_lab",
+			[5] = "tllplat",
+			[6] = "tllsy",
+			[7] = "tllasy",
+			[8] = "tllsubpen",
+			[9] = "tllturtle_lab",
 		},
 		featuredefs = {
 			dead = {

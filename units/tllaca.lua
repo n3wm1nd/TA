@@ -81,7 +81,7 @@ return {
 			[23] = "tllasp",
 			[24] = "tllap",
 			[25] = "tllaap",
-			[27] = "tllplat",
+			[26] = "tllplat",
 			[27] = "tlleap",
 		},
 		nanocolor = {

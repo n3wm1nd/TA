@@ -2,10 +2,10 @@ return {
 	cormddm = {
 		acceleration = 0.006,
 		brakerate = 0.12,
-		buildcostenergy = 32500,
-		buildcostmetal = 2890,
+		buildcostenergy = 30500,
+		buildcostmetal = 2690,
 		builder = false,
-		buildtime = 37500,
+		buildtime = 33500,
 		canattack = true,
 		canguard = true,
 		canmove = true,

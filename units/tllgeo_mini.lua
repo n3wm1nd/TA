@@ -4,7 +4,7 @@ return {
 		bmcode = 0,
 		buildangle = 8192,
 		buildcostenergy = 2200,
-		buildcostmetal = 510,
+		buildcostmetal = 610,
 		builder = false,
 		buildinggrounddecaldecayspeed = 30,
 		buildinggrounddecalsizex = 3.6,

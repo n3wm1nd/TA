@@ -30,7 +30,7 @@ return {
 		corpse = "DEAD",
 		defaultmissiontype = "Standby",
 		description = "Commander",
-		energymake = 30,
+		energymake = 10,
 		energystorage = 1000,
 		energyuse = 0,
 		explodeas = "COMMANDER_BLAST1",

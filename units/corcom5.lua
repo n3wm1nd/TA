@@ -96,7 +96,7 @@ return {
 			[13] = "corvp",
 			[14] = "corap",
 			[15] = "corsy",
-			[16] = "corech3",
+			[16] = "corech18",
 			[17] = "coreyes",
 			[18] = "corrad1",
 			[19] = "corsonar",

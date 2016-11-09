@@ -97,7 +97,7 @@ return {
 			[14] = "armasy",
 			[15] = "ananotower",
 			[16] = "armshltx1",
-			[17] = "armrech18",
+			[17] = "armrech21",
 			[18] = "armfort",
 			[19] = "armarad",
 			[20] = "armason",

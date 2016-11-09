@@ -82,9 +82,9 @@ return {
 		workertime = 700,
 		buildoptions = {
 			[1] = "armgen",
-			[2] = "armlightfus",
-			[3] = "armuwlightfus",
-			[4] = "armatidal",
+			[2] = "armfus",
+			[3] = "armuwfus",
+			[4] = "armgmm",
 			[5] = "armmmkr",
 			[6] = "armuwmmm",
 			[7] = "armuwadves",

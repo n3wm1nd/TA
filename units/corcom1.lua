@@ -85,7 +85,7 @@ return {
 			[3] = "corgen",
 			[4] = "corlightfus",
 			[5] = "coruwlightfus",
-			[6] = "corgeo_mini",
+			[6] = "corgeo",
 			[7] = "cormstor",
 			[8] = "corestor",
 			[9] = "coruwms",

@@ -96,7 +96,7 @@ return {
 			[13] = "armvp",
 			[14] = "armap",
 			[15] = "armsy",
-			[16] = "armrech3",
+			[16] = "armrech18",
 			[17] = "armeyes",
 			[18] = "armrad1",
 			[19] = "armsonar",

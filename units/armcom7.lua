@@ -84,7 +84,7 @@ return {
 			[1] = "armgen",
 			[2] = "armfus",
 			[3] = "armuwfus",
-			[4] = "armatidal",
+			[4] = "armgmm",
 			[5] = "armmmkr",
 			[6] = "armuwmmm",
 			[7] = "armuwadves",

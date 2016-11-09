@@ -68,7 +68,6 @@ return {
 			[16] = "coredauber",
 			[17] = "corgol1",
 			[18] = "corkrog",
-			
 		},
 		nanocolor = {
 			[1] = 0.08,

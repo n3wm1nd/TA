@@ -84,7 +84,7 @@ return {
 			[1] = "corgen",
 			[2] = "corfus",
 			[3] = "coruwfus",
-			[4] = "coratidal",
+			[4] = "corbhmth",
 			[5] = "cormmkr",
 			[6] = "coruwmmm",
 			[7] = "coruwadvms",

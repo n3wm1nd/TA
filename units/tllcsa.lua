@@ -77,7 +77,7 @@ return {
 			[16] = "tllkrak",
 			[17] = "tlltrid",
 			[18] = "tllfgate",
-			[19] = " tllemp",
+			[19] = "tllemp",
 			[20] = "tllantinuke",
 			[21] = "tllsilo",
 			[22] = "tlllrpt",

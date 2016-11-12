@@ -2,7 +2,7 @@ return {
 	tlltrid = {
 		buildangle = 32768,
 		buildcostenergy = 37000,
-		buildcostmetal = 5220,
+		buildcostmetal = 4750,
 		builder = false,
 		buildtime = 49010,
 		canattack = true,

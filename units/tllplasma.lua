@@ -1,7 +1,7 @@
 return {
 	tllplasma = {
 		buildangle = 8200,
-		buildcostenergy = 15872,
+		buildcostenergy = 15870,
 		buildcostmetal = 2240,
 		builder = false,
 		buildinggrounddecaldecayspeed = 30,
@@ -15,7 +15,7 @@ return {
 		corpse = "dead",
 		damagemodifier = 0.125,
 		defaultmissiontype = "GUARD_NOMOVE",
-		description = "Pop-Up Heavy Cannon",
+		description = "Pop-Up Heavy Plasma Cannon",
 		downloadable = 1,
 		energyuse = 0,
 		explodeas = "MEDIUM_BUILDINGEX",
@@ -38,7 +38,7 @@ return {
 		selfdestructas = "MEDIUM_BUILDING",
 		shootme = 1,
 		side = "TLL",
-		sightdistance = 450,
+		sightdistance = 350,
 		standingfireorder = 2,
 		unitname = "tllplasma",
 		unitnumber = 878,

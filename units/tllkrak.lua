@@ -23,7 +23,7 @@ return {
 		idletime = 1800,
 		losemitheight = 26,
 		mass = 2600,
-		maxdamage = 3450,
+		maxdamage = 2450,
 		maxslope = 14,
 		minwaterdepth = 5,
 		name = "KrakeN",

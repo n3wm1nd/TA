@@ -23,7 +23,7 @@ return {
 		idletime = 1800,
 		losemitheight = 42,
 		mass = 2920,
-		maxdamage = 14200,
+		maxdamage = 13200,
 		maxslope = 14,
 		minwaterdepth = 5,
 		name = "Trident",

@@ -2,8 +2,8 @@ return {
 	tllgen = {
 		activatewhenbuilt = true,
 		buildangle = 0,
-		buildcostenergy = 3820,
-		buildcostmetal = 560,
+		buildcostenergy = 3150,
+		buildcostmetal = 570,
 		builder = false,
 		buildinggrounddecaldecayspeed = 30,
 		buildinggrounddecalsizex = 5,

@@ -47,7 +47,7 @@ return {
 		seismicsignature = 0,
 		selfdestructas = "BIG_UNIT",
 		side = "CORE",
-		sightdistance = 450,
+		sightdistance = 525,
 		standingfireorder = 2,
 		standingmoveorder = 1,
 		steeringmode = 1,

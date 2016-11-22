@@ -46,7 +46,7 @@ local convertCapacities = {
 		--TLL
 		[UnitDefNames.tllmm.id]  = { c = 100, e = (T0) }, -- Normal
 		[UnitDefNames.tllwmconv.id]  = { c = 100, e = (T1) }, -- Floating
-		--[UnitDefNames.____.id]  = { c = 300, e = (T2) }, -- T1,5
+		[UnitDefNames.tllgen.id]  = { c = 160, e = (AC1) }, -- T1,5
 		--[UnitDefNames.____.id]  = { c = 600, e = (T3) }, -- Cloaked/Hardened
 		[UnitDefNames.tllammaker.id]  = { c = 1000, e = (T4) }, -- Moho
 		[UnitDefNames.tllwmmohoconv.id]  = { c = 1000, e = (T5) }, -- Underwater

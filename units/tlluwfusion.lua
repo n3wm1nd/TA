@@ -3,7 +3,7 @@ return {
 		activatewhenbuilt = true,
 		buildangle = 8192,
 		buildcostenergy = 21450,
-		buildcostmetal = 5370,
+		buildcostmetal = 4870,
 		builder = false,
 		buildtime = 90000,
 		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON",

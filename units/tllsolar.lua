@@ -2,7 +2,7 @@ return {
 	tllsolar = {
 		activatewhenbuilt = true,
 		buildangle = 2192,
-		buildcostenergy = 0,
+		buildcostenergy = 75,
 		buildcostmetal = 220,
 		builder = false,
 		buildinggrounddecaldecayspeed = 30,

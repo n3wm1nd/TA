@@ -1,8 +1,8 @@
 return {
 	tllmedfusion = {
 		activatewhenbuilt = true,
-		buildcostenergy = 17680,
-		buildcostmetal = 3680,
+		buildcostenergy = 18680,
+		buildcostmetal = 3880,
 		builder = false,
 		buildinggrounddecaldecayspeed = 30,
 		buildinggrounddecalsizex = 8,

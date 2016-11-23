@@ -2,8 +2,8 @@ return {
 	tllcoldfus = {
 		activatewhenbuilt = true,
 		buildangle = 4096,
-		buildcostenergy = 29850,
-		buildcostmetal = 13950,
+		buildcostenergy = 49850,
+		buildcostmetal = 13250,
 		builder = false,
 		buildinggrounddecaldecayspeed = 30,
 		buildinggrounddecalsizex = 8,

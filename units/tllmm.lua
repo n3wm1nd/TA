@@ -2,8 +2,8 @@ return {
 	tllmm = {
 		activatewhenbuilt = true,
 		buildangle = 8192,
-		buildcostenergy = 171,
-		buildcostmetal = 17,
+		buildcostenergy = 350,
+		buildcostmetal = 30,
 		builder = false,
 		buildinggrounddecaldecayspeed = 30,
 		buildinggrounddecalsizex = 5,

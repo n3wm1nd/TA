@@ -12,7 +12,7 @@ return {
 		buildinggrounddecalsizey = 4,
 		buildinggrounddecaltype = "armckmakr_aoplane.dds",
 		buildpic = "armckmakr.png",
-		buildtime = 12000,
+		buildtime = 19000,
 		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON",
 		cloakcost = 40,
 		collisionvolumeoffsets = "-2 0 0",

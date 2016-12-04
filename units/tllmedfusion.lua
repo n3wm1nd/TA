@@ -1,8 +1,8 @@
 return {
 	tllmedfusion = {
 		activatewhenbuilt = true,
-		buildcostenergy = 7680,
-		buildcostmetal = 3680,
+		buildcostenergy = 19680,
+		buildcostmetal = 4150,
 		builder = false,
 		buildinggrounddecaldecayspeed = 30,
 		buildinggrounddecalsizex = 8,
@@ -14,7 +14,7 @@ return {
 		description = "Produces Metal and Energy/ Storage",
 		energymake = 800,
 		energystorage = 2000,
-		energyuse = 300,
+		energyuse = 600,
 		explodeas = "FUSIONX_BLAST",
 		floater = true,
 		footprintx = 5,
@@ -23,7 +23,7 @@ return {
 		idleautoheal = 5,
 		idletime = 2000,
 		losemitheight = 44,
-		makesmetal = 4.2,
+		makesmetal = 6,
 		mass = 3680,
 		maxdamage = 4680,
 		maxslope = 20,

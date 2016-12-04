@@ -2,7 +2,7 @@ return {
 	tllammaker = {
 		activatewhenbuilt = false,
 		buildangle = 8192,
-		buildcostenergy = 8000,
+		buildcostenergy = 16000,
 		buildcostmetal = 1150,
 		builder = false,
 		buildinggrounddecaldecayspeed = 30,
@@ -24,7 +24,7 @@ return {
 		idletime = 1800,
 		losemitheight = 26,
 		mass = 1150,
-		maxdamage = 600,
+		maxdamage = 700,
 		maxslope = 10,
 		maxwaterdepth = 0,
 		metalstorage = 0,

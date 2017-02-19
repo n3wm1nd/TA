@@ -53,16 +53,25 @@ local BlackList = {
    }
    
    local Customlight ={
-   ["armpw_emg"] = {0.48,0.36,0,0.7},
-   ["armpw1_emg"] = {0.48,0.36,0,0.8},
-   ["armhdpw_arm_emcc3"] = {0.48,0.36,0.1,0.20},
-   ["armbanth_armbantha_fire"] = {0.48,0.48,0.9,0.90},
-   ["armgor_armgor_fire"] = {0.48,0.48,0.9,0.90},
-   ["tllriot_tllriot_cannon"] = {0.48,0.48,0.9,0.90},
-   ["tllhailstorm_tll_hailstorm"] = {0.8,0.6,0.2,1.20},
-   ["krogtaar_cor_taar_rc"] = {0.98,0.28,0.3,0.60},
-   ["armlatnk_armlatnk_weapon"] = {0.08,0.08,0.98,0.45},
-   ["armclaw_dclaw"] = {0.08,0.08,0.98,0.45},
+   ["armpw_emg"] = {r=0.48,g=0.36,b=0,radius=140,beam=false},
+   ["armpw1_emg"] = {r=0.48,g=0.36,b=0,radius=160,beam=false},
+   ["armhdpw_arm_emcc3"] = {r=0.48,g=0.36,b=0.1,radius=40,beam=false},
+   ["armbanth_armbantha_fire"] = {r=0.48,g=0.48,b=0.9,radius=230,beam=false},
+   ["armgor_armgor_fire"] = {r=0.48,g=0.48,b=0.9,radius=230,beam=false},
+   ["tllriot_tllriot_cannon"] = {r=0.48,g=0.48,b=0.9,radius=180,beam=false},
+   ["tllhailstorm_tll_hailstorm"] = {r=0.8,g=0.6,b=0.2,radius=240,beam=false},
+   ["tllasgard_hailstorm"] = {r=0.8,g=0.6,b=0.2,radius=440,beam=false},
+   ["krogtaar_cor_taar_rc"] = {r=0.98,g=0.28,b=0.3,radius=120,beam=false},
+   ["armlatnk_armlatnk_weapon"] = {r=0.08,g=0.08,b=0.98,radius=90,beam=true},
+   ["armclaw_dclaw"] = {r=0.08,g=0.08,b=0.98,radius=90,beam=true},
+
+   ["armraven1_exp_heavyrocket1"] = {r=1.2,g=0.2,b=0.2,radius=110,beam=false},
+   ["armraven_exp_heavyrocket"] = {r=1.2,g=0.2,b=0.2,radius=125,beam=false},
+
+   ["corkarg_tawf_banisher1"] = {r=1.2,g=0.2,b=0.2,radius=105,beam=false},
+
+   ["corkarg1_tawf_banisher2"] = {r=1.2,g=0.2,b=0.2,radius=155,beam=false},
+
 
    }
    local Armtrails = {
@@ -152,7 +161,7 @@ local Tlltrailssb = {
   ["armpraet_praetorian_rocket"] = true,
   ["armkrmi_armkrmi_rocket"] = true,
 }
-  local Coretrailssd = {
+  local Coretrailssb = {
   ["corhrk_corhrk_rocket"] = true,
   ["corkrog1_corkrog_rocket1"] = true,
   ["corvroc_cortruck_rocket"] = true,
@@ -163,4 +172,4 @@ local Tlltrailssb = {
   }
 
 
-return BlackList, Customlight, Armtrails, Coretrails, Tlltrails, Plasmabatts, Tlltrailssb, Armtrailssb, Coretrailssd
+return BlackList, Customlight, Armtrails, Coretrails, Tlltrails, Plasmabatts, Tlltrailssb, Armtrailssb, Coretrailssb

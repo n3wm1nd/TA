@@ -206,13 +206,13 @@ end
 function NeedsRepair(unitID)
    -- check if this unitID (which is assumed to be a plane) would want to land
    local health, maxHealth, _, _, buildProgress = Spring.GetUnitHealth(unitID) 
-   if buildProgress<1 then return false end 
    local landAtState = Spring.GetUnitStates(unitID).autorepairlevel
+   if buildProgress<1 then return false end 
    return health < maxHealth * landAtState;
 end
 
 function IsPlane(unitDefID)
-    return UnitDefs[unitDefID].isAirUnit
+   return UnitDefs[unitDefID].isAirUnit
 end
 
 function CheckAll()
@@ -372,6 +372,7 @@ function gadget:UnitCmdDone(unitID, unitDefID, teamID, cmdID, cmdParams, cmdOpti
 end
 
 function gadget:UnitCommand(unitID, unitDefID, teamID, cmdID, cmdParams, cmdOptions)
+   if cmdID < 0 then return end
    -- if a plane is given a command, assume the user wants that command to be actioned and release control
    -- (unless its one of our custom commands, etc)
    if not IsPlane(unitDefID) then return end

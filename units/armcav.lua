@@ -17,7 +17,7 @@ return {
 		category = "ALL LARGE MOBILE NOTDEFENSE NOTHOVERNOTVTOL NOTSUB NOTSUBNOTSHIP NOTVTOL WEAPON",
 		corpse = "dead",
 		defaultmissiontype = "Standby",
-		description = "All-Terrain - Multipurpose Assault Kbot",
+		description = "Jump Assault Kbot",
 		downloadable = 1,
 		energymake = 5,
 		energystorage = 0,
@@ -39,7 +39,7 @@ return {
 		metalmake = 0,
 		metalstorage = 0,
 		mobilestandorders = 1,
-		movementclass = "AMPHKBOT",
+		movementclass = "HKBOT3",
 		name = "Cavalier",
 		noautofire = false,
 		nochasecategory = "SUB VTOL",
@@ -62,6 +62,7 @@ return {
 		upright = true,
 		workertime = 0,
 		customparams = {
+			canjump = "1",
 			requiretech = "Advanced T2 Unit Research Centre",
 		},
 		featuredefs = {

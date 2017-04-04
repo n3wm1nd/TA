@@ -31,7 +31,7 @@ return {
 		idletime = 1800,
 		losemitheight = 62,
 		mass = 260,
-		maxdamage = 1295,
+		maxdamage = 1000,
 		maxslope = 14,
 		maxwaterdepth = 0,
 		name = "Tesla",
@@ -124,6 +124,7 @@ return {
 		weapondefs = {
 			spray_lightning = {
 				areaofeffect = 17,
+ 				beamttl = 8,
 				craterboost = 0,
 				cratermult = 0,
 				duration = 1.9,
@@ -150,8 +151,7 @@ return {
 				weapontype = "LightningCannon",
 				weaponvelocity = 860,
 				damage = {
-					commanders = 280,
-					default = 240,
+					default = 200,
 					subs = 5,
 				},
 			},

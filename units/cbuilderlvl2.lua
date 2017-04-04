@@ -58,7 +58,7 @@ return {
 			[5] = "corvhlt",
 			[6] = "corfhlt",
 			[7] = "corrl1",
-			[8] = "corerad",
+			[8] = "corerad1",
 			[9] = "core_immolator",
 			[10] = "corpcan",
 			[11] = "commando",
@@ -66,8 +66,9 @@ return {
 			[13] = "corstorm1",
 			[14] = "corroy",
 			[15] = "armraven1",
-			[16] = "coredauber",
-			[17] = "corkrog",
+			[16] = "corsumo1",
+			[17] = "corgol1",
+			[18] = "corkrog",
 			
 		},
 		nanocolor = {

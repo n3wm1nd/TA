@@ -6,7 +6,7 @@ return {
 		buildcostenergy = 1437,
 		buildcostmetal = 74,
 		builder = false,
-		buildpic = "CORVALK.png",
+		buildpic = "corvalk.png",
 		buildtime = 4122,
 		canfly = true,
 		canguard = true,
@@ -51,6 +51,7 @@ return {
 		objectname = "CORVALK",
 		pitchscale = 1,
 		radaremitheight = 28.8,
+		releaseheld = true,
 		seismicsignature = 0,
 		selfdestructas = "BIG_UNIT_VTOL",
 		side = "CORE",
@@ -67,6 +68,7 @@ return {
 		workertime = 0,
 		customparams = {
 			buildpic = "CORVALK.png",
+			faction = "CORE",
 		},
 		sfxtypes = {
 			pieceexplosiongenerators = {

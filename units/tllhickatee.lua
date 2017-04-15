@@ -6,6 +6,7 @@ return {
 		buildcostenergy = 1050,
 		buildcostmetal = 245,
 		builder = false,
+		buildpic = "tllhickatee.png",
 		buildtime = 4745,
 		canattack = false,
 		canguard = true,
@@ -28,7 +29,7 @@ return {
 		mass = 260,
 		maxdamage = 1560,
 		maxslope = 32,
-		maxvelocity = 1,
+		maxvelocity = 0.75,
 		maxwaterdepth = 200,
 		mobilestandorders = 1,
 		movementclass = "AMPTBOT",
@@ -51,6 +52,9 @@ return {
 		turnrate = 625,
 		unitname = "tllhickatee",
 		unitnumber = 863,
+		customparams = {
+			faction = "TLL",
+		},
 		featuredefs = {
 			dead = {
 				blocking = true,

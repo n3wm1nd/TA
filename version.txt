@@ -1,3 +1,164 @@
+---------------------------------------- v2.46.1 ---------------------------------------
+----Improvments----
+Add New Icons for all Units
+Add Sonar for Turtle and delete explosion when destroyed.
+TllWhale => Add more time for Flight Pulse (didn't reach target at 1650 range).
+
+
+----Balance----
+Metal Maker T1.5 ; Decrease resources for them. (-10%)
+Underwater All faction Balanced. (TLL T1 cost 2Ke => 300E)
+Decrease Sight for Corprot (450 now)
+Armjugg => Balance Cost 
+All Destroyer  (T1 ship) => Decrease Speed. TLL => Decrease energy and range and dmg/s for canon (700 => 650 range). 
+T2.5 Rapid Core Bot => Increase resources by 5%. Increase Damage by 5%. Decrease Range 400 => 380.
+Gorilla : Increase Spped 1.75 => 2.1. Decrease Damage StarBurst
+Juggernaut : Balance Energy Cost (Increase 126 => 190Ke. Metal : 14600 => 13200)
+All T3.5 Unit StarBurst => Decrease damage 700 => 500 per Shot. (Gain 10K HP for Krog and Orco. Furie 560KE => 510KE)
+Balance AA T2 TLL Ship => Decrease cost and buildtime.
+
+To merge : 
+
+T3.5 Shield Bot => Fix Sightdistance to 500
+ArmHorg => Transform weapon into EMP Missile Long Range (4 burst at 1500 dmg emp)
+Morphing system : Increase Metal and energy to pass T2 => t3.5 (like Howie). Increase Xp by 0.25 too.
+Nerf Cordomm1 Less Hp 70K => 52K) and Tachyon1 Defense (Increase energy)
+Increase All T4 TSAR Weapon by 200KM and Increase by 175% Time to load ammunitions.
+LRPC TLL => Decrease Range to 6200 => 5600 (ARM / CORE to 5100)
+Hover Arm & Core Anti Sub => Balance Sonar Range (1800 => 500)
+Nerf Fast T2 Core Rapid Bot by 5% for range. Increase Metal by 5%.
+All T3.5 Burst launcher have been fixed at 1050 range and 500 damage / s. Add bonus for each unit (+10K HP or decrease cost).
+
+
+
+
+----Bug----
+
+
+
+---------------------------------------- v2.46.0 ---------------------------------------
+----Improvments----
+News TLL Icons
+Add T4 TLL TSAR weapon. And balance all TSAR Canon.
+Arm/Core T1.5 Rocket Bot => Add 2 bursts. Change weapon model with T1 rocket Kbot.
+Fix fighters weapons (now shoot even friendly is near target) 
+Add Fatboy1 and Corsumo1 for Ditawn (replace Helldriver and Cordaub)
+
+----Balance----
+All Commander : rebalance stats. HP, Range and speed same for all. Decrease HP and speed for all commanders.
+Arm/Core T1.5 Rocket Bot => Increase Damage 100 dmg/s, HP 450 => 750, Decrease Range 700 => 620.
+Gladiator => Decrease cost(8KE => 4.8KE 550M =>480M). Rocket : Range 525 => 475. Dmg 120 => 100/s. Laser : Range 450 => 350. Dmg 100/s => 75/s.
+TLL T1 Rocket Bot => Increase Speed, Damage and Range To be better than T1 and smaller than T1.5 Arm/Core Rocket Bot.
+Aexxec => Decrease a little Energy. 5500 => 5200.
+Krow => Nerf Krow HP by 25% (20 => 15K HP)
+TllMediumFus => Increase Metal 3680 => 3880
+All air trans now release passenger when destroyed, now crawling bombs do no damage when trans is destoryed.
+Increase workertime for repair pads
+Tesla and Tesla1 => decrease HP by 15%
+All underwater extrator balanced now.
+
+----Bug----
+Delete All-terrain for Razorback T4
+TllRobber can shoot Air now. (Tll T2 Transport)
+
+----Visual----
+Make corhowie AA missile turn to target a bit faster
+
+---------------------------------------- v2.45.9 ---------------------------------------
+----Improvments----
+Add new Icons for T2 Vehicles and Kbot TLL
+Disable deferred rendering if cursor is too high or ping is too high
+Set build cost widget, default off
+Add protective guard widget, default off
+Add build queue fast foward widget, default off
+Fix monkeylord's script
+Fix arm/core Anti mine aircraft movements, Closes #61
+
+----Balance----
+Add Corgol1 and CorSumo1 for Commander Enginereer (Unlock with T2 Tech Center)
+Add AA Weapon for CorHowie (T3.5 Kbot Missile)
+Add SprayAngle for Armpers (T3 Gunship). Decrease by 10% dmg/s for BlackDown (T3 Core Gunship).
+TLLColdFus : Decrease Metal cost 13950 => 13250
+
+
+---------------------------------------- v2.45.7 ---------------------------------------
+Add jump to cavalier
+Balance tll t2 air trans
+Plasma Canon T1&T2 : Delete Special damage to Commander's
+Add Arm/Core end game weapon's back
+Minor Performace tweaks to some widgets
+Fix crash in deferred rendering widget
+Fix tllom missing wreak
+
+---------------------------------------- v2.45.6 ---------------------------------------
+----Improvments----
+Dont draw lups fame effect is unit is icon
+Add safegard in commands_fx widget
+Add debris gadget
+
+
+---------------------------------------- v2.45.2 ---------------------------------------
+----Improvments----
+Update karg weapon effect
+Add morph progress bar to healthbar widget
+Add custom collision volumes for armvulc* and corbuzz*
+Add new production and use for Mtllmegacoldfus. Same balance.
+
+----Balance----
+TLL T3 Bomber => Damage x 2 for each bomb (300=>600). The Fire Damage doesn't change.
+Replace Weapon for T3 Lighting Tank TLL and T3 Riot TLL Kbot. Add Multiple Lighting. (like TLLBIND Sumo TLL)
+MediumFusion TLL : increase Energy 7500 => 20000. Change production. 4.2 M/s => 6 M/s. 500E/s => 300E/s.
+MediumFusion Underwater TLL : decrease Energy 50500 => 21000. decrease metal : 4800 => 4600. Change production. 6M/s => 8M/s. 900E/s => 400E/s.
+All experimental canon cost increase by ~50%. (~ +10KMetal and +100KEnergy)
+ICBM TLL => Decrease Metal Cost 13000 => 11500.
+ICBM V1 ARM/Core => Decrease Damage versus experimental unit by 33%. Now damage is x 2 (before was x 3) vs defaut damage.
+TLL T2 Metal Maker: Increase Energy cost : 8000 => 19500. HP 600 => 900.
+ARM/CORE T2 Metal Maker:Decrease Metal Cost fir underwater metalmaker to balance with TLL
+AKX Vengence : Increase range for canon 500 => 600. Increase Damage +10%. Increase range (+50) and damage for laser : +45%.
+Krogtaar : Increase Max Velcity 1.2>1.45
+
+----Bugs----
+Fix tllweb/upgweb short visual display time, Closes #27
+Fix partially built planes being ordered to land
+Fix commmander blast widget not showing
+
+---------------------------------------- v2.45.0 ---------------------------------------
+----Improvments----
+Remove Xmas Presents.
+Reduce seismicsignature for Monkeylord, Praetorian and Irritator.
+
+----Balance----
+Tll mex nake explosion the same as arm/core countparts.
+Replace Geo by mini Geo for battle Core.
+Armweaver reduce energy cost 52500>49500, metal cost 3650>3350, hp 12650>9750.
+Tll discharge => Increase Speed and height for jump.
+Infiltrator (Tll cloaked kbot) => delete Green laser and replace by Gun (same than Maverick for Arm). Same balance.
+Tllom (turtle) => Can go in water now.
+
+----Bugs----
+Fix tllturtle lab not unlocking nano morph.
+Add custom hitsphere for tlldmc.
+
+---------------------------------------- v2.44.9 ---------------------------------------
+----Improvments----
+TllJumpBot => Increase Speed for jump.
+Infiltrator (TLL KBOT invisible) => delete Green laser and remplace by Gun (same than Maverick for Arm). Same balance.
+TLLOM (turtle) => Can go in water now.
+Remplace Geo by mini Geo for battle Core 
+
+----Balance----
+Nerf Hero => -25% Damage with primary weapon.
+Tesla Tank => Delete metalcost per shot
+Tesla Tower v0 & v1 => Decrease Damage 240 => 220
+All Turtle speed fixed at 0.75.
+T1.5 TLL AIR Cons => Decrease MetalCost 1150 => 950
+TLLMEX => decrease explosion damage.
+
+
+---------------------------------------- v2.44.4 ---------------------------------------
+----Improvments----
+Add Free morph for Eco Commander or Battle Commander.
+
 ---------------------------------------- v2.44.3 ---------------------------------------
 ----Improvments----
 Remplace TLL Sub Cons into Engineerer (from T2 Sea Lab)

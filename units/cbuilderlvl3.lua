@@ -7,6 +7,7 @@ return {
 		buildcostmetal = 25600,
 		builddistance = 190,
 		builder = true,
+		buildpic = "cbuilderlvl3.png",
 		buildtime = 360000,
 		canfly = true,
 		canguard = true,
@@ -67,8 +68,12 @@ return {
 			[11] = "corint1",
 			[12] = "corbuzz1",
 			[13] = "corfsilo",
-			[14] = "corgant1",
-			[15] = "cshipyardlvl4",
+			[14] = "corflu",
+			[15] = "corgant1",
+			[16] = "cshipyardlvl4",
+		},
+		customparams = {
+			faction = "CORE",
 		},
 		featuredefs = {
 			dead = {

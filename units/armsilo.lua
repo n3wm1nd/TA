@@ -4,15 +4,15 @@ return {
 		antiweapons = 1,
 		brakerate = 0,
 		buildangle = 8192,
-		buildcostenergy = 89886,
-		buildcostmetal = 8133,
+		buildcostenergy = 92000,
+		buildcostmetal = 8150,
 		builder = false,
 		buildinggrounddecaldecayspeed = 30,
 		buildinggrounddecalsizex = 10,
 		buildinggrounddecalsizey = 10,
 		buildinggrounddecaltype = "armsilo_aoplane.dds",
-		buildpic = "ARMSILO.png",
-		buildtime = 178453,
+		buildpic = "armsilo.png",
+		buildtime = 180000,
 		canattack = true,
 		canstop = 1,
 		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL WEAPON",
@@ -59,6 +59,7 @@ return {
 		yardmap = "ooooooooooooooooooooooooooooooooooooooooooooooooo",
 		customparams = {
 			buildpic = "ARMSILO.png",
+			faction = "ARM",
 		},
 		featuredefs = {
 			dead = {
@@ -137,12 +138,14 @@ return {
 		weapondefs = {
 			nuclear_missile = {
 				areaofeffect = 1280,
+				avoidfeature = false,
 				avoidfriendly = false,
 				cegtag = "Trail_Large_Rocket",
 				collidefriendly = false,
 				commandfire = true,
-				craterboost = 6,
-				cratermult = 3,
+				craterareaofeffect = 1920,
+				craterboost = 0.72,
+				cratermult = 0.36,
 				edgeeffectiveness = 0.3,
 				energypershot = 125000,
 				explosiongenerator = "custom:nuke_explo_1280",
@@ -172,7 +175,7 @@ return {
 				weapontype = "StarburstLauncher",
 				weaponvelocity = 1300,
 				damage = {
-					bomb_resistant = 3166.66675,
+					bomb_resistant = 3000,
 					commanders = 2500,
 					default = 9500,
 					subs = 5,

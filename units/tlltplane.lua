@@ -6,6 +6,7 @@ return {
 		buildcostenergy = 1378,
 		buildcostmetal = 71,
 		builder = false,
+		buildpic = "tlltplane.png",
 		buildtime = 5700,
 		canfly = true,
 		canguard = true,
@@ -41,6 +42,7 @@ return {
 		objectname = "TLLTplane",
 		ovradjust = 1,
 		radaremitheight = 28.8,
+		releaseheld = true,
 		scale = 0.8,
 		selfdestructas = "SMALL_UNIT_VTOL",
 		shootme = 1,
@@ -58,6 +60,9 @@ return {
 		unitname = "tlltplane",
 		unitnumber = 944,
 		workertime = 0,
+		customparams = {
+			faction = "TLL",
+		},
 		sfxtypes = {
 			pieceexplosiongenerators = {
 				[1] = "piecetrail0",

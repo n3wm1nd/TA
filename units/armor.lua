@@ -46,6 +46,7 @@ return {
 		objectname = "ARMOR",
 		radardistance = 0,
 		radaremitheight = 28.8,
+		releaseheld = true,
 		scale = 0.8,
 		selfdestructas = "BIG_UNIT_VTOL",
 		shootme = 1,
@@ -54,7 +55,6 @@ return {
 		standingfireorder = 2,
 		standingmoveorder = 1,
 		steeringmode = 1,
-		tedclass = "VTOL",
 		transportcapacity = 1,
 		transportmass = 15000,
 		transportsize = 25,
@@ -65,6 +65,7 @@ return {
 		workertime = 0,
 		customparams = {
 			buildpic = "armor.png",
+			faction = "ARM",
 		},
 		sfxtypes = {
 			pieceexplosiongenerators = {

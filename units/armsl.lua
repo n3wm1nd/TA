@@ -6,7 +6,7 @@ return {
 		buildcostenergy = 10760,
 		buildcostmetal = 530,
 		builder = false,
-		buildpic = "ARMSL.png",
+		buildpic = "armsl.png",
 		buildtime = 12000,
 		canfly = true,
 		canguard = true,
@@ -51,6 +51,7 @@ return {
 		objectname = "ARMSL",
 		pitchscale = 1,
 		radaremitheight = 28.8,
+		releaseheld = true,
 		seismicsignature = 0,
 		selfdestructas = "BIG_UNIT_VTOL",
 		side = "CORE",
@@ -70,6 +71,7 @@ return {
 		workertime = 0,
 		customparams = {
 			buildpic = "ARMSL.png",
+			faction = "CORE",
 		},
 		sfxtypes = {
 			pieceexplosiongenerators = {

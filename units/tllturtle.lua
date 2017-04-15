@@ -7,6 +7,7 @@ return {
 		buildcostenergy = 50000,
 		buildcostmetal = 2250,
 		builder = false,
+		buildpic = "tllturtle.png",
 		buildtime = 90000,
 		canguard = true,
 		canmove = true,
@@ -30,7 +31,7 @@ return {
 		mass = 2250,
 		maxdamage = 3170,
 		maxslope = 32,
-		maxvelocity = 0.8,
+		maxvelocity = 0.75,
 		maxwaterdepth = 200,
 		metalstorage = 0,
 		mobilestandorders = 1,
@@ -55,7 +56,7 @@ return {
 		unitnumber = 31903,
 		workertime = 0,
 		customparams = {
-			requiretech = "T2 Factory",
+			faction = "TLL",
 		},
 		featuredefs = {
 			dead = {
@@ -126,9 +127,11 @@ return {
 		weapondefs = {
 			armscab_weapon = {
 				areaofeffect = 420,
+				avoidfeature = false,
 				avoidfriendly = false,
 				collidefriendly = false,
 				coverage = 2000,
+				craterareaofeffect = 630,
 				craterboost = 0,
 				cratermult = 0,
 				energypershot = 6500,
@@ -146,6 +149,8 @@ return {
 				reloadtime = 2,
 				smoketrail = true,
 				soundhitdry = "xplomed4",
+				soundhitwet = "splslrg",
+				soundhitwetvolume = 0.6,
 				soundstart = "Rockhvy1",
 				stockpile = true,
 				stockpiletime = 90,

@@ -5,7 +5,7 @@ return {
 		buildcostenergy = 373,
 		buildcostmetal = 17,
 		builder = false,
-		buildpic = "CORPUNK.png",
+		buildpic = "corpunk.png",
 		buildtime = 880,
 		canattack = true,
 		canguard = true,
@@ -42,13 +42,12 @@ return {
 		radaremitheight = 25,
 		seismicsignature = 0,
 		selfdestructas = "FLEA_EX",
-		side = "COR",
+		side = "CORE",
 		sightdistance = 650,
 		standingfireorder = 2,
 		standingmoveorder = 1,
 		stealth = true,
 		steeringmode = 2,
-		tedclass = "KBOT",
 		turninplaceanglelimit = 140,
 		turninplacespeedlimit = 2.904,
 		turnrate = 1672,
@@ -57,6 +56,7 @@ return {
 		wpri_badtargetcategory = "ANTIGATOR",
 		customparams = {
 			buildpic = "CORPUNK.png",
+			faction = "CORE",
 		},
 		featuredefs = {
 			armflea_dead = {

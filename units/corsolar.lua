@@ -11,14 +11,14 @@ return {
 		buildinggrounddecalsizex = 8,
 		buildinggrounddecalsizey = 8,
 		buildinggrounddecaltype = "corsolar_aoplane.dds",
-		buildpic = "CORSOLAR.png",
+		buildpic = "corsolar.png",
 		buildtime = 1600,
 		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON",
 		corpse = "DEAD",
 		damagemodifier = 0.5,
 		description = "Produces Energy",
+		energymake = 16,
 		energystorage = 48,
-		energyuse = -16,
 		explodeas = "SMALL_BUILDINGEX",
 		footprintx = 5,
 		footprintz = 5,
@@ -51,6 +51,7 @@ return {
 		yardmap = "ccccc coooc coooc coooc ccccc",
 		customparams = {
 			buildpic = "CORSOLAR.png",
+			faction = "CORE",
 		},
 		featuredefs = {
 			dead = {

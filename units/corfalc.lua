@@ -6,6 +6,7 @@ return {
 		buildcostenergy = 2101,
 		buildcostmetal = 98,
 		builder = false,
+		buildpic = "corfalc.png",
 		buildtime = 9450,
 		canfly = true,
 		canguard = true,
@@ -43,6 +44,7 @@ return {
 		objectname = "CORFALC",
 		ovradjust = 1,
 		radardistance = 0,
+		releaseheld = true,
 		scale = 0.8,
 		selfdestructas = "SMALL_UNIT_VTOL",
 		shootme = 1,
@@ -62,6 +64,7 @@ return {
 		upright = true,
 		workertime = 0,
 		customparams = {
+			faction = "CORE",
 			requiretech = "Advanced T1 Unit Research Centre",
 		},
 		sfxtypes = {

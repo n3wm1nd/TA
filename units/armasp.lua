@@ -12,7 +12,7 @@ return {
 		buildinggrounddecalsizex = 12,
 		buildinggrounddecalsizey = 12,
 		buildinggrounddecaltype = "armasp_aoplane.dds",
-		buildpic = "ARMASP.png",
+		buildpic = "armasp.png",
 		buildtime = 19090,
 		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON",
 		collisionvolumeoffsets = "0 -10 0",
@@ -53,10 +53,11 @@ return {
 		turnrate = 0,
 		unitname = "armasp",
 		usebuildinggrounddecal = true,
-		workertime = 2000,
+		workertime = 3000,
 		yardmap = "ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
 		customparams = {
 			buildpic = "ARMASP.png",
+			faction = "ARM",
 		},
 		featuredefs = {
 			dead = {

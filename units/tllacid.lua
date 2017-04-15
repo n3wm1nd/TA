@@ -6,6 +6,7 @@ return {
 		buildcostenergy = 100000,
 		buildcostmetal = 6100,
 		builder = false,
+		buildpic = "tllacid.png",
 		buildtime = 89500,
 		canattack = true,
 		canguard = true,
@@ -48,7 +49,6 @@ return {
 		standingfireorder = 0,
 		standingmoveorder = 1,
 		steeringmode = 1,
-		tedclass = "TANK",
 		turninplace = 0,
 		turninplaceanglelimit = 140,
 		turninplacespeedlimit = 0.528,
@@ -56,6 +56,9 @@ return {
 		unitname = "tllacid",
 		unitnumber = 30132,
 		workertime = 0,
+		customparams = {
+			faction = "TLL",
+		},
 		featuredefs = {
 			dead = {
 				blocking = true,
@@ -124,8 +127,10 @@ return {
 		weapondefs = {
 			acidrain_rocket = {
 				areaofeffect = 600,
+				avoidfeature = false,
 				cegtag = "TLLRAVENTRAIL",
 				commandfire = true,
+				craterareaofeffect = 900,
 				craterboost = 0,
 				cratermult = 0,
 				edgeeffectiveness = 0.6,

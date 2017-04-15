@@ -6,6 +6,7 @@ return {
 		buildcostmetal = 2710,
 		builddistance = 225,
 		builder = true,
+		buildpic = "tllmusk.png",
 		buildtime = 14000,
 		canguard = true,
 		canmove = true,
@@ -31,7 +32,7 @@ return {
 		mass = 1450,
 		maxdamage = 3200,
 		maxslope = 32,
-		maxvelocity = 1,
+		maxvelocity = 0.75,
 		maxwaterdepth = 200,
 		metalmake = 0.5,
 		metalstorage = 100,
@@ -75,6 +76,9 @@ return {
 			[16] = "tllalab",
 			[17] = "tllturtle_lab",
 			[18] = "tllhtcp",
+		},
+		customparams = {
+			faction = "TLL",
 		},
 		featuredefs = {
 			dead = {

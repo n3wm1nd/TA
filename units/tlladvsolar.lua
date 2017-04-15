@@ -9,14 +9,14 @@ return {
 		buildinggrounddecalsizex = 8,
 		buildinggrounddecalsizey = 8,
 		buildinggrounddecaltype = "tlladvsolar_aoplane.dds",
+		buildpic = "tlladvsolar.png",
 		buildtime = 8850,
 		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON",
 		corpse = "dead",
 		damagemodifier = 0.85,
 		description = "Produces Energy",
-		digger = 1,
+		energymake = 80,
 		energystorage = 100,
-		energyuse = -80,
 		explodeas = "SMALL_BUILDINGEX",
 		footprintx = 5,
 		footprintz = 5,
@@ -46,6 +46,9 @@ return {
 		windgenerator = 25,
 		workertime = 0,
 		yardmap = "ooooo ooooo ooooo ooooo ooooo",
+		customparams = {
+			faction = "TLL",
+		},
 		featuredefs = {
 			dead = {
 				blocking = true,

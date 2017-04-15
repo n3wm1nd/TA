@@ -2,10 +2,11 @@ return {
 	tllwmmohoconv = {
 		activatewhenbuilt = true,
 		buildangle = 8192,
-		buildcostenergy = 26200,
-		buildcostmetal = 1100,
+		buildcostenergy = 32500,
+		buildcostmetal = 1580,
 		builder = false,
-		buildtime = 22000,
+		buildpic = "tllwmmohoconv.png",
+		buildtime = 33000,
 		category = "ALL NOTDEFENSE NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON",
 		description = "Converts upto 1000 Energy into Metal",
 		explodeas = "ATOMIC_BLASTSML",
@@ -33,6 +34,9 @@ return {
 		unitnumber = 870,
 		waterline = 0,
 		yardmap = "wwwww wwwww wwwww wwwww wwwww",
+		customparams = {
+			faction = "TLL",
+		},
 		sfxtypes = {
 			pieceexplosiongenerators = {
 				[1] = "piecetrail0",

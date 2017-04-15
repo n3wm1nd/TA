@@ -5,6 +5,7 @@ return {
 		buildcostenergy = 58000,
 		buildcostmetal = 750,
 		builder = false,
+		buildpic = "coretnt.png",
 		buildtime = 12000,
 		canattack = true,
 		canguard = true,
@@ -28,9 +29,9 @@ return {
 		losemitheight = 25,
 		maneuverleashlength = 640,
 		mass = 750,
-		maxdamage = 2250,
+		maxdamage = 2550,
 		maxslope = 32,
-		maxvelocity = 1.2,
+		maxvelocity = 1,
 		maxwaterdepth = 115,
 		metalstorage = 0,
 		mobilestandorders = 1,
@@ -57,6 +58,7 @@ return {
 		unitnumber = 927,
 		workertime = 0,
 		customparams = {
+			faction = "TLL",
 			requiretech = "Advanced T2 Unit Research Centre",
 		},
 		sfxtypes = {

@@ -11,7 +11,7 @@ return {
 		buildinggrounddecalsizex = 9,
 		buildinggrounddecalsizey = 9,
 		buildinggrounddecaltype = "tllgazelle_aoplane.dds",
-		buildpic = "CORFMD.png",
+		buildpic = "tllgazelle.png",
 		buildtime = 835972,
 		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL WEAPON",
 		collisionvolumeoffsets = "0 0 -1",
@@ -55,6 +55,7 @@ return {
 		yardmap = "oooooo oooooo oooooo oooooo oooooo oooooo",
 		customparams = {
 			buildpic = "TLLGAZELLE.png",
+			faction = "TLL",
 		},
 		featuredefs = {
 			dead = {
@@ -127,9 +128,11 @@ return {
 		weapondefs = {
 			tll_gazelle_rocket = {
 				areaofeffect = 400,
+				avoidfeature = false,
 				avoidfriendly = false,
 				collidefriendly = false,
 				coverage = 3600,
+				craterareaofeffect = 600,
 				craterboost = 0,
 				cratermult = 0,
 				energypershot = 55000,
@@ -147,6 +150,8 @@ return {
 				reloadtime = 2,
 				smoketrail = true,
 				soundhitdry = "xplomed4",
+				soundhitwet = "splslrg",
+				soundhitwetvolume = 0.6,
 				soundstart = "Rockhvy1",
 				stockpile = true,
 				stockpiletime = 90,

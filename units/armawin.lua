@@ -41,7 +41,6 @@ return {
 		selfdestructas = "LARGE_BUILDING",
 		side = "CORE",
 		sightdistance = 273,
-		tedclass = "ENERGY",
 		turninplaceanglelimit = 140,
 		turninplacespeedlimit = 0,
 		turnrate = 0,
@@ -53,6 +52,7 @@ return {
 		customparams = {
 			buildpic = "armawin.png",
 			energymultiplier = 4,
+			faction = "CORE",
 		},
 		featuredefs = {
 			dead = {

@@ -4,14 +4,14 @@ return {
 		activatewhenbuilt = true,
 		brakerate = 0,
 		buildangle = 8192,
-		buildcostenergy = 5115,
-		buildcostmetal = 153,
+		buildcostenergy = 4850,
+		buildcostmetal = 135,
 		builder = false,
 		buildinggrounddecaldecayspeed = 30,
 		buildinggrounddecalsizex = 6,
 		buildinggrounddecalsizey = 6,
 		buildinggrounddecaltype = "armamaker_aoplane.dds",
-		buildpic = "ARMAMAKER.png",
+		buildpic = "armamaker.png",
 		buildtime = 4000,
 		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON",
 		collisionvolumeoffsets = "0 0 1",
@@ -51,6 +51,7 @@ return {
 		yardmap = "oooooooooooooooo",
 		customparams = {
 			buildpic = "ARMAMAKER.png",
+			faction = "ARM",
 		},
 		sfxtypes = {
 			explosiongenerators = {

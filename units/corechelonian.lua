@@ -28,9 +28,9 @@ return {
 		losemitheight = 28,
 		maneuverleashlength = 640,
 		mass = 750,
-		maxdamage = 2950,
+		maxdamage = 2690,
 		maxslope = 50,
-		maxvelocity = 0.9,
+		maxvelocity = 1,
 		maxwaterdepth = 30,
 		metalstorage = 0,
 		mobilestandorders = 1,
@@ -54,6 +54,7 @@ return {
 		workertime = 0,
 		customparams = {
 			buildpic = "corechelonian.png",
+			faction = "CORE",
 		},
 		featuredefs = {
 			dead = {
@@ -128,7 +129,9 @@ return {
 		weapondefs = {
 			corlevlr_weapon = {
 				areaofeffect = 180,
+				avoidfeature = false,
 				burnblow = true,
+				craterareaofeffect = 270,
 				craterboost = 0,
 				cratermult = 0,
 				edgeeffectiveness = 0.75,
@@ -141,6 +144,8 @@ return {
 				rgbcolor = "0.7 0.37 0",
 				size = 2.38,
 				soundhitdry = "xplosml3",
+				soundhitwet = "splslrg",
+				soundhitwetvolume = 0.6,
 				soundstart = "canlite3",
 				turret = true,
 				weapontype = "Cannon",

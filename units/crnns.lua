@@ -9,13 +9,13 @@ return {
 		buildinggrounddecalsizex = 11,
 		buildinggrounddecalsizey = 11,
 		buildinggrounddecaltype = "crnns_aoplane.dds",
+		buildpic = "crnns.png",
 		buildtime = 360000,
 		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON",
 		damagemodifier = 0.9,
 		description = "Produces Energy / Storage",
-		downloadable = 1,
+		energymake = 5120,
 		energystorage = 51200,
-		energyuse = -5120,
 		explodeas = "NUCLEAR_MISSILE_CORE",
 		footprintx = 10,
 		footprintz = 8,
@@ -44,6 +44,9 @@ return {
 		waterline = 10,
 		workertime = 0,
 		yardmap = "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+		customparams = {
+			faction = "CORE",
+		},
 		sfxtypes = {
 			pieceexplosiongenerators = {
 				[1] = "piecetrail5",

@@ -6,6 +6,7 @@ return {
 		buildcostenergy = 1926,
 		buildcostmetal = 103,
 		builder = false,
+		buildpic = "armdragf.png",
 		buildtime = 9301,
 		canfly = true,
 		canguard = true,
@@ -43,6 +44,7 @@ return {
 		objectname = "ARMDRAGF",
 		ovradjust = 1,
 		radardistance = 0,
+		releaseheld = true,
 		scale = 0.8,
 		selfdestructas = "SMALL_UNIT_VTOL",
 		shootme = 1,
@@ -62,6 +64,7 @@ return {
 		upright = true,
 		workertime = 0,
 		customparams = {
+			faction = "ARM",
 			requiretech = "Advanced T1 Unit Research Centre",
 		},
 		sfxtypes = {

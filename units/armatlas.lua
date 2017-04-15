@@ -6,7 +6,7 @@ return {
 		buildcostenergy = 1322,
 		buildcostmetal = 68,
 		builder = false,
-		buildpic = "ARMATLAS.png",
+		buildpic = "armatlas.png",
 		buildtime = 3850,
 		canfly = true,
 		canguard = true,
@@ -44,6 +44,7 @@ return {
 		nochasecategory = "SUB VTOL",
 		objectname = "ARMATLAS",
 		radaremitheight = 28.8,
+		releaseheld = true,
 		scale = 0.8,
 		seismicsignature = 0,
 		selfdestructas = "SMALL_UNIT_VTOL",
@@ -62,6 +63,7 @@ return {
 		workertime = 0,
 		customparams = {
 			buildpic = "ARMATLAS.png",
+			faction = "ARM",
 		},
 		sfxtypes = {
 			pieceexplosiongenerators = {

@@ -1,8 +1,8 @@
 return {
 	cormin = {
-		acceleration = 0.01799,
+		acceleration = 0.05,
 		bankscale = 1.5,
-		brakerate = 0.012,
+		brakerate = 0.08,
 		buildcostenergy = 1600,
 		buildcostmetal = 43,
 		builddistance = 160,
@@ -53,7 +53,6 @@ return {
 		sightdistance = 250,
 		standingmoveorder = 1,
 		steeringmode = 1,
-		tedclass = "CNSTR",
 		turninplaceanglelimit = 140,
 		turninplacespeedlimit = 2.64,
 		turnrate = 256,
@@ -68,12 +67,13 @@ return {
 			[6] = "cormine5",
 			[7] = "cormine6",
 			[8] = "cormine7",
-			[9] = "corfdrag",
-			[10] = "corfmine3",
+			[9] = "corfmine3",
+			[10] = "corfdrag",
 		},
 		customparams = {
 			buildpic = "cormin.png",
 			customstock = true,
+			faction = "CORE",
 		},
 		nanocolor = {
 			[1] = 0.308,
@@ -117,7 +117,9 @@ return {
 		weapondefs = {
 			minesweeperairmissile = {
 				areaofeffect = 512,
+				avoidfeature = false,
 				commandfire = true,
+				craterareaofeffect = 768,
 				craterboost = 0,
 				cratermult = 0,
 				edgeeffectiveness = 1,

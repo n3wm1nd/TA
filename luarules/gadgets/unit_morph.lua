@@ -16,7 +16,7 @@ function gadget:GetInfo()
   return {
     name      = "UnitMorph",
     desc      = "Adds unit morphing",
-    author    = "trepan (improved by jK, Licho, aegis, CarRepairer)",
+    author    = "trepan (improved by jK, Licho, aegis, CarRepairer), nixtux",
     date      = "Jan, 2008",
     license   = "GNU GPL, v2 or later",
     layer     = -1,
@@ -26,6 +26,8 @@ end
 -- Changes for TechA 
 -- Fix Rc not being factory to unlock morph
 -- Fix level output for our needs
+-- Fix failed morph when unit limit is reached, they now stall until unit limit is lowered
+-- Fix all morphs ending on same frame, now they stagger there starting frame
 
 
 -- Changes for "The Cursed"
@@ -473,7 +475,9 @@ local function AddMorphCmdDesc(unitID, unitDefID, teamID, morphDef, teamTech)
     morphCmdDesc.texture = "LuaRules/Images/Morph/".. morphDef.texture
     morphCmdDesc.name = ''
   else
+    local ud = UnitDefs[morphDef.into]
     morphCmdDesc.texture = "#" .. morphDef.into   --//only works with a patched layout.lua or the TweakedLayout widget!
+    morphCmdDesc.name = "" .. string.gsub(ud.humanName, "%s+", "\n")  --to do add padding
   end
 
 
@@ -1329,7 +1333,7 @@ local function SelectSwap(cmd, oldID, newID)
 end
 
 local function StartMorph(cmd, unitID, unitDefID, morphID)
-  if false then --(Script.LuaUI('MorphStart')) then
+  if (Script.LuaUI('MorphStart')) then
     if (useLuaUI) then
       local readTeam, spec, specFullView = nil,GetSpectatingState()
       if (specFullView)
@@ -1346,7 +1350,7 @@ local function StartMorph(cmd, unitID, unitDefID, morphID)
 end
 
 local function StopMorph(cmd, unitID)
-  if false then --(Script.LuaUI('MorphStop')) then
+  if (Script.LuaUI('MorphStop')) then
     if (useLuaUI) then
       local readTeam, spec, specFullView = nil,GetSpectatingState()
       if (specFullView)
@@ -1450,9 +1454,9 @@ function gadget:Update()
   if (frame>oldFrame) then
     oldFrame = frame
     if next(morphUnits) then
-      local useLuaUI_ = false --Script.LuaUI('MorphUpdate')
+      local useLuaUI_ = Script.LuaUI('MorphUpdate')
       if (useLuaUI_~=useLuaUI) then --//Update Callins on change
-        drawProgress = true --not Script.LuaUI('MorphDrawProgress')
+        drawProgress = not Script.LuaUI('MorphDrawProgress')
         useLuaUI     = useLuaUI_
       end
 
@@ -1503,7 +1507,7 @@ local function InitializeUnitShape(unitDefID,unitTeam)
 
   glPushMatrix()
   gl.ColorMask(false)
-  --glUnitShape(unitDefID, unitTeam, true, false , true)
+  glUnitShape(unitDefID, unitTeam, true, true , true)
   gl.ColorMask(true)
   glPopMatrix()
   if (alreadyInit[unitTeam]==nil) then alreadyInit[unitTeam] = {} end

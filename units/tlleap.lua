@@ -42,7 +42,6 @@ return {
 		sightdistance = 305.5,
 		standingfireorder = 2,
 		standingmoveorder = 1,
-		tedclass = "PLANT",
 		turnrate = 0,
 		unitname = "tlleap",
 		workertime = 600,
@@ -55,6 +54,7 @@ return {
 		},
 		customparams = {
 			buildpic = "tlleap.png",
+			faction = "TLL",
 		},
 		featuredefs = {
 			dead = {

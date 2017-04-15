@@ -6,6 +6,7 @@ return {
 		buildcostenergy = 6040,
 		buildcostmetal = 790,
 		builder = false,
+		buildpic = "tllloggerhead.png",
 		buildtime = 16273,
 		canattack = true,
 		canguard = true,
@@ -27,7 +28,7 @@ return {
 		mass = 790,
 		maxdamage = 3380,
 		maxslope = 32,
-		maxvelocity = 0.9,
+		maxvelocity = 0.75,
 		maxwaterdepth = 200,
 		mobilestandorders = 1,
 		movementclass = "AMPTBOT",
@@ -49,6 +50,9 @@ return {
 		unitname = "tllloggerhead",
 		unitnumber = 31903,
 		workertime = 0,
+		customparams = {
+			faction = "TLL",
+		},
 		featuredefs = {
 			dead = {
 				blocking = true,
@@ -119,9 +123,11 @@ return {
 			tllflak = {
 				accuracy = 1000,
 				areaofeffect = 140,
+				avoidfeature = false,
 				burnblow = true,
 				canattackground = false,
 				cegtag = "tllflak-fx",
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				edgeeffectiveness = 0.85,
@@ -137,6 +143,8 @@ return {
 				rgbcolor = "1.0 0.5 0.0",
 				size = 4,
 				soundhitdry = "flakhit",
+				soundhitwet = "splsmed",
+				soundhitwetvolume = 0.6,
 				soundstart = "flakfire",
 				turret = true,
 				weapontimer = 1,

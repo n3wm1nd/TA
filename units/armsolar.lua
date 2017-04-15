@@ -11,15 +11,15 @@ return {
 		buildinggrounddecalsizex = 8,
 		buildinggrounddecalsizey = 8,
 		buildinggrounddecaltype = "armsolar_aoplane.dds",
-		buildpic = "ARMSOLAR.png",
+		buildpic = "armsolar.png",
 		buildtime = 2045,
 		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON",
 		collisionspherescale = 0.5,
 		corpse = "DEAD",
 		damagemodifier = 0.5,
 		description = "Produces Energy",
+		energymake = 20,
 		energystorage = 50,
-		energyuse = -20,
 		explodeas = "SMALL_BUILDINGEX",
 		footprintx = 5,
 		footprintz = 5,
@@ -52,6 +52,7 @@ return {
 		yardmap = "yycyy yoooy coooc yoooy yycyy",
 		customparams = {
 			buildpic = "ARMSOLAR.png",
+			faction = "ARM",
 		},
 		featuredefs = {
 			dead = {

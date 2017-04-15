@@ -6,7 +6,7 @@ return {
 		buildcostmetal = 230,
 		builddistance = 136,
 		builder = true,
-		buildpic = "CORASSIS.png",
+		buildpic = "corassis.png",
 		buildtime = 6193,
 		canguard = true,
 		canmove = true,
@@ -47,7 +47,6 @@ return {
 		sightdistance = 500,
 		standingmoveorder = 1,
 		steeringmode = 1,
-		tedclass = "CNSTR",
 		trackoffset = 6,
 		trackstrength = 5,
 		trackstretch = 1,
@@ -84,6 +83,7 @@ return {
 		},
 		customparams = {
 			buildpic = "CORASSIS.png",
+			faction = "CORE",
 		},
 		featuredefs = {
 			dead = {

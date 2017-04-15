@@ -2,11 +2,11 @@ return {
 	corstorm1 = {
 		acceleration = 0.108,
 		brakerate = 0.564,
-		buildcostenergy = 1337,
-		buildcostmetal = 172,
+		buildcostenergy = 1535,
+		buildcostmetal = 190,
 		builder = false,
-		buildpic = "CORSTORM1.png",
-		buildtime = 2222,
+		buildpic = "corstorm1.png",
+		buildtime = 2000,
 		canattack = true,
 		canguard = true,
 		canmove = true,
@@ -46,7 +46,7 @@ return {
 		seismicsignature = 0,
 		selfdestructas = "BIG_UNIT",
 		side = "CORE",
-		sightdistance = 374.5,
+		sightdistance = 390,
 		standingfireorder = 2,
 		standingmoveorder = 1,
 		steeringmode = 2,
@@ -58,6 +58,7 @@ return {
 		workertime = 0,
 		customparams = {
 			buildpic = "CORSTORM1.png",
+			faction = "CORE",
 		},
 		featuredefs = {
 			corstorm_dead = {
@@ -72,7 +73,7 @@ return {
 				footprintz = 2,
 				height = 20,
 				hitdensity = 100,
-				metal = 128.8,
+				metal = 128,
 				object = "CORSTORM_DEAD",
 				reclaimable = true,
 				seqnamereclamate = "TREE1RECLAMATE",
@@ -89,7 +90,7 @@ return {
 				footprintz = 2,
 				height = 4,
 				hitdensity = 100,
-				metal = 103.04,
+				metal = 103,
 				object = "2X2C",
 				reclaimable = true,
 				seqnamereclamate = "TREE1RECLAMATE",
@@ -133,7 +134,9 @@ return {
 		weapondefs = {
 			core_kbot_rocket1 = {
 				areaofeffect = 48,
+				avoidfeature = false,
 				cegtag = "Core_Trail_rocket_upg",
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				explosiongenerator = "custom:Explosion_Medium_Light",
@@ -148,6 +151,8 @@ return {
 				reloadtime = 3,
 				smoketrail = true,
 				soundhitdry = "xplosml2",
+				soundhitwet = "splshbig",
+				soundhitwetvolume = 0.6,
 				soundstart = "rocklit1",
 				startvelocity = 200,
 				texture1 = "null",
@@ -161,7 +166,7 @@ return {
 				weapontype = "MissileLauncher",
 				weaponvelocity = 200,
 				damage = {
-					default = 137,
+					default = 150,
 					subs = 5,
 				},
 			},

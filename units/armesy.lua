@@ -7,6 +7,7 @@ return {
 		buildinggrounddecalsizex = 18,
 		buildinggrounddecalsizey = 18,
 		buildinggrounddecaltype = "armesy_aoplane.dds",
+		buildpic = "armesy.png",
 		buildtime = 65400,
 		canmove = true,
 		canpatrol = true,
@@ -51,12 +52,13 @@ return {
 		yardmap = "wCCCCCCCCCCCCCwcCCCCCCCCCCCCCccCCCCCCCCCCCCCccCCCCCCCCCCCCCccCCCCCCCCCCCCCccCCCCCCCCCCCCCccCCCCCCCCCCCCCccCCCCCCCCCCCCCccCCCCCCCCCCCCCccCCCCCCCCCCCCCccCCCCCCCCCCCCCccCCCCCCCCCCCCCccCCCCCCCCCCCCCccCCCCCCCCCCCCCccCCCCCCCCCCCCCc",
 		buildoptions = {
 			[1] = "armbc",
-			[2] = "uppercut",
+			[2] = "armmarlin",
 			[3] = "armhcar",
 			[4] = "aseadragon",
 			[5] = "armtrmph",
 		},
 		customparams = {
+			faction = "ARM",
 			providetech = "T3 Factory",
 		},
 		featuredefs = {

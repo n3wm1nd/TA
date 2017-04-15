@@ -8,6 +8,7 @@ return {
 		buildinggrounddecalsizex = 4,
 		buildinggrounddecalsizey = 4,
 		buildinggrounddecaltype = "tllweb_aoplane.dds",
+		buildpic = "tllweb.png",
 		buildtime = 5000,
 		canattack = true,
 		canguard = true,
@@ -31,7 +32,7 @@ return {
 		idletime = 1800,
 		losemitheight = 62,
 		mass = 260,
-		maxdamage = 1295,
+		maxdamage = 1000,
 		maxslope = 14,
 		maxwaterdepth = 0,
 		name = "Tesla",
@@ -49,6 +50,9 @@ return {
 		unitnumber = 80802,
 		usebuildinggrounddecal = true,
 		yardmap = "oooo",
+		customparams = {
+			faction = "TLL",
+		},
 		featuredefs = {
 			dead = {
 				blocking = true,
@@ -124,6 +128,8 @@ return {
 		weapondefs = {
 			spray_lightning = {
 				areaofeffect = 17,
+				beamttl = 8,
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				duration = 1.9,
@@ -131,8 +137,8 @@ return {
 				explosiongenerator = "custom:tllupgweb_exp",
 				firestarter = 85,
 				id = 225,
-				impulseboost = 0.123,
-				impulsefactor = 0.123,
+				impulseboost = 0,
+				impulsefactor = 0,
 				intensity = 12,
 				metalpershot = 0,
 				name = "Spray Lightning",
@@ -141,6 +147,8 @@ return {
 				reloadtime = 1,
 				rgbcolor = "0.6 0.6 0.9",
 				soundhitdry = "lashit2",
+				soundhitwet = "sizzle",
+				soundhitwetvolume = 0.5,
 				soundstart = "Lghthvy1",
 				texture1 = "strike",
 				thickness = 7,
@@ -150,8 +158,7 @@ return {
 				weapontype = "LightningCannon",
 				weaponvelocity = 860,
 				damage = {
-					commanders = 280,
-					default = 240,
+					default = 200,
 					subs = 5,
 				},
 			},

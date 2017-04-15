@@ -6,6 +6,7 @@ return {
 		brakerate = 0.07,
 		buildcostenergy = 58600,
 		buildcostmetal = 720,
+		buildpic = "airwolf3g.png",
 		buildtime = 18000,
 		canattack = true,
 		canfly = true,
@@ -55,6 +56,9 @@ return {
 		unitname = "airwolf3g",
 		unitnumber = 10148,
 		unitrestricted = 300,
+		customparams = {
+			faction = "CORE",
+		},
 		sfxtypes = {
 			pieceexplosiongenerators = {
 				[1] = "piecetrail0",
@@ -89,7 +93,10 @@ return {
 		weapondefs = {
 			corvtol_advmissile = {
 				areaofeffect = 35,
+				avoidfeature = false,
+				avoidfriendly = false,
 				collidefriendly = false,
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				explosiongenerator = "custom:FLASH2",
@@ -105,6 +112,8 @@ return {
 				reloadtime = 0.5,
 				smoketrail = true,
 				soundhitdry = "xplosml2",
+				soundhitwet = "splshbig",
+				soundhitwetvolume = 0.6,
 				soundstart = "Rocklit3",
 				startvelocity = 650,
 				texture2 = "coresmoketrail",
@@ -125,7 +134,10 @@ return {
 			},
 			corvtol_advmissile1 = {
 				areaofeffect = 8,
+				avoidfeature = false,
+				avoidfriendly = false,
 				collidefriendly = false,
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				explosiongenerator = "custom:FLASH2",
@@ -141,6 +153,8 @@ return {
 				reloadtime = 0.5,
 				smoketrail = true,
 				soundhitdry = "xplosml2",
+				soundhitwet = "splshbig",
+				soundhitwetvolume = 0.6,
 				soundstart = "Rocklit3",
 				startvelocity = 650,
 				texture2 = "coresmoketrail",

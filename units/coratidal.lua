@@ -7,7 +7,7 @@ return {
 		buildcostenergy = 2224,
 		buildcostmetal = 346,
 		builder = false,
-		buildpic = "CORATIDAL.png",
+		buildpic = "coratidal.png",
 		buildtime = 8376,
 		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON",
 		corpse = "DEAD",
@@ -36,7 +36,6 @@ return {
 		selfdestructas = "SMALL_BUILDING",
 		side = "CORE",
 		sightdistance = 130,
-		tedclass = "WATER",
 		tidalgenerator = 1,
 		turninplaceanglelimit = 140,
 		turninplacespeedlimit = 0,
@@ -48,6 +47,7 @@ return {
 		customparams = {
 			buildpic = "CORATIDAL.png",
 			energymultiplier = 5,
+			faction = "CORE",
 		},
 		featuredefs = {
 			dead = {

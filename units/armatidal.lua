@@ -7,7 +7,7 @@ return {
 		buildcostenergy = 2160,
 		buildcostmetal = 363,
 		builder = false,
-		buildpic = "ARMATIDAL.png",
+		buildpic = "armatidal.png",
 		buildtime = 8336,
 		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON",
 		corpse = "DEAD",
@@ -36,7 +36,6 @@ return {
 		selfdestructas = "SMALL_BUILDING",
 		side = "ARM",
 		sightdistance = 130,
-		tedclass = "WATER",
 		tidalgenerator = 1,
 		turninplaceanglelimit = 140,
 		turninplacespeedlimit = 0,
@@ -48,6 +47,7 @@ return {
 		customparams = {
 			buildpic = "ARMATIDAL.png",
 			energymultiplier = 5,
+			faction = "ARM",
 		},
 		featuredefs = {
 			dead = {

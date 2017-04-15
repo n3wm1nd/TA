@@ -7,7 +7,7 @@ return {
 		buildinggrounddecalsizex = 13,
 		buildinggrounddecalsizey = 13,
 		buildinggrounddecaltype = "coreap_aoplane.dds",
-		buildpic = "COREAP.png",
+		buildpic = "coreap.png",
 		buildtime = 96525,
 		canbeassisted = true,
 		canmove = true,
@@ -42,7 +42,6 @@ return {
 		sightdistance = 305.5,
 		standingfireorder = 2,
 		standingmoveorder = 1,
-		tedclass = "PLANT",
 		turnrate = 0,
 		unitname = "coreap",
 		usebuildinggrounddecal = true,
@@ -57,6 +56,7 @@ return {
 		},
 		customparams = {
 			buildpic = "COREAP.png",
+			faction = "CORE",
 		},
 		featuredefs = {
 			dead = {

@@ -59,6 +59,7 @@ return {
 		workertime = 0,
 		customparams = {
 			buildpic = "blackdawn.png",
+			faction = "CORE",
 		},
 		sfxtypes = {
 			pieceexplosiongenerators = {
@@ -94,7 +95,9 @@ return {
 		weapondefs = {
 			vtol_sabot = {
 				areaofeffect = 32,
+				avoidfeature = false,
 				collidefriendly = false,
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				explosiongenerator = "custom:FLASH2",
@@ -108,6 +111,8 @@ return {
 				reloadtime = 0.5,
 				smoketrail = true,
 				soundhitdry = "SabotHit",
+				soundhitwet = "splshbig",
+				soundhitwetvolume = 0.6,
 				soundstart = "SabotFire",
 				soundtrigger = true,
 				startvelocity = 700,
@@ -120,10 +125,10 @@ return {
 				weapontype = "MissileLauncher",
 				weaponvelocity = 1000,
 				damage = {
-					commanders = 145,
-					default = 245,
-					experimental_land = 490,
-					experimental_ships = 490,
+					commanders = 110,
+					default = 220,
+					experimental_land = 440,
+					experimental_ships = 440,
 					subs = 5,
 				},
 			},

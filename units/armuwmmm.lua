@@ -4,15 +4,15 @@ return {
 		activatewhenbuilt = true,
 		brakerate = 0,
 		buildangle = 8192,
-		buildcostenergy = 54999,
-		buildcostmetal = 1559,
+		buildcostenergy = 53250,
+		buildcostmetal = 1450,
 		builder = false,
 		buildinggrounddecaldecayspeed = 30,
 		buildinggrounddecalsizex = 6,
 		buildinggrounddecalsizey = 6,
 		buildinggrounddecaltype = "armuwmmm_aoplane.dds",
-		buildpic = "ARMUWMMM.png",
-		buildtime = 30000,
+		buildpic = "armuwmmm.png",
+		buildtime = 40000,
 		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON",
 		corpse = "DEAD",
 		damagemodifier = 0.3,
@@ -49,6 +49,7 @@ return {
 		yardmap = "oooooooooooooooooooo",
 		customparams = {
 			buildpic = "ARMUWMMM.png",
+			faction = "ARM",
 		},
 		featuredefs = {
 			dead = {

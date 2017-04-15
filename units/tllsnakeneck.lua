@@ -5,6 +5,7 @@ return {
 		buildcostenergy = 4485,
 		buildcostmetal = 675,
 		builder = false,
+		buildpic = "tllsnakeneck.png",
 		buildtime = 7280,
 		canattack = true,
 		canguard = true,
@@ -27,7 +28,7 @@ return {
 		mass = 675,
 		maxdamage = 2850,
 		maxslope = 32,
-		maxvelocity = 0.9,
+		maxvelocity = 0.75,
 		maxwaterdepth = 200,
 		mobilestandorders = 1,
 		movementclass = "AMPTBOT",
@@ -46,6 +47,9 @@ return {
 		turnrate = 490,
 		unitname = "tllsnakeneck",
 		unitnumber = 31903,
+		customparams = {
+			faction = "TLL",
+		},
 		featuredefs = {
 			dead = {
 				blocking = true,
@@ -116,7 +120,9 @@ return {
 			artillery = {
 				accuracy = 960,
 				areaofeffect = 129,
-				cegtag = "Trail_cannon",
+				avoidfeature = false,
+				cegtag = "Trail_cannon_med",
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				edgeeffectiveness = 0.5,
@@ -134,6 +140,8 @@ return {
 				size = 2.06,
 				sizedecay = -0.15,
 				soundhitdry = "xplomed4",
+				soundhitwet = "splsmed",
+				soundhitwetvolume = 0.6,
 				soundstart = "cannhvy2",
 				stages = 20,
 				turret = true,

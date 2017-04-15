@@ -6,6 +6,7 @@ return {
 		buildcostmetal = 155,
 		builddistance = 110,
 		builder = true,
+		buildpic = "coreleopard.png",
 		buildtime = 2800,
 		canassist = false,
 		canguard = true,
@@ -29,8 +30,8 @@ return {
 		losemitheight = 25,
 		maneuverleashlength = 640,
 		mass = 256.66666,
-		maxdamage = 1540,
-		maxvelocity = 1.3,
+		maxdamage = 1900,
+		maxvelocity = 1,
 		maxwaterdepth = 24,
 		metalstorage = 25,
 		mobilestandorders = 1,
@@ -55,6 +56,9 @@ return {
 		unitname = "coreleopard",
 		unitnumber = 4331,
 		workertime = 250,
+		customparams = {
+			faction = "CORE",
+		},
 		featuredefs = {
 			dead = {
 				blocking = true,

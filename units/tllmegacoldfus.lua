@@ -9,14 +9,15 @@ return {
 		buildinggrounddecalsizex = 10,
 		buildinggrounddecalsizey = 10,
 		buildinggrounddecaltype = "tllmegacoldfus_aoplane.dds",
+		buildpic = "tllmegacoldfus.png",
 		buildtime = 1750000,
 		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON",
 		corpse = "dead",
 		description = "Produces Metal and Energy/ Storage",
 		downloadable = 1,
-		energymake = 16000,
+		energymake = 24000,
 		energystorage = 29000,
-		energyuse = 11500,
+		energyuse = 18000,
 		explodeas = "SUPERBLAST_BUILDING",
 		footprintx = 7,
 		footprintz = 7,
@@ -44,6 +45,9 @@ return {
 		usebuildinggrounddecal = true,
 		workertime = 0,
 		yardmap = "ooooooo ooooooo ooooooo ooooooo ooooooo ooooooo ooooooo",
+		customparams = {
+			faction = "TLL",
+		},
 		featuredefs = {
 			dead = {
 				blocking = true,

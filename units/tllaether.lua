@@ -60,6 +60,7 @@ return {
 		workertime = 0,
 		customparams = {
 			buildpic = "tllaether.png",
+			faction = "TLL",
 		},
 		sfxtypes = {
 			pieceexplosiongenerators = {
@@ -95,10 +96,12 @@ return {
 		weapondefs = {
 			thermite_bomb = {
 				areaofeffect = 64,
+				avoidfeature = false,
 				burst = 6,
 				burstrate = 0.2,
 				collidefriendly = false,
 				commandfire = false,
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				edgeeffectiveness = 0.9,
@@ -117,6 +120,8 @@ return {
 				reloadtime = 20,
 				smoketrail = true,
 				soundhitdry = "xplomed2",
+				soundhitwet = "splssml",
+				soundhitwetvolume = 0.6,
 				soundstart = "bombrel",
 				sprayangle = 1,
 				startvelocity = 220,
@@ -127,10 +132,10 @@ return {
 				weapontype = "AircraftBomb",
 				weaponvelocity = 600,
 				damage = {
-					bomb_resistant = 100,
+					bomb_resistant = 200,
 					bombers = 5,
-					commanders = 100,
-					default = 300,
+					commanders = 200,
+					default = 600,
 					fighters = 5,
 					flak_resistant = 5,
 					unclassed_air = 5,

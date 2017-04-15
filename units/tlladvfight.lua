@@ -6,6 +6,7 @@ return {
 		brakerate = 0.09,
 		buildcostenergy = 7200,
 		buildcostmetal = 355,
+		buildpic = "tlladvfight.png",
 		buildtime = 10000,
 		canattack = true,
 		canfly = true,
@@ -52,6 +53,9 @@ return {
 		unitname = "tlladvfight",
 		unitnumber = 886,
 		unitrestricted = 300,
+		customparams = {
+			faction = "TLL",
+		},
 		sfxtypes = {
 			pieceexplosiongenerators = {
 				[1] = "piecetrail0",
@@ -89,7 +93,10 @@ return {
 		weapondefs = {
 			armvtol_advmissile = {
 				areaofeffect = 35,
+				avoidfeature = false,
+				avoidfriendly = false,
 				collidefriendly = false,
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				explosiongenerator = "custom:FLASH2",
@@ -105,6 +112,8 @@ return {
 				reloadtime = 0.8,
 				smoketrail = true,
 				soundhitdry = "xplosml2",
+				soundhitwet = "splshbig",
+				soundhitwetvolume = 0.6,
 				soundstart = "Rocklit3",
 				startvelocity = 650,
 				texture2 = "armsmoketrail",
@@ -125,7 +134,10 @@ return {
 			},
 			corvtol_advmissile = {
 				areaofeffect = 8,
+				avoidfeature = false,
+				avoidfriendly = false,
 				collidefriendly = false,
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				explosiongenerator = "custom:FLASH2",
@@ -141,6 +153,8 @@ return {
 				reloadtime = 0.5,
 				smoketrail = true,
 				soundhitdry = "xplosml2",
+				soundhitwet = "splshbig",
+				soundhitwetvolume = 0.6,
 				soundstart = "Rocklit3",
 				startvelocity = 650,
 				texture2 = "coresmoketrail",

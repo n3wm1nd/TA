@@ -1,14 +1,15 @@
 return {
 	tllplasma = {
 		buildangle = 8200,
-		buildcostenergy = 15870,
-		buildcostmetal = 2240,
+		buildcostenergy = 15060,
+		buildcostmetal = 2950,
 		builder = false,
 		buildinggrounddecaldecayspeed = 30,
 		buildinggrounddecalsizex = 5,
 		buildinggrounddecalsizey = 5,
 		buildinggrounddecaltype = "tllplasma_aoplane.dds",
-		buildtime = 18245,
+		buildpic = "tllplasma.png",
+		buildtime = 25000,
 		canattack = true,
 		canstop = 1,
 		category = "ALL NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL WEAPON",
@@ -27,7 +28,7 @@ return {
 		idletime = 1800,
 		losemitheight = 25,
 		mass = 2240,
-		maxdamage = 2550,
+		maxdamage = 3790,
 		maxslope = 10,
 		maxwaterdepth = 0,
 		name = "Happlic",
@@ -45,6 +46,9 @@ return {
 		usebuildinggrounddecal = true,
 		workertime = 0,
 		yardmap = "ooo ooo ooo",
+		customparams = {
+			faction = "TLL",
+		},
 		featuredefs = {
 			dead = {
 				blocking = true,
@@ -116,7 +120,9 @@ return {
 			armamb_gun = {
 				accuracy = 400,
 				areaofeffect = 150,
-				cegtag = "Trail_cannon",
+				avoidfeature = false,
+				cegtag = "Trail_cannon_med",
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				edgeeffectiveness = 0.25,
@@ -135,6 +141,8 @@ return {
 				size = 2.21,
 				sizedecay = -0.15,
 				soundhitdry = "xplomed2",
+				soundhitwet = "splslrg",
+				soundhitwetvolume = 0.6,
 				soundstart = "cannhvy5",
 				stages = 20,
 				turret = true,

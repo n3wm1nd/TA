@@ -1,12 +1,13 @@
 return {
 	corehpad = {
-		buildcostenergy = 15040,
-		buildcostmetal = 1003,
+		buildcostenergy = 5040,
+		buildcostmetal = 1005,
 		builder = true,
 		buildinggrounddecaldecayspeed = 30,
 		buildinggrounddecalsizex = 9,
 		buildinggrounddecalsizey = 9,
 		buildinggrounddecaltype = "corehpad_aoplane.dds",
+		buildpic = "corehpad.png",
 		buildtime = 14250,
 		canmove = true,
 		canpatrol = true,
@@ -58,6 +59,7 @@ return {
 			[5] = "corhind",
 		},
 		customparams = {
+			faction = "CORE",
 			providetech = "T1 Factory",
 		},
 		featuredefs = {

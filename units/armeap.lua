@@ -7,7 +7,7 @@ return {
 		buildinggrounddecalsizex = 13,
 		buildinggrounddecalsizey = 13,
 		buildinggrounddecaltype = "armeap_aoplane.dds",
-		buildpic = "ARMEAP.png",
+		buildpic = "armeap.png",
 		buildtime = 91400,
 		canbeassisted = true,
 		canmove = true,
@@ -42,7 +42,6 @@ return {
 		sightdistance = 300,
 		standingfireorder = 2,
 		standingmoveorder = 1,
-		tedclass = "PLANT",
 		turnrate = 0,
 		unitname = "armeap",
 		usebuildinggrounddecal = true,
@@ -57,6 +56,7 @@ return {
 		},
 		customparams = {
 			buildpic = "ARMEAP.png",
+			faction = "ARM",
 		},
 		featuredefs = {
 			dead = {

@@ -32,7 +32,7 @@ return {
 		idletime = 1800,
 		losemitheight = 62,
 		mass = 360,
-		maxdamage = 1650,
+		maxdamage = 1500,
 		maxslope = 14,
 		maxwaterdepth = 0,
 		name = "Charged Tesla",
@@ -52,6 +52,7 @@ return {
 		yardmap = "oooo",
 		customparams = {
 			buildpic = "tllweb.png",
+			faction = "TLL",
 		},
 		featuredefs = {
 			dead = {
@@ -128,6 +129,8 @@ return {
 		weapondefs = {
 			spray_lightning = {
 				areaofeffect = 17,
+				beamttl = 8,
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				duration = 1.9,
@@ -135,8 +138,8 @@ return {
 				explosiongenerator = "custom:tllupgweb_exp",
 				firestarter = 85,
 				id = 225,
-				impulseboost = 0.123,
-				impulsefactor = 0.123,
+				impulseboost = 0,
+				impulsefactor = 0,
 				intensity = 12,
 				metalpershot = 0,
 				name = "Spray Lightning",
@@ -145,6 +148,8 @@ return {
 				reloadtime = 0.8,
 				rgbcolor = "0.6 0.6 0.9",
 				soundhitdry = "lashit2",
+				soundhitwet = "sizzle",
+				soundhitwetvolume = 0.5,
 				soundstart = "Lghthvy1",
 				texture1 = "strike",
 				thickness = 10,
@@ -154,8 +159,7 @@ return {
 				weapontype = "LightningCannon",
 				weaponvelocity = 860,
 				damage = {
-					commanders = 280,
-					default = 240,
+					default = 200,
 					subs = 5,
 				},
 			},

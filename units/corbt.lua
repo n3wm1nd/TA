@@ -1,6 +1,6 @@
 return {
 	corbt = {
-		acceleration = 0.03,
+		acceleration = 0.04,
 		brakerate = 0.09,
 		buildcostenergy = 215360,
 		buildcostmetal = 18500,
@@ -31,7 +31,7 @@ return {
 		losemitheight = 30,
 		maneuverleashlength = 640,
 		mass = 18500,
-		maxdamage = 38650,
+		maxdamage = 65650,
 		maxslope = 12,
 		maxvelocity = 1.4,
 		maxwaterdepth = 20,

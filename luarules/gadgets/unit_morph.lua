@@ -16,7 +16,7 @@ function gadget:GetInfo()
   return {
     name      = "UnitMorph",
     desc      = "Adds unit morphing",
-    author    = "trepan (improved by jK, Licho, aegis, CarRepairer)",
+    author    = "trepan (improved by jK, Licho, aegis, CarRepairer), nixtux",
     date      = "Jan, 2008",
     license   = "GNU GPL, v2 or later",
     layer     = -1,
@@ -26,6 +26,8 @@ end
 -- Changes for TechA 
 -- Fix Rc not being factory to unlock morph
 -- Fix level output for our needs
+-- Fix failed morph when unit limit is reached, they now stall until unit limit is lowered
+-- Fix all morphs ending on same frame, now they stagger there starting frame
 
 
 -- Changes for "The Cursed"
@@ -364,9 +366,6 @@ local stopMorphOnDevolution = true --// should morphing stop during devolution
 --------------------------------------------------------------------------------
 
 local morphDefs  = {} --// make it global in Initialize()
-local extraUnitMorphDefs = {} -- stores mainly planetwars morphs
-local hostName = nil -- planetwars hostname
-local PWUnits = {} -- planetwars units
 local morphUnits = {} --// make it global in Initialize()
 local reqDefIDs  = {} --// all possible unitDefID's, which are used as a requirement for a morph
 local morphToStart = {} -- morphes to start next frame
@@ -401,6 +400,24 @@ local GetUnitRank = function() return 0 end
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 
+local function SplitNames(name)
+  local Desc = "Morph \n"
+  local string = tostring(name)
+  local longestword = 1
+  for word in string.gmatch(string,"%w+") do 
+    if string.len(word) > longestword then
+      longestword = string.len(word)
+    end
+  end
+  for word in string.gmatch(string,"%w+") do
+    padding = math.floor(longestword-string.len(word))
+    for p = 1, padding do
+      Desc =  Desc .. " "
+    end
+    Desc =  Desc .. word .. "\n"
+  end
+return Desc
+end
 
 local function UnitReqCheck(teamID, reqUnit)
   if (reqUnit==-1) then return true end
@@ -411,6 +428,7 @@ end
 local function GetMorphToolTip(unitID, unitDefID, teamID, morphDef, teamTech, unitXP, unitRank, teamOwnsReqUnit)
   local ud = UnitDefs[morphDef.into]
   local tt = ''
+   tt = tt .. 'UnitDefID ' .. morphDef.into .. '\n'
   if (morphDef.text ~= nil) then
     tt = tt .. WhiteStr  .. morphDef.text .. '\n'
   else
@@ -468,12 +486,31 @@ local function AddMorphCmdDesc(unitID, unitDefID, teamID, morphDef, teamTech)
   local unitRank = GetUnitRank(unitID)
   local teamOwnsReqUnit = UnitReqCheck(teamID,morphDef.require)
   morphCmdDesc.tooltip = GetMorphToolTip(unitID, unitDefID, teamID, morphDef, teamTech, unitXP, unitRank, teamOwnsReqUnit)
+  local humDesc = ""
 
   if morphDef.texture then
     morphCmdDesc.texture = "LuaRules/Images/Morph/".. morphDef.texture
     morphCmdDesc.name = ''
   else
+    local ud = UnitDefs[morphDef.into]
+    local string = SplitNames(ud.humanName)
+    local longestword = 1
+    for word in string.gmatch(string,"%w+") do 
+      if string.len(word) > longestword then
+        longestword = string.len(word)
+      end
+    end
+
+    for word in string.gmatch(string,"%w+") do
+      padding = math.floor(longestword-string.len(word))
+      for p = 1, padding do
+        humDesc =  humDesc .. " "
+      end
+      humDesc =  humDesc .. word .. "\n"
+    end
+
     morphCmdDesc.texture = "#" .. morphDef.into   --//only works with a patched layout.lua or the TweakedLayout widget!
+    morphCmdDesc.name = "" .. humDesc  --to do add padding
   end
 
 
@@ -492,15 +529,6 @@ local function AddMorphCmdDesc(unitID, unitDefID, teamID, morphDef, teamTech)
   morphCmdDesc.texture = nil
   morphCmdDesc.text = nil
 end
-
-
-local function AddExtraUnitMorph(unitID, unitDef, teamID, morphDef)  -- adds extra unit morph (planetwars morphing)
-    morphDef = BuildMorphDef(unitDef, morphDef)
-    extraUnitMorphDefs[unitID] = morphDef
-    AddMorphCmdDesc(unitID, unitDef.id, teamID, morphDef, 0)
-end
-
-
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -600,9 +628,10 @@ local function StopMorph(unitID, morphData)
 
   SendToUnsynced("unit_morph_stop", unitID)
 
-  local cmdDescID = SpFindUnitCmdDesc(unitID, morphData.def.stopCmd)
+  local cmdDescID = SpFindUnitCmdDesc(unitID, morphData.def.stopCmd,morphData.def.cmd)
   if (cmdDescID) then
-    SpEditUnitCmdDesc(unitID, cmdDescID, {id=morphData.def.cmd, name=morphCmdDesc.name})
+  local name = SplitNames(UnitDefs[morphData.def.into].humanName)
+    SpEditUnitCmdDesc(unitID, cmdDescID, {id=morphData.def.cmd, name=name})  --morphCmdDesc.name})
   end
 end
 
@@ -660,24 +689,8 @@ local function FinishMorph(unitID, morphData)
     SpSetUnitPosition(newUnit, px, py, pz)
   end
 
-  if (extraUnitMorphDefs[unitID] ~= nil) then
-    -- nothing here for now
-  end
-  if (hostName ~= nil) and PWUnits[unitID] then
-    -- send planetwars deployment message
-    PWUnit = PWUnits[unitID]
-    PWUnit.currentDef=udDst
-    local data = PWUnit.owner..","..defName..","..floor(px)..","..floor(pz)..",".."S" -- todo determine and apply smart orientation of the structure
-    Spring.SendCommands("w "..hostName.." pwmorph:"..data)
-    extraUnitMorphDefs[unitID] = nil
-    GG.PlanetWars.units[unitID] = nil
-    GG.PlanetWars.units[newUnit] = PWUnit
-    SendToUnsynced('PWCreate', unitTeam, newUnit)
-  elseif (not morphData.def.facing) then  -- set rotation only if unit is not planetwars and facing is not true
-    --Spring.Echo(morphData.def.facing)
-    SpSetUnitRotation(newUnit, 0, -h * pi / 32768, 0)
-  end
-
+  --Spring.Echo(morphData.def.facing)
+  SpSetUnitRotation(newUnit, 0, -h * pi / 32768, 0)
 
   --//copy experience
   local newXp = SpGetUnitExperience(unitID)*XpScale
@@ -786,13 +799,6 @@ function gadget:Initialize()
     GetUnitRank = GG.rankHandler.GetUnitRank
     RankToXp    = GG.rankHandler.RankToXp
   end
-
-  -- self linking for planetwars
-  GG['morphHandler'] = {}
-  GG['morphHandler'].AddExtraUnitMorph = AddExtraUnitMorph
-
-  hostName = GG.PlanetWars and GG.PlanetWars.options.hostname or nil
-  PWUnits = GG.PlanetWars and GG.PlanetWars.units or {}
 
   if (type(GG.UnitRanked)~="table") then GG.UnitRanked = {} end
   table.insert(GG.UnitRanked, UnitRanked)
@@ -1146,7 +1152,7 @@ function gadget:AllowCommand(unitID, unitDefID, teamID, cmdID, cmdParams, cmdOpt
       --Spring.Echo('Morph gadget: AllowCommand morph cannot be here!')
     elseif (cmdID > CMD_MORPH and cmdID <= CMD_MORPH+MAX_MORPH) then
       --Spring.Echo('Morph gadget: AllowCommand specific morph')
-      morphDef = (morphDefs[unitDefID] or {})[cmdID] or extraUnitMorphDefs[unitID]
+      morphDef = (morphDefs[unitDefID] or {})[cmdID]
       cmdp = -cmdID
     end
     if ((morphDef)and
@@ -1197,7 +1203,7 @@ function gadget:CommandFallback(unitID, unitDefID, teamID, cmdID, cmdParams, cmd
     end
   else
     --Spring.Echo('Morph gadget: CommandFallback specific morph')
-    morphDef = (morphDefs[unitDefID] or {})[cmdID] or extraUnitMorphDefs[unitID]
+    morphDef = (morphDefs[unitDefID] or {})[cmdID]
     cmdp = -cmdID
   end
   if (not morphDef) then
@@ -1283,7 +1289,6 @@ local drawProgress = true --//a widget can do this job too (see healthbars)
 
 local morphUnits = {}
 local morphDefs = {}
-local extraUnitMorphDefs = {}
 
 local MAX_MORPH = 0 --// will increase dynamically
 
@@ -1329,7 +1334,7 @@ local function SelectSwap(cmd, oldID, newID)
 end
 
 local function StartMorph(cmd, unitID, unitDefID, morphID)
-  if false then --(Script.LuaUI('MorphStart')) then
+  if (Script.LuaUI('MorphStart')) then
     if (useLuaUI) then
       local readTeam, spec, specFullView = nil,GetSpectatingState()
       if (specFullView)
@@ -1337,7 +1342,7 @@ local function StartMorph(cmd, unitID, unitDefID, morphID)
         else readTeam = GetLocalTeamID() end
       CallAsTeam({ ['read'] = readTeam }, function()
         if (unitID)and(IsUnitVisible(unitID)) then
-          Script.LuaUI.MorphStart(unitID, (morphDefs[unitDefID] or {})[morphID] or nil) -- or SYNCED.extraUnitMorphDefs[unitID])
+          Script.LuaUI.MorphStart(unitID, (morphDefs[unitDefID] or {})[morphID] or nil)
         end
       end)
     end
@@ -1346,7 +1351,7 @@ local function StartMorph(cmd, unitID, unitDefID, morphID)
 end
 
 local function StopMorph(cmd, unitID)
-  if false then --(Script.LuaUI('MorphStop')) then
+  if (Script.LuaUI('MorphStop')) then
     if (useLuaUI) then
       local readTeam, spec, specFullView = nil,GetSpectatingState()
       if (specFullView)
@@ -1375,7 +1380,7 @@ local function StartMph(cmd, unitID, unitDefID, prog, incr, mID, tID, cmdp)
     tdef =(morphDefs[unitDefID] or {})[GG.MorphInfo[unitDefID][cmdp]]
   end
   if cmdp ~= nil and cmdp < 0 then  
-    tdef = (morphDefs[unitDefID] or {})[-cmdp] or extraUnitMorphDefs[unitID]
+    tdef = (morphDefs[unitDefID] or {})[-cmdp]
   end
     
   morphUnits[unitID] = {
@@ -1450,9 +1455,9 @@ function gadget:Update()
   if (frame>oldFrame) then
     oldFrame = frame
     if next(morphUnits) then
-      local useLuaUI_ = false --Script.LuaUI('MorphUpdate')
+      local useLuaUI_ = Script.LuaUI('MorphUpdate')
       if (useLuaUI_~=useLuaUI) then --//Update Callins on change
-        drawProgress = true --not Script.LuaUI('MorphDrawProgress')
+        drawProgress = not Script.LuaUI('MorphDrawProgress')
         useLuaUI     = useLuaUI_
       end
 
@@ -1503,7 +1508,7 @@ local function InitializeUnitShape(unitDefID,unitTeam)
 
   glPushMatrix()
   gl.ColorMask(false)
-  --glUnitShape(unitDefID, unitTeam, true, false , true)
+  glUnitShape(unitDefID, unitTeam, true, true , true)
   gl.ColorMask(true)
   glPopMatrix()
   if (alreadyInit[unitTeam]==nil) then alreadyInit[unitTeam] = {} end

@@ -19,6 +19,10 @@ if (vsx == 1) then --hax for windowed mode
 	vsx,vsy = Spring.GetWindowGeometry()
 end
 
+
+local minimapbrightness = nil
+local update = 0.5
+
 local sIsGUIHidden = Spring.IsGUIHidden
 
 local F = {} --function table
@@ -46,11 +50,11 @@ local glPushMatrix = gl.PushMatrix
 local glPopMatrix = gl.PopMatrix
 local glScale = gl.Scale
 
+
 local GL_LINE_LOOP = GL.LINE_LOOP
 local GL_COLOR_BUFFER_BIT = GL.COLOR_BUFFER_BIT
 local GL_PROJECTION = GL.PROJECTION
 local GL_MODELVIEW = GL.MODELVIEW
-
 
 local function Color(c)
 	glColor(c[1],c[2],c[3],c[4])
@@ -80,7 +84,10 @@ local function Border(px,py,sx,sy,width,c)
 	elseif (width == 0) then
 		return
 	end
-	
+	if (c) and c[4] == 0 then
+		--Spring.Echo("DRAW CALL CULLED")
+		return 
+	end
 	glPushMatrix()
 	if (c) then
 		glColor(c[1],c[2],c[3],c[4])
@@ -97,7 +104,11 @@ end
 
 local function Rect(px,py,sx,sy,c)
 	if (c) then
-		glColor(c[1],c[2],c[3],c[4])
+		if c[4] == 0.54321 then
+			glColor(WG["background_opacity_custom"] or {0,0,0,5})
+		else
+			glColor(c[1],c[2],c[3],c[4])
+		end
 	else
 		glColor(1,1,1,1)
 	end
@@ -138,7 +149,7 @@ function widget:ViewResize(viewSizeX, viewSizeY)
 end
 
 function widget:Initialize()
-        widgetHandler:RegisterGlobal('DrawManager_redui_drawing', DrawStatus)
+    widgetHandler:RegisterGlobal('DrawManager_redui_drawing', DrawStatus)
 	vsx,vsy = widgetHandler:GetViewSizes()
 	CreateStartList()
 	
@@ -170,6 +181,11 @@ function widget:Initialize()
 end
 
 function widget:DrawScreen()
+	if triggered == nil then
+		minimapbrightness=WG["background_color"]
+	triggered = true
+	end
+
 	glResetState()
 	glResetMatrices()
 	
@@ -186,12 +202,25 @@ function widget:DrawScreen()
 	CleanedTodo = true
 end
 
-function widget:Update()
+local timeCounter = math.huge -- force the first update
+
+function widget:Update(deltaTime)
 	if (sIsGUIHidden()) then
 		for i=1,#Todo do
 			Todo[i] = nil
 		end
 	end
+	if (timeCounter < update) then
+    	timeCounter = timeCounter + deltaTime
+    	return
+  	end
+  	timeCounter = 0
+	
+  	if WG["background_opacity_custom"] then
+            minimapbrightness = WG["background_opacity_custom"][4]
+        else
+            minimapbrightness = 0.5
+        end
 end
 
 function widget:Shutdown()

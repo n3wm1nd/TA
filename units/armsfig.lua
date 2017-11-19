@@ -6,7 +6,7 @@ return {
 		buildcostenergy = 7500,
 		buildcostmetal = 160,
 		builder = false,
-		buildpic = "ARMSFIG.png",
+		buildpic = "armsfig.dds",
 		buildtime = 5000,
 		canattack = true,
 		canfly = true,
@@ -20,9 +20,6 @@ return {
 		cruisealt = 80,
 		defaultmissiontype = "VTOL_standby",
 		description = "Seaplane Fighter",
-		energymake = 1,
-		energystorage = 0,
-		energyuse = 1,
 		explodeas = "BIG_UNITEX",
 		firestandorders = 1,
 		floater = true,
@@ -37,7 +34,6 @@ return {
 		maxslope = 10,
 		maxvelocity = 11,
 		maxwaterdepth = 255,
-		metalstorage = 0,
 		mobilestandorders = 1,
 		moverate1 = 8,
 		name = "Tornado",
@@ -46,7 +42,6 @@ return {
 		objectname = "ARMSFIG",
 		seismicsignature = 0,
 		selfdestructas = "BIG_UNIT_VTOL",
-		side = "ARM",
 		sightdistance = 550,
 		standingfireorder = 2,
 		standingmoveorder = 1,
@@ -55,9 +50,9 @@ return {
 		turninplacespeedlimit = 6.93,
 		turnrate = 1625,
 		unitname = "armsfig",
-		workertime = 0,
 		customparams = {
 			buildpic = "ARMSFIG.png",
+			faction = "ARM",
 		},
 		sfxtypes = {
 			pieceexplosiongenerators = {
@@ -96,6 +91,8 @@ return {
 		weapondefs = {
 			armsfig_weapon = {
 				areaofeffect = 35,
+				avoidfeature = false,
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				explosiongenerator = "custom:FLASH2",
@@ -110,6 +107,8 @@ return {
 				reloadtime = 0.8,
 				smoketrail = true,
 				soundhitdry = "xplosml2",
+				soundhitwet = "splshbig",
+				soundhitwetvolume = 0.6,
 				soundstart = "Rocklit3",
 				startvelocity = 420,
 				texture2 = "armsmoketrail",

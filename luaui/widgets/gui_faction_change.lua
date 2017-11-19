@@ -71,6 +71,9 @@ end
 -- Callins
 --------------------------------------------------------------------------------
 function widget:Initialize()
+    if not WG["background_opacity_custom"] then
+        WG["background_opacity_custom"] = {0,0,0,0.5}
+    end
 	if spGetSpectatingState() or
 	   Spring.GetGameFrame() > 0 or
 	   amNewbie then
@@ -117,7 +120,10 @@ function widget:DrawScreen()
 	glPushMatrix()
 	glTranslate(px, py, 0)
 	--call list
+	glColor(WG["background_opacity_custom"])
+
 	if factionChangeList then
+
 		glCallList(factionChangeList)
 	else 
 		factionChangeList = glCreateList(FactionChangeList)
@@ -129,7 +135,6 @@ end
 
 function FactionChangeList()
 	-- Panel
-	glColor(0, 0, 0, 0.5)
 	glRect(0, 0, 192, 80)
 		-- Highlight
 	glColor(1, 1, 0, 0.5)

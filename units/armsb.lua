@@ -9,7 +9,7 @@ return {
 		buildcostenergy = 8047,
 		buildcostmetal = 180,
 		builder = false,
-		buildpic = "ARMSB.png",
+		buildpic = "armsb.dds",
 		buildtime = 9684,
 		canattack = true,
 		canfly = true,
@@ -23,9 +23,6 @@ return {
 		cruisealt = 250,
 		defaultmissiontype = "VTOL_standby",
 		description = "Seaplane Bomber",
-		energymake = 1.1,
-		energystorage = 0,
-		energyuse = 1.1,
 		explodeas = "BIG_UNITEX",
 		firestandorders = 1,
 		floater = true,
@@ -40,17 +37,14 @@ return {
 		maxslope = 10,
 		maxvelocity = 8.91,
 		maxwaterdepth = 255,
-		metalstorage = 0,
 		mobilestandorders = 1,
 		moverate1 = 8,
 		name = "Tsunami",
 		noautofire = true,
 		nochasecategory = "SUB VTOL",
 		objectname = "ARMSB",
-		scale = 1,
 		seismicsignature = 0,
 		selfdestructas = "BIG_UNIT_VTOL",
-		side = "ARM",
 		sightdistance = 455,
 		standingfireorder = 2,
 		standingmoveorder = 1,
@@ -59,9 +53,9 @@ return {
 		turninplacespeedlimit = 5.8806,
 		turnrate = 392,
 		unitname = "armsb",
-		workertime = 0,
 		customparams = {
 			buildpic = "ARMSB.png",
+			faction = "ARM",
 		},
 		sfxtypes = {
 			pieceexplosiongenerators = {
@@ -100,9 +94,11 @@ return {
 		weapondefs = {
 			seaadvbomb = {
 				areaofeffect = 100,
+				avoidfeature = false,
 				burst = 5,
 				collidefriendly = false,
 				commandfire = false,
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				edgeeffectiveness = 0.7,
@@ -117,6 +113,8 @@ return {
 				range = 1280,
 				reloadtime = 0.14,
 				soundhitdry = "xplomed2",
+				soundhitwet = "splsmed",
+				soundhitwetvolume = 0.6,
 				soundstart = "bombrel",
 				weapontype = "AircraftBomb",
 				damage = {
@@ -133,7 +131,7 @@ return {
 		weapons = {
 			[1] = {
 				def = "SEAADVBOMB",
-				onlytargetcategory = "NOTVTOL",
+				onlytargetcategory = "SURFACE",
 			},
 		},
 	},

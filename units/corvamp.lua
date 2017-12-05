@@ -6,7 +6,7 @@ return {
 		brakerate = 0.087,
 		buildcostenergy = 9600,
 		buildcostmetal = 150,
-		buildpic = "CORVAMP.png",
+		buildpic = "corvamp.dds",
 		buildtime = 9000,
 		canattack = true,
 		canfly = true,
@@ -19,8 +19,6 @@ return {
 		cruisealt = 160,
 		defaultmissiontype = "VTOL_standby",
 		description = "Stealth Fighter",
-		energymake = 2,
-		energyuse = 2,
 		explodeas = "BIG_UNITEX",
 		firestandorders = 1,
 		footprintx = 2,
@@ -41,7 +39,6 @@ return {
 		objectname = "CORVAMP",
 		seismicsignature = 0,
 		selfdestructas = "BIG_UNIT_VTOL",
-		side = "CORE",
 		sightdistance = 550,
 		standingfireorder = 2,
 		standingmoveorder = 1,
@@ -54,6 +51,7 @@ return {
 		unitrestricted = 150,
 		customparams = {
 			buildpic = "CORVAMP.png",
+			faction = "CORE",
 		},
 		sfxtypes = {
 			pieceexplosiongenerators = {
@@ -89,7 +87,10 @@ return {
 		weapondefs = {
 			corvtol_advmissile = {
 				areaofeffect = 35,
+				avoidfeature = false,
+				avoidfriendly = false,
 				collidefriendly = false,
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				explosiongenerator = "custom:FLASH2",
@@ -105,6 +106,8 @@ return {
 				reloadtime = 0.5,
 				smoketrail = true,
 				soundhitdry = "xplosml2",
+				soundhitwet = "splshbig",
+				soundhitwetvolume = 0.6,
 				soundstart = "Rocklit3",
 				startvelocity = 650,
 				texture2 = "coresmoketrail",

@@ -171,7 +171,7 @@ end
 function gadget:Initialize()
 	for _,mapname in ipairs(mapBlackList) do
 		if (Game.mapName:find(mapname)) then
-			Spring.Echo(red .. "ILLEGAL MAP DETECTED, ENDING GAME!!!!!!!!!!!!!!!!")
+			Spring.Echo(red .. "ILLEGAL MAP/MOD DETECTED, ENDING GAME!!!!!!!!!!!!!!!!")
 	 		Spring.GameOver({nil})
 		end
 	end
@@ -250,7 +250,7 @@ end
 -- Startpoints
 ----------------------------------------------------------------
 
-function gadget:AllowStartPosition(x,y,z,playerID,readyState)
+function gadget:AllowStartPosition(playerID, teamID, readyState, x, y, z, rx, ry, rz)
     -- readyState:
   
     -- 0: player did not place startpoint, is unready 

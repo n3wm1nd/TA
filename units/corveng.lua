@@ -6,7 +6,7 @@ return {
 		brakerate = 0.065,
 		buildcostenergy = 2025,
 		buildcostmetal = 90,
-		buildpic = "CORVENG.png",
+		buildpic = "corveng.dds",
 		buildtime = 3500,
 		canattack = true,
 		canfly = true,
@@ -19,9 +19,6 @@ return {
 		cruisealt = 110,
 		defaultmissiontype = "VTOL_standby",
 		description = "Fighter",
-		energymake = 1,
-		energystorage = 0,
-		energyuse = 1,
 		explodeas = "SMALL_UNITEX",
 		firestandorders = 1,
 		footprintx = 2,
@@ -35,7 +32,6 @@ return {
 		maxslope = 10,
 		maxvelocity = 10,
 		maxwaterdepth = 255,
-		metalstorage = 0,
 		mobilestandorders = 1,
 		moverate1 = 8,
 		name = "Avenger",
@@ -44,7 +40,6 @@ return {
 		objectname = "CORVENG",
 		seismicsignature = 0,
 		selfdestructas = "SMALL_UNIT_VTOL",
-		side = "CORE",
 		sightdistance = 500,
 		standingfireorder = 2,
 		standingmoveorder = 1,
@@ -56,6 +51,7 @@ return {
 		unitrestricted = 200,
 		customparams = {
 			buildpic = "CORVENG.png",
+			faction = "CORE",
 		},
 		sfxtypes = {
 			pieceexplosiongenerators = {
@@ -91,7 +87,10 @@ return {
 		weapondefs = {
 			corvtol_missile_a2a = {
 				areaofeffect = 35,
+				avoidfeature = false,
+				avoidfriendly = false,
 				collidefriendly = false,
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				explosiongenerator = "custom:FLASH2",
@@ -106,6 +105,8 @@ return {
 				reloadtime = 0.6,
 				smoketrail = true,
 				soundhitdry = "xplosml2",
+				soundhitwet = "splshbig",
+				soundhitwetvolume = 0.6,
 				soundstart = "Rocklit3",
 				startvelocity = 600,
 				texture2 = "coresmoketrail",

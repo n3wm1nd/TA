@@ -47,8 +47,8 @@ flak_resistant = {
            "chopper",
            "smasher",
            "tllcopter",
-	   "corhind",
-	   "armkamo",
+	         "corhind",
+	         "armkamo",
            "skykrogoth",
 },
 unclassed_air = {
@@ -112,7 +112,15 @@ unclassed_air = {
            "corrag",
            "armmin",
            "cormin",
+           "tllbuilderlvl1",
+           "tllbuilderlvl2",
+           "tllbuilderlvl3",
            "tllhtca",
+		"tllmoth",
+		"blastwing",
+		"armarpe",
+		
+		
 },
 --### SEA ###
 ships = {
@@ -178,7 +186,7 @@ subs = {
            "tawf009",
            "armacsub",
            "armrecl",
-	 	   "tllsr",
+	 	       "tllsr",
 },
 experimental_ships = {
            "armtrmph",
@@ -189,6 +197,9 @@ experimental_ships = {
            "cortyrnt",
            "corhcar",
            "corblackhy",
+	   "tllasgard",
+	   "tllhcar",
+           "tlldest",
 },
 --### LAND ###
 experimental_land = {
@@ -206,7 +217,7 @@ experimental_land = {
            "tllblind",
            "tllgrim",
            "tllmlrpc",
-           -- cor t3 vehs
+           -- core t3 vehs
            "clb",
            "armtigre2",
            "armmcv",
@@ -223,6 +234,7 @@ experimental_land = {
            -- arm t3 bots
            "armorco",
            "arm_furie",
+	   "arm_furie1",
            "armbanth",
            "armjag",
            "armjugg",
@@ -231,7 +243,7 @@ experimental_land = {
            "armshock",
            "armcrabe",
            "armpod",
-           -- cor t3 bots
+           -- core t3 bots
            "corkrog",
            "armgor",
            "gorg",
@@ -256,18 +268,22 @@ experimental_land = {
            "tllvaliant",
            -- _experimental_
            "armpraet",
-	   "monkeylord",
-	   "irritator",
+	         "monkeylord",
+	         "irritator",
+           -- t+++
+           "tllcolossus",
+           "fatshrew",
+           "exoarm",
 },
 flamethrowers = {
            "corpyro",
-	   "corpyrox",
-	   "corpyrox1",
+	         "corpyrox",
+	         "corpyrox1",
            "tllburner",
            "tlllft",
            "cormaw",
            "cormatch",
-	   "coreavalanche",
+	         "coreavalanche",
 },
 sniper_resistant = {
            "armzeus",
@@ -307,8 +323,7 @@ crawlingbombs = {
            "corroach",
            "corsktl",
            "tllcrawlb",
-	   "coretnt",
-		
+	         "coretnt",
 },
 nanos = {
            "armnanotc",
@@ -322,7 +337,7 @@ nanos = {
            "tllnanotc",
            "tllnanotc1",
            "tllnanotc2",
-	   "armfnanotc",
+	         "armfnanotc",
            "armfnanotc1",
            "armfnanotc2",
            "armfnanotc3",
@@ -333,6 +348,7 @@ nanos = {
            "tllfnanotc",
            "tllfnanotc1",
            "tllfnanotc2",
+           "tllfnanotc3",
 },
 mines = {
            "armmine1",
@@ -347,34 +363,37 @@ mines = {
            "cormine7",
            "armfmine3",
            "corfmine3",
-	   "tllmine1",
+	         "tllmine1",
            "tllmine2",
            "tllmine3",
            "tllmine4",
            "tllmine5",
-	   "tllmine6",
+	         "tllmine6",
 },
 minelayers = {
            "armmlv",
            "cormlv",
-	   "tllmlv",
+	         "tllmlv",
 },
 commanders = {
            "armcom",
            "armcom1",
            "armcom4",
+           "armcom_fusion",
            "armcom5",
            "armcom6",
            "armcom7",
            "corcom",
            "corcom1",
            "corcom3",
+           "corcom_fusion",
            "corcom5",
            "corcom6",
            "corcom7",
            "tllcom",
            "tllcom1",
            "tllcom3",
+           "tllcom_fusion",
            "tllcom5",
            "tllcom6",
            "tllcom7",

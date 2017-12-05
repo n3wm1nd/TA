@@ -6,7 +6,7 @@ return {
 		buildcostenergy = 6000,
 		buildcostmetal = 150,
 		builder = false,
-		buildpic = "CORSFIG.png",
+		buildpic = "corsfig.dds",
 		buildtime = 5000,
 		canattack = true,
 		canfly = true,
@@ -20,9 +20,6 @@ return {
 		cruisealt = 70,
 		defaultmissiontype = "VTOL_standby",
 		description = "Seaplane Fighter",
-		energymake = 1,
-		energystorage = 0,
-		energyuse = 1,
 		explodeas = "BIG_UNITEX",
 		firestandorders = 1,
 		floater = true,
@@ -37,7 +34,6 @@ return {
 		maxslope = 10,
 		maxvelocity = 11,
 		maxwaterdepth = 255,
-		metalstorage = 0,
 		mobilestandorders = 1,
 		moverate1 = 8,
 		name = "Voodoo",
@@ -46,7 +42,6 @@ return {
 		objectname = "CORSFIG",
 		seismicsignature = 0,
 		selfdestructas = "BIG_UNIT_VTOL",
-		side = "CORE",
 		sightdistance = 550,
 		standingfireorder = 2,
 		standingmoveorder = 1,
@@ -55,9 +50,9 @@ return {
 		turninplacespeedlimit = 7.128,
 		turnrate = 1547,
 		unitname = "corsfig",
-		workertime = 0,
 		customparams = {
 			buildpic = "CORSFIG.png",
+			faction = "CORE",
 		},
 		sfxtypes = {
 			pieceexplosiongenerators = {
@@ -96,6 +91,8 @@ return {
 		weapondefs = {
 			corsfig_weapon = {
 				areaofeffect = 35,
+				avoidfeature = false,
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				explosiongenerator = "custom:FLASH2",
@@ -110,6 +107,8 @@ return {
 				reloadtime = 0.8,
 				smoketrail = true,
 				soundhitdry = "xplosml2",
+				soundhitwet = "splshbig",
+				soundhitwetvolume = 0.6,
 				soundstart = "Rocklit3",
 				startvelocity = 420,
 				tolerance = 8000,

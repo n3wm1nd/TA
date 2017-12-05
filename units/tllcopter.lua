@@ -6,6 +6,7 @@ return {
 		buildcostenergy = 9058,
 		buildcostmetal = 683,
 		builder = false,
+		buildpic = "tllcopter.dds",
 		buildtime = 25000,
 		canattack = true,
 		canfly = true,
@@ -36,12 +37,8 @@ return {
 		noautofire = false,
 		nochasecategory = "SUB VTOL",
 		objectname = "tllcopter",
-		ovradjust = 1,
 		radardistance = 0,
-		scale = 1,
 		selfdestructas = "BIG_UNIT_VTOL",
-		shootme = 1,
-		side = "TLL",
 		sightdistance = 350,
 		standingfireorder = 2,
 		standingmoveorder = 1,
@@ -50,8 +47,9 @@ return {
 		turninplacespeedlimit = 4.62,
 		turnrate = 720,
 		unitname = "tllcopter",
-		unitnumber = 890,
-		workertime = 0,
+		customparams = {
+			faction = "TLL",
+		},
 		sfxtypes = {
 			pieceexplosiongenerators = {
 				[1] = "piecetrail0",
@@ -89,8 +87,12 @@ return {
 		weapondefs = {
 			vtol_emg = {
 				areaofeffect = 8,
+				avoidfeature = false,
+				avoidfriendly = false,
 				burst = 3,
 				burstrate = 0.1,
+				collidefriendly = false,
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				explosiongenerator = "custom:BRAWLIMPACTS",
@@ -104,6 +106,8 @@ return {
 				reloadtime = 0.8,
 				rgbcolor = "1 0.9 0.49",
 				size = 0.82,
+				soundhitwet = "splshbig",
+				soundhitwetvolume = 0.6,
 				soundstart = "brawlemg",
 				sprayangle = 1024,
 				tolerance = 6000,
@@ -121,11 +125,11 @@ return {
 		weapons = {
 			[1] = {
 				def = "VTOL_EMG",
-				onlytargetcategory = "NOTVTOL",
+				onlytargetcategory = "SURFACE",
 			},
 			[2] = {
 				def = "VTOL_EMG",
-				onlytargetcategory = "NOTVTOL",
+				onlytargetcategory = "SURFACE",
 			},
 		},
 	},

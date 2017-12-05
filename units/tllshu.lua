@@ -6,6 +6,7 @@ return {
 		brakerate = 0.09,
 		buildcostenergy = 42000,
 		buildcostmetal = 850,
+		buildpic = "tllshu.dds",
 		buildtime = 18000,
 		canattack = true,
 		canfly = true,
@@ -18,8 +19,6 @@ return {
 		cruisealt = 200,
 		defaultmissiontype = "VTOL_standby",
 		description = "Stealth Fighter",
-		energymake = 20,
-		energyuse = 20,
 		explodeas = "BIG_UNITEX",
 		firestandorders = 1,
 		footprintx = 3,
@@ -39,8 +38,6 @@ return {
 		objectname = "tllshu",
 		radardistance = 0,
 		selfdestructas = "BIG_UNIT_VTOL",
-		shootme = 1,
-		side = "TLL",
 		sightdistance = 750,
 		standingfireorder = 2,
 		standingmoveorder = 1,
@@ -50,8 +47,10 @@ return {
 		turninplacespeedlimit = 9.9,
 		turnrate = 1280,
 		unitname = "tllshu",
-		unitnumber = 551,
 		unitrestricted = 300,
+		customparams = {
+			faction = "TLL",
+		},
 		sfxtypes = {
 			pieceexplosiongenerators = {
 				[1] = "piecetrail0",
@@ -86,7 +85,10 @@ return {
 		weapondefs = {
 			armvtol_advmissile = {
 				areaofeffect = 35,
+				avoidfeature = false,
+				avoidfriendly = false,
 				collidefriendly = false,
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				explosiongenerator = "custom:FLASH2",
@@ -102,6 +104,8 @@ return {
 				reloadtime = 0.6,
 				smoketrail = true,
 				soundhitdry = "xplosml2",
+				soundhitwet = "splshbig",
+				soundhitwetvolume = 0.6,
 				soundstart = "Rocklit3",
 				startvelocity = 650,
 				texture2 = "armsmoketrail",

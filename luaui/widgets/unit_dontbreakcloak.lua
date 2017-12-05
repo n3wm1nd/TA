@@ -20,35 +20,32 @@ local isCommander = {
   [UnitDefNames["corcom"].id] = true,
   [UnitDefNames["corcom1"].id] = true,
   [UnitDefNames["corcom3"].id] = true,
+  [UnitDefNames["corcom_fusion"].id] = true,
   [UnitDefNames["corcom5"].id] = true,
   [UnitDefNames["corcom6"].id] = true,
   [UnitDefNames["corcom7"].id] = true,
   [UnitDefNames["corsktl"].id] = true,
-  [UnitDefNames["corjurgen"].id] = true,
-  [UnitDefNames["corprot"].id] = true,
-
 
 --Arm 
   [UnitDefNames["armcom"].id] = true,
   [UnitDefNames["armcom1"].id] = true,
   [UnitDefNames["armcom4"].id] = true,
+  [UnitDefNames["armcom_fusion"].id] = true,
   [UnitDefNames["armcom5"].id] = true,
   [UnitDefNames["armcom6"].id] = true,
   [UnitDefNames["armcom7"].id] = true,
   [UnitDefNames["taipan"].id] = true,
-  --[UnitDefNames["armpaspd"].id] = true,
- 
 
 --The lost legacy
   [UnitDefNames["tllcom"].id] = true,
   [UnitDefNames["tllcom1"].id] = true,
   [UnitDefNames["tllcom3"].id] = true,
+  [UnitDefNames["tllcom_fusion"].id] = true,
   [UnitDefNames["tllcom5"].id] = true,
   [UnitDefNames["tllcom6"].id] = true,
   [UnitDefNames["tllcom7"].id] = true,
   [UnitDefNames["tlltraq"].id] = true,
   [UnitDefNames["tllwhale"].id] = true,
-
 }
 
 ----------------------------------------------------------------
@@ -72,7 +69,8 @@ function widget:Initialize()
 	end
 end
 
-function widget:UnitCommand(uID, uDefID, uTeam, cmdID, cmdParams, cmdOpts) 
+function widget:UnitCommand(uID, uDefID, uTeam, cmdID, cmdParams, cmdOpts)
+  if cmdID < 0 then return end
 	if (cmdID == CMD_CLOAK) and isCommander[uDefID] and (uTeam == spGetMyTeamID()) then
         if spGetSpectatingState() then
             widgetHandler:RemoveWidget(self)

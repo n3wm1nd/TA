@@ -7,7 +7,7 @@ function widget:GetInfo()
 		date      = 'May 2011',
 		license   = 'GNU GPL v2.1',
 		layer     = 0,
-		enabled   = true,
+		enabled   = false,
 	}
 end
 --------------------------------------------------------------------------------
@@ -26,7 +26,7 @@ local EfficiencyThresholds = {
 	{title="D", 		color={r = 1, 	g = 0.5, 	b = 0, 	a = 0.5}, e=0.013}, 
 	{title="E", 		color={r = 1, 	g = 0, 		b = 0, 	a = 0.5}, e=0.012}, 
 	{title="E-", 		color={r = 0.8, 	g = 0, 		b = 0, 	a = 0.5}, e=0.001}, 
-	{title="/", 			color={r = 0.6, 	g = 0.6, 	b = 0.6,	a = 0.5}, e=0}
+	{title="/", 		color={r = 0.6, 	g = 0.6, 	b = 0.6,	a = 0.5}, e=0}
 }
 
 
@@ -76,6 +76,9 @@ local spGetSpectatingState = Spring.GetSpectatingState
 local spGetTeamResources = Spring.GetTeamResources
 
 local convertCapacities = VFS.Include('LuaRules/Configs/maker_defs.lua')
+
+local cbackground, cborder, cbuttonbackground = include("Configs/ui_config.lua")
+local triggered = nil
 
 --table.sort(EfficiencyThresholds, function(a,b) return a.e>b.e end)
 local WhiteStr   = "\255\255\255\255"
@@ -188,7 +191,7 @@ end
 -- Callins
 --------------------------------------------------------------------------------
 function widget:Initialize()
-         widgetHandler:RegisterGlobal('DrawManager_energygui', DrawStatus)
+    widgetHandler:RegisterGlobal('DrawManager_energygui', DrawStatus)
 
 	WG.energyConversion = {convertCapacities = convertCapacities}
 		
@@ -206,13 +209,24 @@ function widget:Shutdown()
 	widgetHandler:DeregisterGlobal('DrawManager_energygui', DrawStatus)
 end
 
-function widget:GameFrame(n)
-	if (n % resourceRefreshRate == 1) then
+function widget:GameFrame(frame)
+	if frame%10==0 then
+		cbackground[4] = WG["background_color_over"]
+		return
+    end
+	if (frame % resourceRefreshRate == 1) then
 		refreshData() 
 	end
 end
 
 function widget:DrawScreen()
+	if triggered == nil then
+		if cbackground[4] == 0.54321 and WG["background_color"] then
+			Spring.Echo("bg color reset",cbackground[4],WG["background_color"])
+			cbackground[4]=WG["background_color"]
+		end
+	triggered = true
+	end
 
 	if not hasData then refreshData() end
 
@@ -221,11 +235,11 @@ function widget:DrawScreen()
     -- Positioning
     glPushMatrix()
 	glTranslate(px, py, 0)
-	
+
 	-- Panel
-	glColor(0, 0, 0, 0.5)
+	glColor(cbackground)
 	glRect(0, 0, sx, sy)
-	glColor(0, 0, 0, 0.8)
+	glColor(cborder)
 	drawBorder(0, 0, sx, sy, 1)
 
 	-- Class box

@@ -9,8 +9,9 @@ return {
 		buildinggrounddecalsizex = 6,
 		buildinggrounddecalsizey = 6,
 		buildinggrounddecaltype = "armfor_aoplane.dds",
+		buildpic = "armfor.dds",
 		buildtime = 200000,
-		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON",
+		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON SURFACE",
 		description = "Advanced Geothermical reactor",
 		energymake = 5000,
 		energystorage = 5000,
@@ -32,13 +33,13 @@ return {
 		objectname = "armFOR",
 		radaremitheight = 73,
 		selfdestructas = "Nuclear_missile1",
-		side = "arm",
 		sightdistance = 250,
 		unitname = "armfor",
-		unitnumber = 2415,
 		usebuildinggrounddecal = true,
-		workertime = 0,
 		yardmap = "oooo oooo oooo oooo",
+		customparams = {
+			faction = "arm",
+		},
 		sfxtypes = {
 			pieceexplosiongenerators = {
 				[1] = "piecetrail5",

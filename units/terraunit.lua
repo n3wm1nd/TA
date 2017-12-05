@@ -6,11 +6,11 @@ return {
 		buildcostenergy = 106667,
 		buildcostmetal = 106667,
 		builder = false,
-		buildpic = "levelterra.png",
+		buildpic = "terraunit.dds",
 		buildtime = 10000000,
 		canattack = false,
 		capturable = false,
-		category = "ALL",
+		category = "ALL UNDERWATER",
 		collisionvolumeoffsets = "0 -3000 0",
 		collisionvolumescales = "32 32 32",
 		collisionvolumetest = 1,
@@ -36,7 +36,6 @@ return {
 		script = "nullscript.lua",
 		seismicsignature = 4,
 		selfdestructcountdown = 1,
-		side = "ARM",
 		sightdistance = 0,
 		stealth = true,
 		turninplaceanglelimit = 140,
@@ -44,10 +43,10 @@ return {
 		turnrate = 0,
 		unitname = "terraunit",
 		upright = false,
-		workertime = 0,
 		yardmap = "yyyy",
 		customparams = {
 			buildpic = "levelterra.png",
+			faction = "ARM",
 		},
 		sfxtypes = {
 			pieceexplosiongenerators = {

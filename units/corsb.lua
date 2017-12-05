@@ -8,7 +8,7 @@ return {
 		buildcostenergy = 8465,
 		buildcostmetal = 194,
 		builder = false,
-		buildpic = "CORSB.png",
+		buildpic = "corsb.dds",
 		buildtime = 9022,
 		canattack = true,
 		canfly = true,
@@ -22,9 +22,6 @@ return {
 		cruisealt = 250,
 		defaultmissiontype = "VTOL_standby",
 		description = "Seaplane Bomber",
-		energymake = 0.9,
-		energystorage = 0,
-		energyuse = 0.9,
 		explodeas = "BIG_UNITEX",
 		firestandorders = 1,
 		floater = true,
@@ -39,7 +36,6 @@ return {
 		maxslope = 10,
 		maxvelocity = 8.71,
 		maxwaterdepth = 255,
-		metalstorage = 0,
 		mobilestandorders = 1,
 		moverate1 = 8,
 		name = "Maelstrom",
@@ -48,7 +44,6 @@ return {
 		objectname = "CORSB",
 		seismicsignature = 0,
 		selfdestructas = "BIG_UNIT_VTOL",
-		side = "CORE",
 		sightdistance = 455,
 		standingfireorder = 2,
 		standingmoveorder = 1,
@@ -57,9 +52,9 @@ return {
 		turninplacespeedlimit = 5.7486,
 		turnrate = 368,
 		unitname = "corsb",
-		workertime = 0,
 		customparams = {
 			buildpic = "CORSB.png",
+			faction = "CORE",
 		},
 		sfxtypes = {
 			pieceexplosiongenerators = {
@@ -98,9 +93,11 @@ return {
 		weapondefs = {
 			seaadvbomb = {
 				areaofeffect = 100,
+				avoidfeature = false,
 				burst = 5,
 				collidefriendly = false,
 				commandfire = false,
+				craterareaofeffect = 0,
 				craterboost = 0,
 				cratermult = 0,
 				edgeeffectiveness = 0.7,
@@ -115,6 +112,8 @@ return {
 				range = 1280,
 				reloadtime = 0.14,
 				soundhitdry = "xplomed2",
+				soundhitwet = "splsmed",
+				soundhitwetvolume = 0.6,
 				soundstart = "bombrel",
 				weapontype = "AircraftBomb",
 				damage = {
@@ -131,7 +130,7 @@ return {
 		weapons = {
 			[1] = {
 				def = "SEAADVBOMB",
-				onlytargetcategory = "NOTVTOL",
+				onlytargetcategory = "SURFACE",
 			},
 		},
 	},
